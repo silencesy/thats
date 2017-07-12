@@ -103,3 +103,10 @@ s, i, em {
 }
 
 
+body {
+    background: #fff url(../images/bg_body.png) repeat-x 0 0;
+    color: #292929;
+    max-width: 100%;
+}
+
+

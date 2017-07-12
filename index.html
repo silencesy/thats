@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>That’s Shanghai – News, Gossip, Reviews, Photos, Events, Dining, Nightlife, Arts, Lifestyle and more in Shanghai</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -14,7 +15,57 @@
     <![endif]-->
 </head>
 <body>
-	
+	<div class="wrapper">
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="thats-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6">
+				  		<div class="dropdown pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shanghai
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">Shanghai</a></li>
+								<li><a href="#">Beijing</a></li>
+								<li><a href="#">Shenzhen</a></li>
+								<li><a href="#">Guangzhou</a></li>
+								<li><a href="#">China</a></li>
+							</ul>
+				  		</div>
+				  		<div class="search pull-left">
+							<form id="search-form" action="#">
+								<div class="search-group" id="">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">Listings</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Listings"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<!-- <li style="cursor: pointer;">All</li> -->
+											<li style="cursor: pointer;">Listings</li>
+											<li style="cursor: pointer;">Articles</li>
+											<li style="cursor: pointer;">Events</li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left ">
+									<button type="submit" class="icon-search pull-left"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</form>
+				  </div>
+				</div>
+					<div class="col-md-4"></div>
+				</div>
+			</header>
+		</div>
+	</div>
 
 
 	<script src="js/jquery.min.js"></script>
