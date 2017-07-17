@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /*设置默认编码集*/
 
+
+
+/*字体*/ 
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../fonts/opensans.woff) format('woff');
+}
+
 /*css 初始化 start */
 
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
@@ -20,15 +30,6 @@ ul, ol {
     list-style: none;
 }
 
-input {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-select, input, textarea {
-    font-size: 12px;
-    margin: 0;
-}
 
 /*防止拖动 影响布局*/
 textarea {
@@ -45,31 +46,6 @@ table {
     border-collapse: collapse;
 }
 
-/*body {
-    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; 
-    font-family: "微软雅黑";
-    color: #666;
-    background: #fff;
-}*/
-
-/*清除浮动*/
-.clearfix:before, .clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1; /*IE/7/6*/
-}
-
-a {
-    text-decoration: none;
-    color: #444;
-}
 
 a:link {
     text-decoration: none;
@@ -77,12 +53,12 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: #444;
+    color: #666;
 }
 
 a:hover {
     text-decoration: none;
-    color: #444;
+    color: #666;
 }
 
 a:active {
@@ -98,15 +74,273 @@ s, i, em {
 }
 
 /*项目主体色*/
-.col-red {
-    color: #C81623 !important;
-}
 
 
 body {
     background: #fff url(../images/bg_body.png) repeat-x 0 0;
     color: #292929;
     max-width: 100%;
+    font-family: 'Open Sans';
 }
+
+.wrapper > .container {
+    background: #ffffff;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .wrapper > .container, .container {
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 1040px;
+    }
+
+}
+
+
+/*头部*/ 
+header {
+    padding-top: 27px;
+}
+
+header .dropdown {
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+header .open>.dropdown-menu {
+    margin-left: -40px;
+}
+
+header .dropdown-menu>li>a {
+    text-align: center;
+}
+
+.dropdown button {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.caret {
+    border: none !important;
+    position: relative;
+    background: url(../images/icon.png) no-repeat -26px 0;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+}
+
+.wrapper header .row .col-md-6 {
+    line-height: 48px;
+}
+
+
+header .search {
+    height: 48px;
+}
+
+
+
+.search-group {
+    border: 1px solid #e5e5e5;
+    border-radius: 17px;
+    height: 34px;
+    vertical-align: middle;
+}
+
+.search-group .icon-search {
+    display: block;
+    border: 0 none;
+    background-color: #fff;
+    color: #fc4103;
+    font-size: 16px;
+}
+
+header .user-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(200,200,200,0.3);
+}
+
+header .user-info  li {
+    float: left;
+    display: inline-block;
+    color: #999;
+}
+
+header .user-info  li a {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 11px;
+    color: #999;
+}
+
+header .user-info  li a:hover {
+    color: #666;
+}
+
+/*nav部分*/
+header .nav {
+    border-top: 1px dashed #e5e5e5;
+    border-bottom: 1px dashed #e5e5e5;
+} 
+
+header .nav a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    background: none;
+    color: #aaa;
+}
+
+header .nav li.active a,header .nav a:hover {
+    color: #292929;
+    background: none;
+}
+
+header .thats-navbar {
+    margin-bottom: 15px;
+}
+
+
+/*主题部分*/ 
+
+
+/*导航广告*/ 
+.thats-content .thats-nav-ad {
+    margin-bottom: 15px;
+}
+
+.thats-content .thats-nav-ad img {
+    width: 100%;
+    height: auto;
+}
+
+/*轮播图*/
+
+
+
+
+
+
+
+
+
+/*底部部分开始*/ 
+
+#footer {
+    width: 100%;
+    line-height: 26px;
+    background: #25282b;
+    padding: 48px 10px 48px 10px;
+}
+
+#footer p {
+    margin: 0;
+    color: #999;
+}
+
+#footer p a {
+    margin: 0 4px;
+    color: #999;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#footer p a:hover {
+    color: #aaa;
+}
+
+#footer p a:nth-child(1) {
+    margin-left: 0;
+}
+#footer li {
+    float: left;
+}
+
+
+#footer .pull-right li {
+    margin-left: 11px;
+}
+
+#footer .footer-logo a {
+    margin-right: 22px;
+}
+
+#mobile-nav .citylist {
+    border: none;
+}
+
+#mobile-nav .glyphicon-search {
+    color: #fc4103;
+}
+
+#mobile-nav .search-mobile{
+    padding: 6px 14px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: none;
+}
+
+
+
+
+/*底部部分结束*/ 
+
+
+
+@media screen and (max-width: 768px) {
+    #footer {
+        padding: 28px 10px 10px 10px;
+    }
+
+    #mobile-nav .mobile-logo {
+        height: 30px;
+        margin-top: 10px;
+    }
+    .wrapper {
+        padding-top: 50px;
+    }
+
+    /*移动端头部按钮颜色*/ 
+    // #mobile-nav .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    //     background-color: none !important;
+    // }
+}
+
+@media screen and (max-width: 768px) and (min-width: 240px) {
+
+    #thats-navbar .nav {
+        margin-top: 0;
+        padding-top: 10px;
+        line-height: 40px;
+        margin: 0 0 20px;
+    }
+
+    #thats-navbar .nav li {
+        width: 49%;
+        display: inline-block;
+    }
+
+    #thats-navbar .nav li a {
+        font-style: 14px;
+    }
+
+}
+
+
+
+   
+
+
+
+
+
 
 
