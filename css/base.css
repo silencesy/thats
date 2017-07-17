@@ -18,6 +18,10 @@ html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, l
     padding: 0;
 }
 
+body, div, p, li, span {
+    font-family: 'Open Sans';
+}
+
 /*各浏览器显示不同，去掉边框等默认样式*/
 fieldset, img, input, button {
     border: none;
@@ -99,22 +103,26 @@ body {
 
 
 /*头部*/ 
-header {
+.thats-header {
     padding-top: 27px;
 }
 
-header .dropdown {
+.thats-header .dropdown {
     vertical-align: middle;
     text-transform: uppercase;
 }
 
-header .open>.dropdown-menu {
-    margin-left: -40px;
+.thats-header .dropdown-cityname {
+    line-height: 48px;
 }
 
-header .dropdown-menu>li>a {
-    text-align: center;
-}
+// .thats-header .open>.dropdown-menu {
+//     margin-left: -40px;
+// }
+
+// .thats-header .dropdown-menu>li>a {
+//     text-align: center;
+// }
 
 .dropdown button {
     background: none;
@@ -131,12 +139,12 @@ header .dropdown-menu>li>a {
     height: 14px;
 }
 
-.wrapper header .row .col-md-6 {
-    line-height: 48px;
-}
+// .wrapper .thats-header .row .col-md-6 {
+//     line-height: 48px;
+// }
 
 
-header .search {
+.thats-header .search {
     height: 48px;
 }
 
@@ -145,9 +153,20 @@ header .search {
 .search-group {
     border: 1px solid #e5e5e5;
     border-radius: 17px;
-    height: 34px;
-    vertical-align: middle;
+    height: 36px;
+    margin: 8px 0 0 20px;
+    width: 343px;
+    line-height: 34px;
 }
+
+.search-group  .dropdown {
+    margin-left: 20px;
+}
+
+.search-group  input {
+    margin-left: 5px;
+}
+
 
 .search-group .icon-search {
     display: block;
@@ -155,9 +174,10 @@ header .search {
     background-color: #fff;
     color: #fc4103;
     font-size: 16px;
+    margin-right: 15px;
 }
 
-header .user-info {
+.thats-header .user-info {
     position: absolute;
     top: 0;
     right: 0;
@@ -165,30 +185,30 @@ header .user-info {
     background-color: rgba(200,200,200,0.3);
 }
 
-header .user-info  li {
+.thats-header .user-info  li {
     float: left;
     display: inline-block;
     color: #999;
 }
 
-header .user-info  li a {
+.thats-header .user-info  li a {
     display: inline-block;
     padding: 5px 10px;
     font-size: 11px;
     color: #999;
 }
 
-header .user-info  li a:hover {
+.thats-header .user-info  li a:hover {
     color: #666;
 }
 
 /*nav部分*/
-header .nav {
+.thats-header .nav {
     border-top: 1px dashed #e5e5e5;
     border-bottom: 1px dashed #e5e5e5;
 } 
 
-header .nav a {
+.thats-header .nav a {
     display: inline-block;
     font-size: 16px;
     padding: 10px 20px;
@@ -198,12 +218,12 @@ header .nav a {
     color: #aaa;
 }
 
-header .nav li.active a,header .nav a:hover {
+.thats-header .nav li.active a,.thats-header .nav a:hover {
     color: #292929;
     background: none;
 }
 
-header .thats-navbar {
+.thats-header .thats-navbar {
     margin-bottom: 15px;
 }
 
@@ -276,6 +296,12 @@ header .thats-navbar {
     border: none;
 }
 
+#mobile-nav .citylist .cityname {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 12px;
+}
+
 #mobile-nav .glyphicon-search {
     color: #fc4103;
 }
@@ -284,12 +310,47 @@ header .thats-navbar {
     padding: 6px 14px;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: none;
+
+#mobile-nav #mobile-navbar-collapse ul li {
+    text-transform: uppercase;
+}
+#mobile-nav .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+#mobile-navbar-search {
+    position: relative;
+}
+
+#mobile-navbar-search>div {
+    height: 55px;
+}
+
+#mobile-navbar-search>div form {
+    height: 32px;
+}
+
+#mobile-nav .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 768px;
 }
 
 
 
+#mobile-search-form input {
+    height: 32px;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+}
+
+#mobile-search-form .icon-search {
+    position: absolute;
+    right: 32px;
+    top: 15px;
+    background-color: transparent;
+}
 
 /*底部部分结束*/ 
 
@@ -303,6 +364,7 @@ header .thats-navbar {
     #mobile-nav .mobile-logo {
         height: 30px;
         margin-top: 10px;
+        margin-left: 15px;
     }
     .wrapper {
         padding-top: 50px;
