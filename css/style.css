@@ -111,9 +111,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
 }
-button[type="submit"] {
-	margin: 10px auto;
-}
 textarea {
 	width: 100%;
 	color: #666;
@@ -423,6 +420,9 @@ img {
 input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #e5e5e5;
 }
+.btn-email {
+	margin: 10px auto;
+}
 .btn-all, .w-all {
     width: 100%;
 }
@@ -461,9 +461,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 #reviewModal {
 	display: block;
     padding-right: 17px;
-}
-button[type="submit"] {
-    margin: 10px auto;
 }
 .add-laber {
 	width: 22%;
@@ -539,13 +536,18 @@ button[type="submit"] {
 
 
 @media (max-width: 768px) {
-	.page-bottom .col-md-4:nth-of-type(2) img, .page-bottom .col-md-4:nth-of-type(3) img {
-		width: 68%;
-	}
 	.tagbala .bdr-fresh {
 		margin-bottom: 20px;
 	}
-
+	.img-container a img {
+		width: 100%;
+	}
+	.pull-plus {
+		width: 100%;
+	}
+	.pull-plus >a {
+		width: 100%;
+	}
 
 
 

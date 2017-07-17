@@ -15,23 +15,13 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jiathis.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/fastclick.js"></script>
-	<script type="text/javascript">
-		// 消除移动端300ms的click延迟
-		window.addEventListener( "load", function() {
-			FastClick.attach( document.body );
-		}, false );
-	</script>
 </head>
 <body>
 	<img src="Picture/startup-loses-umbrellas.jpg" style="width:0;height:0">
 	<div class="wrapper">
 		<div class="container">
 			<!-- 头部部分开始 -->
-			<header class="hidden-xs">
+			<header class="hidden-xs thats-header">
 				<div class="row">
 					<div class="col-md-2">
 						<div class="thats-logo">
@@ -41,7 +31,7 @@
 						</div>
 					</div>
 					<div class="col-md-6 ">
-				  		<div class="dropdown pull-left">
+				  		<div class="dropdown dropdown-cityname pull-left">
 							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
 							<span class="caret"></span>
 							</button>
@@ -56,8 +46,8 @@
 				  		<div class="search pull-left">
 							<form id="search-form" class="clearfix" action="#">
 								<div class="search-group">
-									<!-- <div class="dropdown pull-left"> -->
-										<!-- <button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											<span id="navsearchmodule">LISTINGS</span>
 											<span class="caret"></span>
 										</button>
@@ -69,7 +59,7 @@
 										</ul>
 									</div>
 									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left">
-									<button type="submit" class="icon-search pull-left"><span class="glyphicon glyphicon-search"></span></button> -->
+									<button type="submit" class="icon-search pull-right"><span class="glyphicon glyphicon-search"></span></button>
 								</div>
 							</form>
 				  		</div>
@@ -280,7 +270,7 @@
 					                <span>0</span> User Comments            
 					            </h2>
 					        </div>					        
-					        <div class="pull-right">
+					        <div class="pull-right pull-plus">
 					            <a type="button" class="btn btn-red btn-lg add-btn" data-toggle="modal" data-target="#myModal">
 					                <i class="thaticon icon-add"></i>
 					                <span class="text-bold text-italic add-font">Add your Comment</span>
@@ -352,7 +342,7 @@
 				        <form action="" method="post" target="_blank">
 				        	<input type="hidden" name="DMDtask" value="subscribe" />
 				            <input type="email" placeholder="Email Address" name="email" class="btn-all">
-				            <button type="submit" class="btn btn-fresh btn-all">
+				            <button type="submit" class="btn btn-fresh btn-all btn-email">
 				                <span class="text-bold text-italic">Add</span>
 				            </button>
 				        </form>
@@ -586,5 +576,16 @@
         </div>
     </nav>
     <!-- 移动端nav结束 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jia.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script type="text/javascript">
+		// 消除移动端300ms的click延迟
+		window.addEventListener( "load", function() {
+			FastClick.attach( document.body );
+		}, false );
+	</script>
 </body>
 </html>
