@@ -5,17 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 	<title>article</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--[if lt IE 9]><script src="Scripts/ie8-responsive-file-warning.js"></script><![endif]-->
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="Scripts/html5shiv.min.js"></script>
-	<script src="Scripts/respond.min.js"></script>
-	<![endif]-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/jiathis.css">
-	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<img src="Picture/startup-loses-umbrellas.jpg" style="width:0;height:0">
@@ -482,7 +481,8 @@
 			</div><!-- container-fluid ed -->		
 		</div><!-- container ed -->
 	</div><!-- wrapper ed -->
-	<footer id="footer" >
+	<!-- 底部部分开始 -->
+	<footer id="footer" class="thats-footer">
 		<div class="container" class="clearfix">
 			<ul class="pull-left">
 				<li class="footer-logo">
@@ -524,29 +524,30 @@
 
 		</div>
 	</footer>
+	<!-- 底部部分结束 -->
 
 	<!-- 移动端nav开始 -->
-    <nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs " role="navigation">
+	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
         <div class="container-fluid mobile-nav-container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
                     <span class="sr-only"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <button type="button" class="navbar-toggle search-mobile" data-toggle="collapse" data-target="#mobile-navbar-search">
+                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
                     <span class="glyphicon glyphicon-search icon-ufsearch"></span>
                 </button>
-                <button type="button" class="navbar-toggle citylist" data-toggle="collapse" data-target="#citylist">
+                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
                     <span class="cityname">BEIJING</span>
                     <span class="caret"></span>
                 </button>
-                <a href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
             </div>
             <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">HOME</a></li>
+                    <li class="active"><a href="#">home</a></li>
                     <li><a href="#">news</a></li>
 					<li><a href="#">Bars & Restaurants</a></li>
 					<li><a href="#">entertainment</a></li>
@@ -555,6 +556,10 @@
 					<li><a href="#">Directory</a></li>
 					<li><a href="#">Events</a></li>
 					<li><a href="#">VIDEO</a></li>
+					<hr>
+					<li></li>
+					<li><a href="#">log in</a></li>
+					<li><a href="#">sign up</a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="citylist">
@@ -567,16 +572,35 @@
                 </ul>
             </div>
             <div class="navbar-collapse collapse" id="mobile-navbar-search">
-                <div class="search-group search-group-mobile">
+                <div class="search-group-mobile">
                     <form id="mobile-search-form" method="post" action="#">
                         <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
-                        <button type="submit" class="icon-search pull-left"><span class="glyphicon glyphicon-search"></span></button>
+                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
                     </form>
                 </div>
             </div>
         </div>
     </nav>
     <!-- 移动端nav结束 -->
+    <!-- ad-app部分开始 -->
+    <div class="ad-thatsapp visible-xs">
+    	<div class="ad-thatsapp-logo">
+    		<a href="http://www.thatsmags.com/app">
+    			<img src="images/thatsapp-logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="ad-thatsapp-text">
+    		<p>Get the App. Your essential China city companion.</p>
+    	</div>
+    	<div class="ad-thatsapp-open">
+    		<button class="btn ad-thatsapp-download">open</button>
+    		<a class="ad-thatsapp-close">
+    			<img src="images/thatsapp-close.png" alt="">
+    		</a>
+    	</div>
+    	<div></div>
+    </div>
+    <!-- ad-app部分结束 -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jia.js"></script>

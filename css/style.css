@@ -347,7 +347,7 @@ img {
     margin-bottom: 20px;
 }
 .row.picture .img-container {
-	max-height: 95px;
+	// max-height: 95px;
 	overflow: hidden;
 }
 .picture p, .picture p a, .row-fluid a, .user-info li, .user-info li a, .select-sort a, .tab-side .nav-tabs > li > a, #footer p, #footer a {
