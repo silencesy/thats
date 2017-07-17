@@ -103,6 +103,10 @@ h3 {
 	font-size: 18px;
 	font-weight: bold;
 }
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
 input[type="text"], input[type="email"], input[type="password"] {
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
@@ -316,7 +320,7 @@ div.wrapper {
     color: #999;
 }
 img {
-	width: 100%;
+	max-width: 100%;
 }
 .comment-info *[type="button"] {
     margin-top: 10px;
@@ -373,9 +377,14 @@ img {
     width: 50%;
     padding-top: 5px;
 }
+.page-bottom .col-md-4:nth-of-type(2) img {
+	width: auto;
+	margin-top: 25px;
+}
 .page-bottom .col-md-4:last-child img {
+	width: auto;
     display: inline-block;
-    margin-top: -15px;
+    margin-top: 15px;
     margin-left: 5px;
 }
 .sidebar-module {
@@ -398,10 +407,18 @@ img {
     height: 30px;
     cursor: pointer;
 }
+.share-s a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+} 
 .follow-us input[type="email"] {
     margin-top: 5px;
     padding: 10px;
     line-height: normal;
+}
+.instagram {
+	width: 94%;
 }
 input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #e5e5e5;
