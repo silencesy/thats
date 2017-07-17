@@ -3,18 +3,19 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
-	<title>Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas – That’s Shanghai</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>article</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!--[if lt IE 9]><script src="Scripts/ie8-responsive-file-warning.js"></script><![endif]-->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="Scripts/html5shiv.min.js"></script>
 	<script src="Scripts/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jiathis.css">
 	<script src="js/jquery.min.js"></script>
-	<link href="css/flexslider.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.js"></script>
 	<script src="js/fastclick.js"></script>
 	<script type="text/javascript">
@@ -23,195 +24,488 @@
 			FastClick.attach( document.body );
 		}, false );
 	</script>
-	<style type="text/css">
-		div.wrapper {
-			background: none;
-			padding-top: 0;
-		}
-	</style>
 </head>
 <body>
-	<img src="Picture/startup-loses-umbrellas.jpg" style="width:0;height:0"><div class="wrapper">
-	<div class="container">
-		<header id="header" class="clearfix">
-			<div class="row">
-				<div class="col-md-2">
-				  <div class="header-logo">
-					<a href="http://www.thatsmags.com/shanghai" class="logo">
-						<img src="Picture/logo.png" alt="">
-					</a>
-				  </div>
-				</div>
-				<div class="col-md-6">
-					<div class="dropdown pull-left">
-						<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Shanghai						<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-							<li><a href="http://www.thatsmags.com/shanghai">Shanghai</a></li>
-							<li><a href="http://www.thatsmags.com/beijing">Beijing</a></li>
-							<li><a href="http://www.thatsmags.com/shenzhen">Shenzhen</a></li>
-							<li><a href="http://www.thatsmags.com/guangzhou">Guangzhou</a></li>
-							<li><a href="/china">China</a></li>
-						</ul>
+	<img src="Picture/startup-loses-umbrellas.jpg" style="width:0;height:0">
+	<div class="wrapper">
+		<div class="container">
+			<header id="header" class="clearfix">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="header-logo">
+							<a href="" class="logo">
+								<img src="Picture/logo.png" alt="">
+							</a>
+						</div>
 					</div>
-					<div class="search pull-left">
-						<form id="search-form" action="http://www.thatsmags.com/shanghai/search" data-params="">
-							<div class="search-group" id="">
-								<div class="dropdown pull-left">
-									<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span id="navsearchmodule">Articles</span>
-										<span class="caret"></span>
-									</button>
-									<input type="hidden" name="type" value="Articles"/>
-									<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-										<!-- <li style="cursor: pointer;">All</li> -->
-										<li style="cursor: pointer;">Listings</li>
-										<li style="cursor: pointer;">Articles</li>
-										<li style="cursor: pointer;">Events</li>
-									</ul>
+					<div class="col-md-6">
+						<div class="dropdown pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Shanghai						
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="http://www.thatsmags.com/shanghai">Shanghai</a></li>
+								<li><a href="http://www.thatsmags.com/beijing">Beijing</a></li>
+								<li><a href="http://www.thatsmags.com/shenzhen">Shenzhen</a></li>
+								<li><a href="http://www.thatsmags.com/guangzhou">Guangzhou</a></li>
+								<li><a href="/china">China</a></li>
+							</ul>
+						</div>
+						<div class="search pull-left">
+							<form id="search-form" action="http://www.thatsmags.com/shanghai/search" data-params="">
+								<div class="search-group" id="">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">Articles</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Articles"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<!-- <li style="cursor: pointer;">All</li> -->
+											<li style="cursor: pointer;">Listings</li>
+											<li style="cursor: pointer;">Articles</li>
+											<li style="cursor: pointer;">Events</li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left ">
+									<button type="submit" class="icon-search pull-left"><span class="glyphicon glyphicon-search"></span></button>
 								</div>
-								<input name="keywords" type="search" value="" placeholder="Search" class="pull-left ">
-								<button type="submit" class="icon-search pull-left"><span class="glyphicon glyphicon-search"></span></button>
-							</div>
-						</form>
+							</form>
+						</div>
+					</div>
+					<div class="dowload col-md-4">
+					    <div class="pull-right">
+							<a href="/magazine">
+								<img src="Picture/dowload.png" alt="">
+							</a>
+					    </div>
+					</div>
+					<ul class="user-info">
+						<li>
+							<a href="http://www.thatsmags.com/usercenter/login" class="text-uppercase">Log in</a> |
+						</li>
+						<li>
+							<a href="http://www.thatsmags.com/usercenter/register" class="text-uppercase">Sign up</a>
+						</li>
+					</ul>
+				</div>
+				<nav id="navbar" role="navigation">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="http://www.thatsmags.com/shanghai/news" class="text-uppercase" target="_blank">news</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/br" class="text-uppercase" target="_blank">Bars & Restaurants</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/entertainment" class="text-uppercase" target="_blank">entertainment</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/lifestyle" class="text-uppercase" target="_blank">lifestyle</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/features" class="text-uppercase" target="_blank">features</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/directory" class="text-uppercase" target="_blank">Directory</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/event" class="text-uppercase" target="_blank">Events</a>
+						</li>
+						<li class="">
+							<a href="http://www.thatsmags.com/shanghai/video" class="text-uppercase" target="_blank">VIDEO</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div class="row">	
+				<div class="col-sm-9 main">
+					<!-- 文章内容 -->
+					<section class="word-container">
+					    <ol class="breadcrumb">
+					        <li>
+					            <a href=""><i class="thaticon icon-home"></i>Home</a>
+					        </li>
+					        <li>
+					            <a href="">Articles</a>
+					        </li>
+					    </ol>
+					    <header class="word-title">
+					        <h1 class="title">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</h1>
+					        By <span><a href="">Jesse Pottinger</a></span>,<span>July 11, 2017</span>
+					        <p class="pull-right addup">
+					            <!-- 分享统计 -->
+					            <a href="javascript:void(0);" class="addup-share">
+					                <i class="thaticon icon-share"></i>
+					                <span class="text-dark">0</span>
+					            </a>
+					            <!-- 评论统计 -->
+					            <a href="#artcileComment" class="addup-comment">
+					                <i class="thaticon icon-comment"></i>
+					                <span class="text-dark">0</span>
+					            </a>
+					        </p>
+					    </header>
+					    <!-- 文章主体 -->
+					    <div class="word-content">
+					        <!-- 文章配图 -->
+					        <div class="banner article-banner">
+					            <img src="images/Startup-Loses-Umbrellas.jpg">
+					        </div>				        
+					        <!-- 文章顶部分享 -->
+					        <div class="toolbar tool-top clearfix">
+					            <ul class="share share-s pull-right jiathis_style_32x32">
+					                <li><a class="jiathis_button_twitter"><span class="jiathis_txt jtico jtico_twitter"></span></a></li>
+					                <li><a class="jiathis_button_fb"><span class="jiathis_txt jtico jtico_fb"></span></a></li>
+					                <li><a class="jiathis_button_tsina"><span class="jiathis_txt jtico jtico_tsina"></span></a></li>
+					                <li><a class="jiathis_button_weixin"><span class="jiathis_txt jtico jtico_weixin"></span></a></li>
+					                <li><a class="jiathis_button_email"><span class="jiathis_txt jtico jtico_email"></span></a></li>
+								</ul>
+					        </div>
+					        <div class="text tickets" id="content-body">
+					            <p>A China-based umbrella-sharing startup has seen brighter days, after losing nearly all of its 300,000 umbrellas in under three months.</p>
+					            <p>The news may come as no surprise, considering just last month, umbrella-share startups in Shanghai lost <a href="" target="_blank">most of their umbrellas</a>&nbsp;in just days.
+					            </p>
+					            <p>Growth in the sharing economy has introduced a number of shared items into Chinese cities, most notably bicycles. But as the new sharing company E Umbrella has learned, umbrellas, unlike bikes, are easily misplaced.</p>
+					            <p>“We were really impressed by the bike-sharing model,” said E Umbrella creator Zhao Shuping to <a href="" target="_blank">The Paper</a>, adding that he “thought that everything on the street can now be shared.”</p>
+					            <p><img src="Picture/startup-loses-umbrellas-1.jpg"/></p>
+					            <p>According to <a href="" target="_blank"><em>South China Morning Post</em></a>, E Umbrella launched in April with a RMB10-million investment, and has since sprung up in 11 cities throughout mainland China.</p>
+					            <p>The company operates like China’s many bike shares, with customers paying a RMB19 deposit, and an additional RMB0.5 per 30 minutes of use. &nbsp;</p>
+					            <p>Each lost umbrella costs E Umbrella about RMB60 to replace, but the company still intends to add another 30 million over the next several months.</p>
+					            <p>Despite the clouds looming over his business, Zhao remains optimistic about the future of E Umbrella, though he is aware of its limitations.</p>
+					            <p>“Umbrellas are different from bicycles,” said Zhao.&nbsp;“Bikes can be parked anywhere, but with an umbrella you need railings or a fence to hang it on.”</p>
+					            <p><img src="Picture/startup-loses-umbrellas-2.jpg"/></p>
+					            <p>Zhao did not disclose what measures might be taken to ensure that future umbrellas would not see the same fate as the first 300,000. Perhaps GPS tracking or lost umbrella fees can be expected?</p>
+					            <p>With the addition of millions of new umbrellas by the end of the year, he will certainly have to make some changes to keep the business afloat.</p>
+					            <p><strong><em>READ MORE:&nbsp;<a href="">3 Things You Can Now Rent With Chinese Sharing Apps</a></em></strong><br/></p>
+					            <p><em>[Images via <a href="" target="_blank">The Guardian</a>, <a href="" target="_blank">SCMP</a>]</em>
+					            </p>       
+					        </div>
+					        <!-- 文章底部：标签&分享 -->
+					        <div class="toolbar tool-bottom clearfix">
+					            <!-- tag bala-->
+					            <p class="tagbala pull-left">
+					            	<a href="" type="button" class="btn-tag btn btn-line bdr-fresh">Share economy</a>
+	                                <a href="" type="button" class="btn-tag btn btn-line bdr-fresh">China</a>
+	                                <a href="" type="button" class="btn-tag btn btn-line bdr-fresh">news</a>
+	                                <a href="" type="button" class="btn-tag btn btn-line bdr-fresh">Umbrella sharing</a>
+					            </p><!-- /tag bala end/ -->
+					            <!-- 分享：小图标 -->
+					            <ul class="share share-s pull-right jiathis_style_32x32"  data-id="19767" data-type="1">
+									<li><a class="jiathis_button_twitter"><span class="jiathis_txt jtico jtico_twitter"></span></a></li>
+					                <li><a class="jiathis_button_fb"><span class="jiathis_txt jtico jtico_fb"></span></a></li>
+					                <li><a class="jiathis_button_tsina"><span class="jiathis_txt jtico jtico_tsina"></span></a></li>
+					                <li><a class="jiathis_button_weixin"><span class="jiathis_txt jtico jtico_weixin"></span></a></li>
+					                <li><a class="jiathis_button_email"><span class="jiathis_txt jtico jtico_email"></span></a></li>
+								</ul>
+					        </div><!-- /标签&分享结束/ -->
+					    </div>
+					</section><!-- 文章内容结束 -->
+					<div class="line-dashed"></div>
+					<!-- more news -->
+					<div class="more-news">
+					    <h2 class="text-uppercase text-shadow">more news</h2>
+					    <div class="row">
+					        <!-- 文章推荐：图文 -->
+					        <div class="col-md-8">
+					            <!-- 图文推荐：大图 -->
+					            <div class="news-pic thumb-big bor-bottom">
+					                <div class="img-container">
+					                    <a href="">
+					                        <div>
+					                            <img src="Picture/shared-cars-shenzhen1.jpg">
+					                        </div>
+					                    </a>
+					                </div>
+					                <div class="text-container">
+					                    <h3 class="text-bold">
+					                        <a href="">5 Car-Sharing Options Available in China</a>
+					                    </h3>
+					                    <p class="text-muted">Got a Chinese drivers license and RMB500? Then you, too, can use a shared car.</p>
+					                </div>
+					            </div><!-- /大图结束/ -->
+					            <!-- 图文推荐：小图 -->
+					            <div class="news-pic thumb-small">
+					                <div class="img-container">
+					                    <a href="">
+					                        <img src="Picture/2016-quiz.jpg">
+					                    </a>
+					                </div>
+					                <div class="text-container">
+					                    <h3>
+					                        <a href="">2016 China News Quiz: Do You Remember the Top Stories?</a>
+					                    </h3>
+					                    <p class="text-muted">Test your knowledge of 2016 China news with our quiz!</p>
+					                </div>
+					            </div>            
+					            <div class="news-pic thumb-small">
+					                <div class="img-container">
+					                    <a href="">
+					                        <img src="Picture/tuhao-gold-shared-bikes1.jpg">
+					                    </a>
+					                </div>
+					                <div class="text-container">
+					                    <h3>
+					                        <a href="">PHOTOS: 'Tuhao Gold' Shared Bikes Debut in China</a>
+					                    </h3>
+					                    <p class="text-muted">The inevitable is here: 'tuhao gold' shared bikes are now a thing in China.</p>
+					                </div>
+					            </div><!-- /小图结束/ -->
+					        </div>
+					        <!-- 文章推荐：文字 -->
+					        <div class="col-sm-4 more-text">
+					            <div class="text-container">
+					                <h3>
+					                    <a href="">English Completely Removed from New Uber China App</a>
+					                </h3>
+					                <p class="text-muted">The new Uber China app was officially released today, and it just got a whole lot more difficult to use.</p>
+					            </div>
+					            <div class="text-container">
+					                <h3>
+					                    <a href="">QUIZ: How Well Do You Know This Week's News?</a>
+					                </h3>
+					                <p class="text-muted">Have you been paying attention to what's been going on in China this week? Test your knowledge of China's biggest stories this week with our news quiz.</p>
+					            </div>
+					            <div class="text-container">
+					                <h3>
+					                    <a href="">No, There Won't be an Entire Month of Rain in China</a>
+					                </h3>
+					                <p class="text-muted">Graphic circulating on Chinese social media showing a weather forecast predicting an entire month of rain is fake.</p>
+					            </div>
+					            <div class="text-container">
+					                <h3>
+					                    <a href="">China Expat Packages Now 2nd Highest in Asia-Pacific</a>
+					                </h3>
+					                <p class="text-muted">Expat packages in China continue to rise due to high cost of living and pollution.</p>
+					            </div>
+					            <div class="text-container">
+					                <h3>
+					                    <a href="">QUIZ: How Well Do You Know This Week's News?</a>
+					                </h3>
+					                <p class="text-muted">Have you been paying attention to what's been going on in China this week? Test your knowledge of China's biggest stories this week with our news quiz.</p>
+					            </div>
+					        </div>
+					    </div><!-- /row end/ -->
+					</div><!-- /more news end/ -->
+					<div class="line-dashed"></div>
+					<!-- 文章评论 -->
+					<section class="word-comment">
+					    <div id="listReviews" class="comment-info clearfix">    	
+					        <div class="pull-left">
+					            <h2 class="text-muted">
+					                <span>0</span> User Comments            
+					            </h2>
+					        </div>					        
+					        <div class="pull-right">
+					            <a type="button" class="btn btn-red btn-lg add-btn" data-toggle="modal" data-target="#myModal">
+					                <i class="thaticon icon-add"></i>
+					                <span class="text-bold text-italic add-font">Add your Comment</span>
+					            </a>
+					        </div>
+					    </div>
+					</section>	
+					<!-- Add弹出层开始 -->	
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					        <form id="reviewForm">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					                    	<span aria-hidden="true">&times;</span>
+					                    </button>
+					                    <h4 class="modal-title" id="reviewModalLabel">Add your comment</h4>
+					                </div>
+					                <div class="modal-body">
+					                    <fieldset>
+					                        <div class="form-group" >
+					                            <label class="control-label add-laber" for="content">* Comment Content</label>
+					                            <textarea class="form-control add-control" rows="3" name="content" placeholder="Please enter your review"></textarea>
+					                        </div>
+					                        <input type="hidden" name="iTargetID" value="19822" />
+					                        <input type="hidden" name="iType" value="1" />
+					                        <input type="hidden" name="channel" value="4" />
+					                        <input type="hidden" name="cityid" value="1" />
+					                    </fieldset>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="submit" class="btn btn-primary">Submit</button>
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					                </div>
+					            </div>
+					        </form>
+					    </div>    
+					</div><!-- Add弹出层结束 -->								
+				</div><!-- col-sm-9 end -->	
+				<!-- sidebar -->
+				<div class="col-sm-3 sidebar">
+				    <!-- follow us -->
+				    <div class="sidebar-module follow-us">
+				        <h2 class="text-uppercase text-shadow">follow us</h2>
+				        <ul class="share-s">
+				        	<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+				                <li class="thaticon icon-twitter">&nbsp;</li>
+				            </a>
+				            <a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+				                <li class="thaticon icon-facebook"></li>
+				            </a>
+				            <a href="http://weibo.com/p/1002061749863802" title="Weibo">
+				            	<li class="thaticon icon-weibo"></li>
+				            </a>
+				            <li class="thaticon icon-weibo">
+				                <a href="https://instagram.com/thatsshanghai" title="Instagram"><img src="Picture/instasmall.png"></a>
+				            </li>
+				        </ul>
+				        <div class="text-container">
+				            <h3>
+				                Get the weekly newsletter!
+				            </h3>
+				            <p class="text-muted">
+				                Sign up to get the entertainment, lifestyle and event news from That's Shanghai every week!
+				            </p>
+				        </div>
+				        <form action="" method="post" target="_blank">
+				        	<input type="hidden" name="DMDtask" value="subscribe" />
+				            <input type="email" placeholder="Email Address" name="email" class="btn-all">
+				            <button type="submit" class="btn btn-fresh btn-all">
+				                <span class="text-bold text-italic">Add</span>
+				            </button>
+				        </form>
+				    </div><!-- /follow us end/ -->			    
+				    <!-- trending -->
+				    <div class="sidebar-module trending">
+				        <h2 class="text-uppercase text-shadow">trending</h2>
+				        <!-- 侧栏图文1 -->
+				        <div class="news-pic thumb-side">
+				            <div class="img-container">
+				                <a href="">
+				                    <img class="lazy" src="images/yongkang-lu-shutdown1.jpg">
+				                </a>
+				            </div>
+				            <div class="text-container">
+				                <h3>
+				                    <a href="">VPNs to Be Blocked in China By February 2018?</a>
+				                </h3>
+				            </div>
+				        </div>
+				        <!-- 侧栏图文1 -->
+				        <div class="news-pic thumb-side">
+				            <div class="img-container">
+				                <a href="">
+				                    <img class="lazy" src="images/yongkang-lu-shutdown1.jpg">
+				                </a>
+				            </div>
+				            <div class="text-container">
+				                <h3>
+				                    <a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+				                </h3>
+				            </div>
+				        </div>
+				       	<!-- 侧栏图文1 -->
+				        <div class="news-pic thumb-side">
+				            <div class="img-container">
+				                <a href="">
+				                    <img class="lazy" src="images/yongkang-lu-shutdown1.jpg">
+				                </a>
+				            </div>
+				            <div class="text-container">
+				                <h3>
+				                    <a href="">New Beijing to Shanghai High-Speed Trains Feature Super Comfy Beds</a>
+				                </h3>
+				            </div>
+				        </div>
+				    </div><!-- trending end -->			        
+				</div><!-- sidebar ed -->
+			</div><!-- row ed -->
+		    <!-- start footer -->
+			<h2 class="text-dark">In Case You Missed It…</h2>
+			<div class="row picture">
+				<div class="col-md-2">
+					<div class="img-container article-pic-con">
+						<a href="">
+							<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
+						</a>
+					</div>
+					<p>
+						<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
+						</a>
+					</div>
+					<p>
+						<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
+						</a>
+					</div>
+					<p>
+						<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
+						</a>
+					</div>
+					<p>
+						<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+					</p>
+				</div>
+				<div class="col-md-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
+						</a>
+					</div>
+					<p>
+						<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
+					</p>
+				</div>
+			</div><!-- picture ed -->
+			<div class="container-fluid page-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>We're on WeChat!</h3>
+						<div class="pull-left">
+							<p>Scan our QR Code at right or follow us at Thats_Shanghai for events, guides, giveaways and much more! </p>
+						</div>
+						<div class="pull-rig3000ht">
+							<img src="Picture/thats-shanghai-wechat.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>7 Days in Shanghai With thatsmags.com</h3>
+						<div class="pull-left">
+							<p>Weekly updates to your email inbox every Wednesday</p>
+							<p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/thats-newsletter.png">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>Download previous issues</h3>
+						<div class="pull-left">
+							<p>Never miss an issue of That's Shanghai!</p>
+							<p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/mags_thumb_1.jpg" alt="">
+						</div>
 					</div>
 				</div>
-				<div class="dowload col-md-4">
-				    <div class="pull-right">
-						<a href="/magazine">
-							<img src="Picture/dowload.png" alt="">
-						</a>
-				    </div>
-				</div>
-				<ul class="user-info">
-					<li>
-						<a href="http://www.thatsmags.com/usercenter/login" class="text-uppercase">Log in</a> |
-					</li>
-					<li>
-						<a href="http://www.thatsmags.com/usercenter/register" class="text-uppercase">Sign up</a>
-					</li>
-				</ul>
-			</div>
-			<nav id="navbar" role="navigation">
-				<ul class="nav navbar-nav">
-					<li class="active">
-						<a href="http://www.thatsmags.com/shanghai/news" class="text-uppercase" target="_blank">news</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/br" class="text-uppercase" target="_blank">Bars & Restaurants</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/entertainment" class="text-uppercase" target="_blank">entertainment</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/lifestyle" class="text-uppercase" target="_blank">lifestyle</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/features" class="text-uppercase" target="_blank">features</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/directory" class="text-uppercase" target="_blank">Directory</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/event" class="text-uppercase" target="_blank">Events</a>
-					</li>
-					<li class="">
-						<a href="http://www.thatsmags.com/shanghai/video" class="text-uppercase" target="_blank">VIDEO</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div class="row">	
-			<div class="col-sm-9 main">
-				<!-- 文章内容 -->
-				<section class="word-container">
-				    <ol class="breadcrumb">
-				        <li>
-				            <a href="http://www.thatsmags.com/shanghai"><i class="thaticon icon-home"></i>home</a>
-				        </li>
-				        <li>
-				            <a href="http://www.thatsmags.com/shanghai/post">Articles</a>
-				        </li>
-				    </ol>
-				    <header class="word-title">
-				        <h1 class="title">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</h1>
-				        <p class="text-muted"></p>
-				        <a href="http://www.thatsmags.com/shanghai/post?author=Jesse Pottinger" class="avatar avatar-s">
-				            <img class="lazy img-circle" data-original="/image/view/201707/Thats-Logo165.jpg?w=26&h=26&c=1">
-				        </a>
-				        By <span><a href="http://www.thatsmags.com/shanghai/post?author=Jesse Pottinger">Jesse Pottinger</a></span>,<span>July 11, 2017</span>
-				        <p class="pull-right addup">
-				            <!-- 分享统计 -->
-				            <a href="javascript:void(0);" class="addup-share">
-				                <i class="thaticon icon-share"></i>
-				                <span class="text-dark">0</span>
-				            </a>
-				            <!-- 评论统计 -->
-				            <a href="#artcileComment" class="addup-comment">
-				                <i class="thaticon icon-comment"></i>
-				                <span class="text-dark">0</span>
-				            </a>
-				        </p>
-				    </header>
-				    <!-- 文章主体 -->
-				    <div class="word-content">
-				        <!-- 文章配图 -->
-				        <div class="banner" style="text-align:center;margin:15px 0">
-				            <img class="lazy" data-original="/image/view/201707/Startup-Loses-Umbrellas.jpg" style="max-width:100%">
-				        </div>				        
-				        <!-- 文章顶部分享 -->
-				        <div class="toolbar tool-top clearfix">
-				            <ul class="share share-s pull-right jiathis_style_32x32"  style="margin-top:10px" data-id="19767" data-type="1">
-				                <li><a class="jiathis_button_twitter"></a></li>
-				                <li><a class="jiathis_button_fb"></a></li>
-				                <li><a class="jiathis_button_tsina"></a></li>
-				                <li><a class="jiathis_button_weixin"></a></li>
-				                <li><a class="jiathis_button_email"></a></li>
-							</ul>
-				        </div>
-				        <div class="text tickets" id="content-body" style="overflow: hidden;">
-				            <p>A China-based umbrella-sharing startup has seen brighter days, after losing nearly all of its 300,000 umbrellas in under three months.</p>
-				            <p>The news may come as no surprise, considering just last month, umbrella-share startups in Shanghai lost <a href="https://www.thatsmags.com/shanghai/post/19158/shared-umbrellas-disappear-after-debut" target="_blank">most of their umbrellas</a>&nbsp;in just days.
-				            </p>
-				            <p>Growth in the sharing economy has introduced a number of shared items into Chinese cities, most notably bicycles. But as the new sharing company E Umbrella has learned, umbrellas, unlike bikes, are easily misplaced.</p>
-				            <p>“We were really impressed by the bike-sharing model,” said E Umbrella creator Zhao Shuping to <a href="http://www.thepaper.cn/newsDetail_forward_1726241" target="_blank">The Paper</a>, adding that he “thought that everything on the street can now be shared.”</p>
-				            <p><img src="Picture/startup-loses-umbrellas-1.jpg" title="Startup-Loses-Umbrellas-1.jpg" alt="Startup-Loses-Umbrellas-1.jpg" width="100%" height="" border="0" vspace="0"/></p>
-				            <p>According to <a href="http://www.scmp.com/news/china/society/article/2101722/chinese-umbrella-sharing-firm-remains-upbeat-despite-losing-most" target="_blank"><em>South China Morning Post</em></a>, E Umbrella launched in April with a RMB10-million investment, and has since sprung up in 11 cities throughout mainland China.</p>
-				            <p>The company operates like China’s many bike shares, with customers paying a RMB19 deposit, and an additional RMB0.5 per 30 minutes of use. &nbsp;</p>
-				            <p>Each lost umbrella costs E Umbrella about RMB60 to replace, but the company still intends to add another 30 million over the next several months.</p>
-				            <p>Despite the clouds looming over his business, Zhao remains optimistic about the future of E Umbrella, though he is aware of its limitations.</p>
-				            <p>“Umbrellas are different from bicycles,” said Zhao.&nbsp;“Bikes can be parked anywhere, but with an umbrella you need railings or a fence to hang it on.”</p>
-				            <p><img src="Picture/startup-loses-umbrellas-2.jpg" title="Startup-Loses-Umbrellas-2.jpg" alt="Startup-Loses-Umbrellas-2.jpg" width="100%" height="" border="0" vspace="0"/></p>
-				            <p>Zhao did not disclose what measures might be taken to ensure that future umbrellas would not see the same fate as the first 300,000. Perhaps GPS tracking or lost umbrella fees can be expected?</p>
-				            <p>With the addition of millions of new umbrellas by the end of the year, he will certainly have to make some changes to keep the business afloat.</p>
-				            <p><strong><em>READ MORE:&nbsp;<a href="https://www.thatsmags.com/china/post/18879/umbrella-sharing-is-now-a-thing-in-china" target="_blank">3 Things You Can Now Rent With Chinese Sharing Apps</a></em></strong><br/></p>
-				            <p><em>[Images via <a href="https://www.theguardian.com/world/2017/jul/11/brolly-bad-show-chinese-sharing-startup-loses-300000-umbrellas" target="_blank">The Guardian</a>, <a href="http://www.scmp.com/news/china/society/article/2101722/chinese-umbrella-sharing-firm-remains-upbeat-despite-losing-most" target="_blank">SCMP</a>]</em>
-				            </p>       
-				        </div>
-				        <!-- 文章底部：标签&分享 -->
-				        <div class="toolbar tool-bottom clearfix">
-				            <!-- tag bala-->
-				            <p class="tagbala pull-left">
-				            	<a href="http://www.thatsmags.com/shanghai/post?tag=Share+economy" type="button" class="btn-tag btn btn-line bdr-fresh">Share economy</a>
-                                <a href="http://www.thatsmags.com/shanghai/post?tag=China" type="button" class="btn-tag btn btn-line bdr-fresh">China</a>
-                                <a href="http://www.thatsmags.com/shanghai/post?tag=news" type="button" class="btn-tag btn btn-line bdr-fresh">news</a>
-                                <a href="http://www.thatsmags.com/shanghai/post?tag=Umbrella+sharing" type="button" class="btn-tag btn btn-line bdr-fresh">Umbrella sharing</a>
-				            </p><!-- /tag bala end/ -->
-				            <!-- 分享：小图标 -->
-				            <ul class="share share-s pull-right jiathis_style_32x32"  data-id="19767" data-type="1">
-				                <li><a class="jiathis_button_twitter"></a></li>
-				                <li><a class="jiathis_button_fb"></a></li>
-				                <li><a class="jiathis_button_tsina"></a></li>
-				                <li><a class="jiathis_button_weixin"></a></li>
-				                <li><a class="jiathis_button_email"></a></li>
-							</ul>
-				        </div><!-- /标签&分享结束/ -->
-				    </div>
-				</section><!-- 文章内容结束 -->
-			</div><!-- col-sm-9 -->	
-		</div>
-	</div><!-- container -->
+			</div><!-- container-fluid ed -->		
+		</div><!-- container ed -->
+	</div><!-- wrapper ed -->
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
@@ -223,13 +517,13 @@
 				</li>
 				<li class="footer-text">
 					<p>
-						<a href="http://online.thatsmags.com/mediakit">About Us</a> |
-						<a href="/contact">Contact Us</a> |
-						<a href="http://online.thatsmags.com/mediakit/">Advertise With Us</a> |
-						<a href="http://online.thatsmags.com/jobs">Work for Us</a> |
-						<a href="http://page.thatsmags.com/app" target="_blank">App</a>
+						<a href="">About Us</a> |
+						<a href="">Contact Us</a> |
+						<a href="">Advertise With Us</a> |
+						<a href="">Work for Us</a> |
+						<a href="">App</a>
 					</p>
-	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12038926号-2</a></p>
+	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="" target="_blank">沪ICP备12038926号-2</a></p>
 				</li>
 			</ul>
 			<ul class="pull-right">
@@ -251,40 +545,5 @@
 			</ul>
 		</div>
 	</footer>
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content"><!--  id="globalSubscribeForm" -->
-				<form action="http://newsletter.thatsmags.com/x/plugin/?pName=subscribe&amp;MIDRID=S7Y1BgAA64&amp;pLang=en&amp;Z=1087741649" method="post" target="_blank">
-					<input type="hidden" name="DMDtask" value="subscribe" />
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel">Add your email</h4>
-					</div>
-					<div class="modal-body">
-						<input type="email" placeholder="Email Address" name="email" class="btn-all" style="padding:10px;line-height:normal">
-					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-fresh btn-all">
-							<span class="text-bold text-italic">Add</span>
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="ad-thatsapp pc-hide">
-		<div class="ad-thatsapp-logo">
-			<a href="//www.thatsmags.com/app"><img src="Picture/thatsapp-logo.png"></a>
-		</div>
-		<div class="ad-thatsapp-text">
-			<p>Get the App. Your essential China city companion.</p>
-		</div>
-		<div class="ad-thatsapp-ope">
-			<button type="button" class="btn ad-thatsapp-download">Open</button>
-			<a class="ad-thatsapp-close">
-				<img src="Picture/thatsapp-close.png">
-			</a>
-		</div>	
-	</div>
 </body>
 </html>
