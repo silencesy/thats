@@ -364,9 +364,11 @@ body {
 
 .ad-thatsapp>div {
     float: left;
-    margin-right: 10px;
 }
 
+.ad-thatsapp>div:first-child {
+    margin-right: 10px;
+}
 
 
 .ad-thatsapp .ad-thatsapp-open {
@@ -385,7 +387,7 @@ body {
 .ad-thatsapp-close {
     position: absolute;
     top: -25px;
-    right: -20px;
+    right: -8px;
     zoom: 0.4;
 }
 
@@ -394,6 +396,7 @@ body {
     font-size: 10px;
     width: 155px;
     color: #fff;
+    margin-top: 5px;
 }
 
 .ad-thatsapp-open {
