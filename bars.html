@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>bars</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jiathis.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!-- 头部部分开始 -->
+			<header class="hidden-xs thats-header">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="thats-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 ">
+				  		<div class="dropdown dropdown-cityname pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">SHANGHAI</a></li>
+								<li><a href="#">BEIJING</a></li>
+								<li><a href="#">SHENZHENG</a></li>
+								<li><a href="#">GUANGZHOU</a></li>
+								<li><a href="#">CHINA</a></li>
+							</ul>
+				  		</div>
+				  		<div class="search pull-left">
+							<form id="search-form" class="clearfix" action="#">
+								<div class="search-group">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">LISTINGS</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Listings"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<li><a href="#">LISTINGS</a></li>
+											<li><a href="#">ARTICLES</a></li>
+											<li><a href="#">EVENTS</a></li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left">
+									<button type="submit" class="icon-search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</form>
+				  		</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img class="pull-right" src="images/dowload.png" alt="">
+						</a>
+					</div>
+					<ul class="user-info">
+						<li>
+							<a href="#">LOG IN</a>|
+						</li>
+						<li>
+							<a href="#">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+				<nav id="thats-navbar" class="thats-navbar clearfix">
+					<ul class="nav navbar-nav">
+						<li><a href="#">news</a></li>
+						<li><a href="#">Bars & Restaurants</a></li>
+						<li><a href="#">entertainment</a></li>
+						<li><a href="#">lifestyle</a></li>
+						<li><a href="#">features</a></li>
+						<li><a href="#">Directory</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">VIDEO</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- 头部部分结束 -->
+	
+			<div class="title title-bar">
+			    <ol class="breadcrumb">
+			        <li>
+			            <a href="http://www.thatsmags.com/shanghai"><i class="thaticon icon-home"></i>Home</a>
+			        </li>
+			        <li>Bars & Restaurants</li>
+			    </ol>
+			</div>
+			<div class="row">
+				<div class="col-sm-9 main">
+					<!-- 轮播开始 -->
+					<div id="myCarousel" class="carousel front-carousel slide" data-interval="4000" data-ride="carousel">
+			    		<ol class="carousel-indicators">
+			                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			                <li data-target="#myCarousel" data-slide-to="1" ></li>
+			            </ol>
+			    		<div class="carousel-inner front-carousel-inner" role="listbox">
+			                <div class="item active">
+			            		<a href="">
+			            			<img class="first-slide" src="Picture/china-sleeper-train-1.jpg"/>
+			            		</a>
+					            <div class="carousel-caption front-carousel-caption">
+					                <h1>
+					                	<a href="">New Beijing to Shanghai High-Speed Trains Feature Super Comfy Beds</a>
+					                </h1>
+					                <p class="text-muted">Traveling between Beijing and Shanghai just got a whole lot better.</p>
+					            </div>
+			        		</div>
+			                <div class="item">
+				            	<a href="">
+				            		<img class="first-slide" src="Picture/shanghai-busy.jpg"/>
+				            	</a>
+					            <div class="carousel-caption front-carousel-caption">
+					                <h1>
+					                	<a href="">Shanghai to Become World's 3rd Largest City by 2030</a>
+					                </h1>
+					                <p class="text-muted">The United Nations' World Urbanization Prospects has found that Shanghai is on its way to becoming the third biggest world city.</p>
+				            	</div>
+			        		</div>
+			            </div>
+			    		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    			<span class="sr-only">Previous</span>
+			  			</a>
+			  			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    			<span class="sr-only">Next</span>
+			  			</a>
+					</div><!-- #myCarousel end/轮播结束-->
+
+					<div class="line-dashed mb-35"></div>
+					<!-- 文章摘要列表1 -->
+					<section class="writing-container">
+					    <div class="see-all">
+					        <a href="" class="text-fresh">
+					            <small>See All Articles &raquo;</small>
+					        </a>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/pjimage-33-.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">The 10 Best Things to Do This Week in Shanghai</a>
+				                </h3>
+				                <p class="abstract">Beer, wine and The Triplets of Belleville in this week's best events.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Erica Martin</a>,  <span>July 17, 2017</span>
+				                </p>
+					        </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/Crafted-by-bistro-burger-shanghai-restaurant-cover.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/pjimage-33-.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/Pick-of-Six-leo-gallery1.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/pjimage-33-.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/Pick-of-Six-leo-gallery1.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>
+					    <div class="writing row">
+					        <div class="col-sm-4">
+					            <div class="img-container">
+					                <a href="" target="_blank">
+					                    <img class="lazy" alt="" src="Picture/Crafted-by-bistro-burger-shanghai-restaurant-cover.jpg">
+					                </a>
+					            </div>
+					        </div>
+					        <div class="col-sm-8">
+				                <h3>
+				                    <a target="_blank" href="">Shanghai Restaurant Review: Crafted by Bistro Burger</a>
+				                </h3>
+				                <p class="abstract">Sequel to the much-loved Bistro Burger on Hengshan Lu.</p>
+				                <p class="time-stamp">
+				                    by <a href="">Betty Richardson</a>,  <span>July 17, 2017</span>
+				                </p>
+				            </div>
+					    </div>					    					    					    					    
+					</section>
+				</div><!-- col-sm-9/main end -->
+
+				<div class="col-sm-3 sidebar">
+				    <!-- ad top-right -->
+				    <div class="tsab">
+				        <div class="tsa tsa-1">
+				        	<a href="">
+				        		<img class="right-add" src="Picture/book-1-.gif" />
+				        	</a>
+				        </div>    
+				    </div>
+				    <!-- ad top-right end -->
+				   	<div class="sidebar-module pt-0">
+						<h2 class="text-uppercase text-shadow">latest openings</h2>
+					    <div class="article area-b clearfix type-grade">
+				            <div class="img-container pull-left">
+				                <a href="">
+				                    <img src="Picture/Bites--Bottle-O.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="text-container pull-right">
+				                <h3>LA Pho</h3>
+				                <div class="grade">
+				                    <!-- a追加css "active" 则星星为实心，不加为空心，默认为空心 -->
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                </div>
+				                <p>Serving up steaming bowls of LA-style ...</p>
+				            </div>
+					    </div>
+				        <div class="article area-b clearfix type-grade">
+				            <div class="img-container pull-left">
+				                <a href="">
+				                    <img src="Picture/Bites--Bottle-O.jpg" alt="">
+				                </a>
+				            </div>
+				            <div class="text-container pull-right">
+				                <h3>LA Pho</h3>
+				                <div class="grade">
+				                    <!-- a追加css "active" 则星星为实心，不加为空心，默认为空心 -->
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                    <a href="javascript:void(0);">
+				                        <span class="thaticon icon-star"></span>
+				                    </a>
+				                </div>
+				                <p>Serving up steaming bowls of LA-style ...</p>
+				            </div>
+				        </div>
+				    </div><!-- sidebar-module / pt-0 ed -->
+					<div class="sidebar-module newest">
+					    <div class="text-center pb-15">
+					        <a href="" class="arrow text-center">
+					            <small class="text-fresh">All Newest Openings</small>
+					        </a>
+					    </div>
+					</div>
+					<div class="sidebar-module">
+					    <a type="button" class="btn btn-fresh btn-all" href="">
+					        <span class="text-bold text-italic">Add a Listing</span>
+					    </a>
+					</div>
+
+					<!-- tab-side -->
+					<div class="tab tab-side" role="tabpanel" id="sideTab1">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs tab-row-2" role="tablist">
+						    <li role="presentation" class="active">
+						        <a href="#most_popular" aria-controls="home" role="tab" data-toggle="tab">
+						            <small>Trending</small>
+						        </a>
+						    </li>
+						    <li role="presentation">
+						        <a href="#most_recent" aria-controls="profile" role="tab" data-toggle="tab">
+						            <small>Recently Added</small>
+						        </a>
+						    </li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="most_popular">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <h3>EGG</h3>
+						                    <p>...</p>
+					                	</div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <h3>EGG</h3>
+						                    <p>...</p>
+					                	</div>
+					            	</li>
+					            </ul>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="most_recent">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					            </ul>
+							</div>
+						</div><!-- tab-content end -->	
+					</div><!-- /tab-side end/ -->				 
+				</div><!-- col-sm-3/sidebar ed -->
+			</div><!-- row ed -->
+
+		    <!-- start footer -->
+			<h2 class="text-dark">In Case You Missed It…</h2>
+			<div class="row picture">
+				<div class="col-sm-2">
+					<div class="img-container article-pic-con">
+						<a href="">
+							<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
+						</a>
+					</div>
+					<p>
+						<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
+						</a>
+					</div>
+					<p>
+						<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
+						</a>
+					</div>
+					<p>
+						<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
+						</a>
+					</div>
+					<p>
+						<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
+						</a>
+					</div>
+					<p>
+						<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
+					</p>
+				</div>
+			</div><!-- picture ed -->
+			<div class="container-fluid page-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>We're on WeChat!</h3>
+						<div class="pull-left">
+							<p>Scan our QR Code at right or follow us at Thats_Shanghai for events, guides, giveaways and much more! </p>
+						</div>
+						<div class="pull-right ewm">
+							<img src="Picture/thats-shanghai-wechat.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>7 Days in Shanghai With thatsmags.com</h3>
+						<div class="pull-left">
+							<p>Weekly updates to your email inbox every Wednesday</p>
+							<p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/thats-newsletter.png">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>Download previous issues</h3>
+						<div class="pull-left">
+							<p>Never miss an issue of That's Shanghai!</p>
+							<p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/mags_thumb_1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div><!-- container-fluid ed -->
+		</div><!-- container ed -->
+	</div><!-- wrapper ed -->
+	<!-- 底部部分开始 -->
+	<footer id="footer" class="thats-footer">
+		<div class="container" class="clearfix">
+			<ul class="pull-left">
+				<li class="footer-logo">
+					<a href="#" class="logo">
+						<img src="Picture/logo.png" alt="">
+					</a>
+				</li>
+				<li class="footer-text">
+					<p>
+						<a href="http://online.thatsmags.com/mediakit">About Us</a>
+						<span>|</span>
+						<a href="/contact">Contact Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/mediakit/">Advertise With Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/jobs">Work for Us</a>
+						<span>|</span>
+						<a href="http://page.thatsmags.com/app" target="_blank">App</a>
+					</p>
+	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12038926号-2</a></p>
+				</li>
+			</ul>
+
+			<ul class="pull-right">
+					<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+						<li>&nbsp;</li>
+					</a>
+
+					<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+						<li></li>
+					</a>
+					<a href="http://weibo.com/p/1002061749863802" title="Weibo">
+						<li></li>
+					</a>
+					<a href="https://instagram.com/thatsshanghai" title="Instagram">
+						<li><img src="Picture/instagram.png"></li>
+					</a>
+			</ul>
+
+		</div>
+	</footer>
+	<!-- 底部部分结束 -->
+
+	<!-- 移动端nav开始 -->
+	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
+        <div class="container-fluid mobile-nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
+                    <span class="glyphicon glyphicon-search icon-ufsearch"></span>
+                </button>
+                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
+                    <span class="cityname">BEIJING</span>
+                    <span class="caret"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">news</a></li>
+					<li><a href="#">Bars & Restaurants</a></li>
+					<li><a href="#">entertainment</a></li>
+					<li><a href="#">lifestyle</a></li>
+					<li><a href="#">features</a></li>
+					<li><a href="#">Directory</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<hr>
+					<li></li>
+					<li><a href="#">log in</a></li>
+					<li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="citylist">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Shanghai</a></li>
+                    <li><a href="#">Beijing</a></li>
+                    <li><a href="#">Shenzhen</a></li>
+                    <li><a href="#">Guangzhou</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="mobile-navbar-search">
+                <div class="search-group-mobile">
+                    <form id="mobile-search-form" method="post" action="#">
+                        <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
+                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 移动端nav结束 -->
+    <!-- ad-app部分开始 -->
+    <div class="ad-thatsapp visible-xs">
+    	<div class="ad-thatsapp-logo">
+    		<a href="http://www.thatsmags.com/app">
+    			<img src="images/thatsapp-logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="ad-thatsapp-text">
+    		<p>Get the App. Your essential China city companion.</p>
+    	</div>
+    	<div class="ad-thatsapp-open">
+    		<button class="btn ad-thatsapp-download">open</button>
+    		<a class="ad-thatsapp-close">
+    			<img src="images/thatsapp-close.png" alt="">
+    		</a>
+    	</div>
+    	<div></div>
+    </div>
+    <!-- ad-app部分结束 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jia.js"></script>
+	<script src="js/fastclick.js"></script>
+</body>
+</html>

@@ -451,16 +451,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*--------------------------- news start ----------------------- */
 .carousel-control.left, .carousel-control.right {
     background-image: none;
@@ -554,6 +544,75 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 /*--------------------------- news end ----------------------- */
+
+/*--------------------------- bars end ----------------------- */
+.sidebar .tab-pane .pull-right, .article .text-container {
+    width: 170px;
+    height: 74px;
+    line-height: 120%;
+    overflow: hidden;
+}
+.area-b .pull-right h3 {
+	margin: 0;
+}
+.icon-star {
+    background-position: -24px -32px;
+}
+.sidebar-module >.article {
+    padding-top: 10px;
+    margin-bottom: 6px;
+}
+.pt-0 .area-b .img-container {
+	margin-top: 0;
+}
+.sidebar .tab-pane li, .article {
+    padding: 10px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.newest {
+	padding-bottom: 30px;
+}
+.text-fresh, *.text-fresh, * .text-fresh {
+    color: #46dcff;
+}
+.tab-side {
+    padding-top: 10px;
+}
+.tab-side .nav-tabs {
+    border: none;
+}
+.tab-row-2 > * {
+    width: 50%;
+}
+.tab-side .nav-tabs li.active a {
+    border-bottom: 3px solid #00ecff;
+    color: #333333;
+    padding-bottom: 12px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	background: none;
+	border-width: 0 0 3px;
+}
+.nav-tabs > li > a > small {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.tab-side .nav-tabs > li > a {
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+/*--------------------------- bars end ----------------------- */
+
+
+
 
 
 /*--------------------------- RESPONSIVE CSS ----------------------- */
