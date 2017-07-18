@@ -460,7 +460,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 .carousel-control.left, .carousel-control.right {
     background-image: none;
 }
-.carousel {
+.main .carousel {
     margin-bottom: 45px;
     border: 1px solid #dadada;
 }
@@ -581,11 +581,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 
 @media (max-width: 768px) {
-
-	.thats-content {
-		padding-top: 54px;
-	}
-
 	.tagbala .bdr-fresh {
 		margin-bottom: 20px;
 	}
@@ -621,7 +616,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     	padding-top: 15px;
     	margin-top: -8px;
 	}
-	.carousel {
+	.main .carousel {
 	    height: auto;
 	    margin: 0 -15px 30px;
 	    padding-bottom: 80px;
