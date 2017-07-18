@@ -547,6 +547,11 @@ input[type="text"], input[type="email"], input[type="password"] {
     text-overflow: ellipsis;
     white-space: nowrap;	
 }
+.right-add {
+	border:0 none;
+	width:280px;
+	max-height:460px;
+}
 
 /*--------------------------- news end ----------------------- */
 
