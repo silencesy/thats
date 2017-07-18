@@ -220,6 +220,7 @@ img {
 }
 .page-bottom .col-md-4 {
     height: 188px;
+    padding: 0;
 }
 
 
@@ -336,6 +337,10 @@ input[type="text"], input[type="email"], input[type="password"] {
 /*--------------------------- Article end ----------------------- */
 
 /*--------------------------- features开始 ----------------------- */
+#carousel-example-generic {
+    overflow: hidden;
+}
+
 #carousel-example-generic .item {
 	max-height: 448px;
 	min-height: inherit;
@@ -632,8 +637,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 	    background-color: #000;
 	    padding: 10px;
 	}
-
-
 
 
 }
