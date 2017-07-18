@@ -220,7 +220,6 @@ img {
 }
 .page-bottom .col-md-4 {
     height: 188px;
-    padding: 0;
 }
 
 
@@ -371,7 +370,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 	color: #fff;
 	overflow: hidden;
  	text-overflow: ellipsis;
- 	display: -webkit-box;
  	-webkit-line-clamp: 1;
  	-webkit-box-orient: vertical;
  	text-align: left;
@@ -386,6 +384,34 @@ input[type="text"], input[type="email"], input[type="password"] {
  	-webkit-line-clamp: 1;
  	-webkit-box-orient: vertical;
  	text-align: left;
+}
+
+.flex-slider .slider-img {
+    position: relative;
+}
+
+.flex-slider .slider-img .play-icon {
+    position: absolute;
+    width: 63px;
+    height: 62px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(../images/play-icon.png) no-repeat -318px -1px;
+}
+
+#carousel-example-generic .big-play-icon {
+    position: absolute;
+    width: 146px;
+    height: 147px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(../images/play-icon.png) no-repeat -1px -1px;
 }
 
 
@@ -615,13 +641,113 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 
 
+
+
+/*--------------------------- video 开始 ----------------------- */
+.bottom-banner img {
+    width: 100%;
+    height: auto;
+}
+/*--------------------------- video 结束 ----------------------- */
+
+
+/*--------------------------- 地区 开始 ----------------------- */
+
+#myCarousel .item img {
+    width: 100%;
+}
+
+.featured {
+    padding-top: 30px;
+    margin-top: 60px;
+    border-top: 1px dashed #e5e5e5;
+    width: 100%;
+    position: relative;
+}
+
+.featured-img img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-more-btn {
+    position: absolute;
+    width: 204px;
+    height: 30px;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: auto;
+    background: url(../images/tag_more.png) no-repeat;
+}
+
+.featured-text p {
+    color: #999;
+}
+
+.date .tab .title {
+    position: relative;
+    background: url(../images/adorn_2.png) no-repeat left bottom;
+    background-size: 100% auto;
+    padding-bottom: 12px;
+}
+.date .tab .title h2 {
+    display: inline-block;
+    font-size: 24px;
+    border-bottom: 5px solid #fc4103;
+    font-family: 'Arial Narrow';
+}
+
+.date .tab .title a {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 18px;
+}
+
+.week-lisk {
+    border-bottom: 1px solid #ddd;
+}
+
+    
+
+.week-lisk li {
+    float: left;
+    width: 14%;
+}
+
+.week-lisk li span {
+    display: block;
+    text-align: center;
+}
+
+.date-week {
+    line-height: 12px;
+    text-align: center;
+}
+
+.date-day {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'impact';
+    font-weight: 300;
+    text-align: center;
+}
+/*--------------------------- 地区 结束 ----------------------- */
+
+
+
+
+
+
 /*--------------------------- RESPONSIVE CSS ----------------------- */
 @media (min-width: 1024px){
-	.col-sm-9.main, .col-md-9.home-block {
+	.col-md-9.main, .col-md-9.home-block {
     	width: 70%;
     	padding-right: 0;
     }
-    .col-sm-3.sidebar, .col-md-3.home-block {
+    .col-md-3.sidebar, .col-md-3.home-block {
     	width: 30%;
 	}
 	.wrapper > .container, .container {
@@ -701,7 +827,12 @@ input[type="text"], input[type="email"], input[type="password"] {
 	    background-color: #000;
 	    padding: 10px;
 	}
-
+    #carousel-example-generic .big-play-icon {
+        zoom: 0.7;
+    }
+    .page-bottom .col-md-4 {
+        padding: 0;
+    }
 
 }
 
