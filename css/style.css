@@ -221,12 +221,19 @@ img {
 .page-bottom .col-md-4 {
     height: 188px;
 }
-.pull-rig3000ht >img {
-	width:132px;
-	height:132px;
+
+
+.page-bottom .ewm img {
+    width: 132px;
+} 
+
+.page-bottom .pull-left {
+    width: 55%;
+    padding-top: 5px;
 }
-.page-bottom .pull-left, .page-bottom .pull-right {
-    width: 50%;
+
+.page-bottom .pull-right {
+    width: 45%;
     padding-top: 5px;
 }
 .page-bottom .col-md-4:nth-of-type(2) img {
@@ -234,10 +241,8 @@ img {
 	margin-top: 25px;
 }
 .page-bottom .col-md-4:last-child img {
-	width: auto;
+    width: 141px;
     display: inline-block;
-    margin-top: 15px;
-    margin-left: 5px;
 }
 .sidebar-module {
     padding: 10px 0 6px;
@@ -649,6 +654,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 
     .picture .col-sm-2 {
         width: 100%;
+    }
+    .page-bottom .pull-right {
+        text-align: center;
     }
 }
 
