@@ -11,6 +11,156 @@
     src: local('Open Sans'), local('OpenSans'), url(../fonts/opensans.woff) format('woff');
 }
 
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadPro-Regular.woff') format('woff'),
+         url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+         url('../fonts/MyriadPro-Regular.svg#glyphicons_halflingsregular') format('svg');
+}
+/*load end*/
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(../fonts/opensans.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(../fonts/opensans-bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans Extra Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Extra Bold'), local('OpenSans-ExtraBold'), url(../fonts/OpenSans-ExtraBold.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(../fonts/opensans-italic.woff) format('woff');
+}
+
+@font-face{
+    font-family: 'Open Sans Bold Italic';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(../fonts/opensans-bolditalic.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Extra Bold Italic';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Extra Bold Italic'), local('OpenSans-ExtraBoldItalic'), url(../fonts/OpenSans-ExtraBoldItalic.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(../fonts/opensans-condensedbold.woff) format('woff');
+}
+
+h2 {
+    font-family: 'Open Sans bold';
+}
+h1, h2.title-main, .lead.username {
+    font-family: 'Open Sans bold';
+}
+body, div, p, li, span {
+    font-family: 'Open Sans';
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+.word-content ul, .word-content ol,.word-content li {
+    list-style-type: disc;
+}
+.word-content ul, .word-content ol {
+    padding-left:2rem;
+}
+input:focus, button:focus, a:focus {
+    outline: 0;
+}
+em, .text-em {
+    font-style: italic;
+}
+ul {
+    padding-left: 0;
+}
+p {
+    word-wrap:break-word;
+    white-space:normal;
+}
+h1, h2, h3, h4, h5,
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    color: #292929;font-family: 'Open Sans Condensed', sans-serif;
+}
+h1, h2 {
+    font-weight: bold;
+    line-height: 125%;
+    margin-top: 0;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"] {
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+textarea {
+    width: 100%;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+dt, label, h2.title-sub {
+    font-weight: normal;
+}
+th, td {
+    line-height: 150%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+th {
+    border: none;
+}
+td {
+    border: 1px solid #e5e5e5;
+    word-break: break-all;
+}
+body {
+    background: #fff url(../Images/bg_body.png) repeat-x 0 0;
+    color: #292929;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none !important;color:#337ab7;
+}
+.icon-home, .icon-star, .icon-arrow-down, .icon-page-pre, .icon-page-next, .icon-share, .icon-share-d, .icon-print-wh-s, .icon-comment, .icon-map-marker-s, .icon-fork, .icon-cutlery, .icon-rmb, .icon-add-photo, .icon-file-add {
+    width: 14px;
+    height: 14px;
+}
+div.wrapper {
+    background: none;
+    padding-top: 0;
+}
+
 /*css 初始化 start */
 
 
@@ -433,7 +583,7 @@ body {
 
 @media screen and (max-width: 768px) {
     #footer {
-        padding: 28px 10px 10px 10px;
+        padding: 12px 10px 10px 10px;
     }
 
     #mobile-nav .mobile-logo {
