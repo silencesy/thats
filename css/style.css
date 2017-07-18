@@ -457,7 +457,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 .carousel {
     margin-bottom: 45px;
-    border: 1px solid #dadada;
 }
 .carousel-indicators {
     bottom: -35px;;
