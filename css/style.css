@@ -472,36 +472,99 @@ input[type="text"], input[type="email"], input[type="password"] {
     display: block;
     float: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*----- 弹出层 end ---- */
-
-
-
-
-
-
-
-
-
-
 /*--------------------------- Article end ----------------------- */
 
 
+/*--------------------------- news start ----------------------- */
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+.carousel {
+    margin-bottom: 45px;
+    border: 1px solid #dadada;
+}
+.carousel-indicators {
+    bottom: -35px;;
+}
+.carousel-indicators li {
+    background: rgba(0, 0, 0, .25);
+    border: none;
+}
+.carousel-indicators .active {
+    background: rgba(249, 66, 30, 1);
+    width: 12px;
+    height: 12px;
+    margin-top: -4px;
+}
+.front-carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    padding: 15px 15px 5px 20px;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+.front-carousel-caption h1 a {
+    color: #fff;
+}
+.carousel-caption h1 {
+    color: #fff;
+}
+.front-carousel-caption p.text-muted {
+    color: #eee;
+}
+.thumb-side .img-container img {
+	width: 100%;
+}
+.see-all {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    padding-left: 5px;
+}
+.see-all > a {
+    display: block;
+}
+.writing-container, .writing-container header {
+	position: relative;
+}
+.text-fresh small {
+    color: #46dcff;
+}
+.mb-35, *.mb-35 {
+    margin-bottom: 35px;
+}
+.img-container > a > img, .sidebar .tab-pane .pull-left img, .banner a > img, .tsab a>img {
+	width: 100%;
+}
+.writing {
+    margin-bottom: 30px;
+}
+.abstract {
+    padding-top: 30px;
+    line-height: 160%;
+    overflow: hidden;
+}
+.writing h2, .writing h3 {
+    margin-top: 0;
+}
+.writing p.time-stamp {
+    color: #aaa;
+}
+.item .carousel-caption h1 {
+	margin-top: 0;
+}
+.banner, .tsab {
+    margin: 0 0 15px;
+}
+.gallery-wrap .word-title > h1, .gallery-wrap .word-title > p, .carousel-caption h1, .side-banner .pic-intro .pull-left, .banner-s .pic-intro .pull-left, .news-pic.thumb-big h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
 
+/*--------------------------- news end ----------------------- */
 
 
 /*--------------------------- RESPONSIVE CSS ----------------------- */
@@ -528,7 +591,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 	.picture .col-md-2 {
 	    width: 20%;
 	}
-
+	.front-carousel-caption p.text-muted {
+	    color: #eee;
+	}
 
 
 
@@ -549,7 +614,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 		width: 100%;
 	}
 	.h1, h1 {
-		font-size: 24px;
+		font-size: 23px;
 	}
 	.container-fluid {
 	    padding-right: 15px;
@@ -557,6 +622,38 @@ input[type="text"], input[type="email"], input[type="password"] {
 	    margin-right: auto;
 	    margin-left: auto;
 	}
+	.front-carousel-caption h1,  .front-carousel-caption p {
+		margin-bottom: 0;
+	}
+	a {
+	    text-decoration: none !important;
+	    color: #337ab7;
+	}
+	div.wrapper {
+    	padding-top: 60px;
+	}
+	.wrapper > .container {
+    	padding-top: 15px;
+    	margin-top: -8px;
+	}
+	.carousel {
+	    height: auto;
+	    margin: 0 -15px 30px;
+	    padding-bottom: 80px;
+	    overflow: hidden;
+	}
+	.carousel-indicators {
+	    bottom: -35px;
+	}
+	.carousel-inner {
+    	overflow: visible;
+	}
+	.front-carousel-caption {
+	    bottom: -80px;
+	    background-color: #000;
+	    padding: 10px;
+	}
+
 
 
 
