@@ -760,7 +760,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 .tab-content-week .text-container p {
-    margin: 10px 0;
+    margin: 7px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -774,7 +774,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 .last-open .img-container {
     position: relative;
-    margin-bottom: 10px;
 }
 
 .last-open .img-container-box {
