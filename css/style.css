@@ -213,11 +213,17 @@ img {
 }
 .container-fluid.page-bottom {
     overflow: hidden;
+    padding: 0;
 }
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
+
+.page-bottom .row {
+    margin: 0;
+}
+
 .page-bottom .col-md-4 {
     height: 188px;
     padding: 0;
@@ -694,16 +700,16 @@ input[type="text"], input[type="email"], input[type="password"] {
     float: left;
     width: 14.28%;
     text-align: center;
-    border-radius: 8px;
-}
-
-.week-lisk li:hover {
-    background-color: #eee;
 }
 
 .week-lisk li a {
     padding: 10px 0;
-    color: #999;    color: #999
+    color: #999;
+    border-radius: 8px;
+}
+
+.week-lisk li a:hover {
+    background-color: #eee;
 }
 
 .week-lisk li span {

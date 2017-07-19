@@ -267,6 +267,10 @@ body {
     margin-top: 25px;
 }
 
+.thats-header .dropdown-cityname .dropdown-menu{
+    margin-top: 12px;
+}
+
 .dropdown button {
     background: none;
     border: none;
@@ -484,6 +488,14 @@ body {
     max-height: 768px;
 }
 
+#mobile-nav .navbar-nav>li>a {
+    padding: 6px 15px;
+    line-height: auto;
+}
+
+#mobile-nav hr {
+    margin: 5px 0;
+}
 
 
 #mobile-search-form input {
@@ -596,25 +608,25 @@ body {
     }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+// @media screen and (max-width: 991px) and (min-width: 768px) {
 
-    #thats-navbar .nav {
-        margin-top: 0;
-        padding-top: 10px;
-        line-height: 40px;
-        margin: 0 0 20px;
-    }
+//     #thats-navbar .nav {
+//         margin-top: 0;
+//         padding-top: 10px;
+//         line-height: 40px;
+//         margin: 0 0 20px;
+//     }
 
-    #thats-navbar .nav li {
-        width: 49%;
-        display: inline-block;
-    }
+//     #thats-navbar .nav li {
+//         width: 49%;
+//         display: inline-block;
+//     }
 
-    #thats-navbar .nav li a {
-        font-style: 14px;
-    }
+//     #thats-navbar .nav li a {
+//         font-style: 14px;
+//     }
 
-}
+// }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .thats-header .dropdown-cityname {
