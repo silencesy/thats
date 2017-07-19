@@ -684,7 +684,9 @@ input[type="text"], input[type="email"], input[type="password"] {
     border-bottom: 1px solid #ddd;
 }
 
-    
+.date .nav-tabs>li.active>a,.date .nav-tabs>li.active>a:focus,.date .nav-tabs>li.active>a:hover {
+    color: #f9421e;
+}
 
 .week-lisk li {
     float: left;
@@ -699,6 +701,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 .week-lisk li a {
     padding: 10px 0;
+    color: #999;
 }
 
 .week-lisk li span {
@@ -728,6 +731,27 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-family: 'impact';
     font-weight: 300;
     text-align: center;
+}
+
+.tab-content-week ul li {
+    padding: 13px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.tab-content-week ul li>div {
+    padding: 0;
+}
+
+.tab-content-week ul li>div:first-child {
+    padding-right: 10px;
+}
+
+.tab-content-week .text-container h3 {
+    margin: 0;
+}
+
+.tab-content-week .text-container p {
+    margin: 10px 0;
 }
 /*--------------------------- 地区 结束 ----------------------- */
 
