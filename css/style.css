@@ -714,12 +714,33 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 .week-lisk li {
     float: left;
-    width: 14%;
+    width: 14.28%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.week-lisk li:hover {
+    background-color: #eee;
+}
+
+.week-lisk li a {
+    padding: 10px 0;
 }
 
 .week-lisk li span {
     display: block;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.week-lisk li span:first-child {
+    padding-bottom: 2px;
+}
+
+.week-lisk li li > a {
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
 .date-week {
