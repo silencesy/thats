@@ -615,6 +615,149 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 
 
+
+
+/*--------------------------- video 开始 ----------------------- */
+.bottom-banner img {
+    width: 100%;
+    height: auto;
+}
+/*--------------------------- video 结束 ----------------------- */
+
+
+/*--------------------------- 地区 开始 ----------------------- */
+
+#myCarousel .item img {
+    width: 100%;
+}
+
+.featured {
+    padding-top: 30px;
+    margin-top: 60px;
+    border-top: 1px dashed #e5e5e5;
+    width: 100%;
+    position: relative;
+}
+
+.featured-img img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-more-btn {
+    position: absolute;
+    width: 204px;
+    height: 30px;
+    top: -15px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: auto;
+    background: url(../images/tag_more.png) no-repeat;
+}
+
+.featured-text p {
+    color: #999;
+}
+
+.date .tab .title {
+    position: relative;
+    background: url(../images/adorn_2.png) no-repeat left bottom;
+    background-size: 100% auto;
+    padding-bottom: 12px;
+}
+.date .tab .title h2 {
+    display: inline-block;
+    font-size: 24px;
+    border-bottom: 5px solid #fc4103;
+    font-family: 'Arial Narrow';
+}
+
+.date .tab .title a {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 18px;
+}
+
+.week-lisk {
+    border-bottom: 1px solid #ddd;
+}
+
+.date .nav-tabs>li.active>a,.date .nav-tabs>li.active>a:focus,.date .nav-tabs>li.active>a:hover {
+    color: #f9421e;
+}
+
+.week-lisk li {
+    float: left;
+    width: 14.28%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.week-lisk li:hover {
+    background-color: #eee;
+}
+
+.week-lisk li a {
+    padding: 10px 0;
+    color: #999;
+}
+
+.week-lisk li span {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.week-lisk li span:first-child {
+    padding-bottom: 2px;
+}
+
+.week-lisk li li > a {
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.date-week {
+    line-height: 12px;
+    text-align: center;
+}
+
+.date-day {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: 'impact';
+    font-weight: 300;
+    text-align: center;
+}
+
+.tab-content-week ul li {
+    padding: 13px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.tab-content-week ul li>div {
+    padding: 0;
+}
+
+.tab-content-week ul li>div:first-child {
+    padding-right: 10px;
+}
+
+.tab-content-week .text-container h3 {
+    margin: 0;
+}
+
+.tab-content-week .text-container p {
+    margin: 10px 0;
+}
+/*--------------------------- 地区 结束 ----------------------- */
+
+
+
+
 /*--------------------------- RESPONSIVE CSS ----------------------- */
 @media (min-width: 1024px){
 	.col-sm-9.main, .col-md-9.home-block {
