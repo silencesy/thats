@@ -213,11 +213,17 @@ img {
 }
 .container-fluid.page-bottom {
     overflow: hidden;
+    padding: 0;
 }
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
+
+.page-bottom .row {
+    margin: 0;
+}
+
 .page-bottom .col-md-4 {
     height: 188px;
     padding: 0;
@@ -695,16 +701,16 @@ input[type="text"], input[type="email"], input[type="password"] {
     float: left;
     width: 14.28%;
     text-align: center;
-    border-radius: 8px;
-}
-
-.week-lisk li:hover {
-    background-color: #eee;
 }
 
 .week-lisk li a {
     padding: 10px 0;
-    color: #999;    color: #999
+    color: #999;
+    border-radius: 8px;
+}
+
+.week-lisk li a:hover {
+    background-color: #eee;
 }
 
 .week-lisk li span {
@@ -761,7 +767,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 .tab-content-week .text-container p {
-    margin: 10px 0;
+    margin: 7px 0;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -775,7 +781,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 .last-open .img-container {
     position: relative;
-    margin-bottom: 10px;
 }
 
 .last-open .img-container-box {
