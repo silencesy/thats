@@ -21,6 +21,9 @@
 .breadcrumb a {
 	color: #f9421e;
 }
+.breadcrumb a:hover {
+    color: #f9421e;
+}
 .addup a {
     margin-left: 15px;
 }
@@ -628,6 +631,39 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     height: auto;
 }
+
+#carousel-example-generic {
+    position: relative;
+}
+
+#carousel-example-generic .big-play-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 146px;
+    height: 147px;
+    background: url(../images/play-icon.png) no-repeat -1px -1px;
+}
+
+
+.thats-content .flex-slider .slider-img {
+    position: relative;
+}
+
+.thats-content .flex-slider .slider-img .play-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 62px;
+    height: 63px;
+    background: url(../images/play-icon.png) no-repeat -319px -1px;
+}
 /*--------------------------- video 结束 ----------------------- */
 
 
@@ -814,6 +850,164 @@ input[type="text"], input[type="email"], input[type="password"] {
 .last-open .img-container img {
     width: 100%;
 }
+
+.trending-artiles .text-shadow {
+    font-size: 24px;
+}
+
+.digest-list .data-dt {
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.digest-list .number {
+    color: #f9421e;
+    font-size: 48px;
+}
+.digest-list .data-dd,.digest-list .data-dt {
+    float: left;
+}
+
+.digest-list .data-dd {
+    width: 80%;
+    height: 95px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.digest-list .data-dd a {
+    margin-top: 0;
+    display: inline-block;
+    color: #292929;
+    line-height: 120%;
+    font-size: 140%;
+    font-family: 'Open Sans Condensed';
+}
+
+.news-image .imgae-text h3 {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.news-image .imgae-text p {
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+.news-image .big-image img {
+    width: 100%;
+}
+
+.news-image .big-image {
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.small-image {
+    margin-top: 20px;
+}
+
+.small-image .row > div:nth-child(2) {
+    padding-left: 8px;
+}
+
+.news-image .small-image img {
+    width: 100%;
+}
+
+.news-image .small-image .imgae-text h3,.news-image .small-image .imgae-text p {
+    margin: 10px 0;
+    -webkit-line-clamp: 2;
+}
+
+/*侧边栏tab开始*/
+.slide-tab .nav {
+    background: url(../images/line_1px.png) repeat-x 0 47px;
+    margin-bottom: 10px;
+}
+
+.slide-tab ul li {
+    text-align: center;
+}
+
+.slide-tab .nav-tabs li.active a {
+    border: none;
+    background: url(../images/arrow_down.png) no-repeat 50% bottom;
+}
+
+
+
+.slide-tab .nav-tabs>li a:hover {
+    border: none;
+    background-color: transparent;
+}
+
+.slide-tab .nav-tabs>a:hover span {
+    margin-left: 0;
+}
+
+.slide-tab  .nav-tabs {
+    border: none;
+}
+
+.slide-tab ul li .thats-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+.slide-tab ul li .icon-clock {
+    background-position: -41px 0;
+}
+
+.slide-tab ul li .icon-fork {
+    background-position: -41px -31px;
+}
+
+.slide-tab ul li .icon-microphone {
+    background-position: -41px -61px;
+}
+
+.slide-tab ul li .icon-star {
+    background-position: -41px -121px;
+}
+
+#slide-tab-Content .title {
+    position: relative;
+}
+
+#slide-tab-Content .title a {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 18px;
+}
+
+#slide-tab-Content ul p {
+    color: #999;
+    text-align: left;
+}
+
+#slide-tab-Content ul h3 {
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+
+/*侧边栏tab结束*/ 
+
+
+
 /*--------------------------- 地区 结束 ----------------------- */
 
 
@@ -821,11 +1015,11 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 /*--------------------------- RESPONSIVE CSS ----------------------- */
 @media (min-width: 1024px){
-	.col-sm-9.main, .col-md-9.home-block {
+	.col-md-9.main, .col-md-9.home-block {
     	width: 70%;
     	padding-right: 0;
     }
-    .col-sm-3.sidebar, .col-md-3.home-block {
+    .col-md-3.sidebar, .col-md-3.home-block {
     	width: 30%;
 	}
 	.wrapper > .container, .container {
