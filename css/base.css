@@ -71,10 +71,7 @@ h2 {
 }
 h1, h2.title-main, .lead.username {
     font-family: 'Open Sans bold';
-}
-body, div, p, li, span {
-    font-family: 'Open Sans';
-}
+}   
 
 ul, ol, li {
     list-style-type: none;
