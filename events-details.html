@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>events-details</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jiathis.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!-- 头部部分开始 -->
+			<header class="hidden-xs thats-header">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="thats-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 ">
+				  		<div class="dropdown dropdown-cityname pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">SHANGHAI</a></li>
+								<li><a href="#">BEIJING</a></li>
+								<li><a href="#">SHENZHENG</a></li>
+								<li><a href="#">GUANGZHOU</a></li>
+								<li><a href="#">CHINA</a></li>
+							</ul>
+				  		</div>
+				  		<div class="search pull-left">
+							<form id="search-form" class="clearfix" action="#">
+								<div class="search-group">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">LISTINGS</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Listings"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<li><a href="#">LISTINGS</a></li>
+											<li><a href="#">ARTICLES</a></li>
+											<li><a href="#">EVENTS</a></li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left">
+									<button type="submit" class="icon-search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</form>
+				  		</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img class="pull-right" src="images/dowload.png" alt="">
+						</a>
+					</div>
+					<ul class="user-info">
+						<li>
+							<a href="#">LOG IN</a>|
+						</li>
+						<li>
+							<a href="#">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+				<nav id="thats-navbar" class="thats-navbar clearfix">
+					<ul class="nav navbar-nav">
+						<li><a href="#">news</a></li>
+						<li><a href="#">Bars & Restaurants</a></li>
+						<li><a href="#">entertainment</a></li>
+						<li><a href="#">lifestyle</a></li>
+						<li><a href="#">features</a></li>
+						<li><a href="#">Directory</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">VIDEO</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- 头部部分结束 -->
+			<div class="row">
+				<div class="col-sm-9 main">
+					<section class="writing-container">
+			            <ol class="breadcrumb">
+			                <li>
+			                    <a href=""><i class="thaticon icon-home"></i>Home</a>
+			                </li>
+			                <li>
+			                    <a href="">Events</a>
+			                </li>
+			                <li>
+			                    <a href="">Nightlife & Live Music</a>
+			                </li>
+			            </ol>
+						<header>
+							<h1>MOVIE NIGHT SERIES – FOREST GUMP – @The Pear</h1>
+							<div class="serve-grade clearfix">
+								<div class="grade-user pull-left">
+									<a href="" class="text-fresh">0 User Comments</a>
+								</div>
+								<div class="pull-right">
+									<small class="text-weak"> Last Updated: <span>25/07/2017</span> |Posted by: <span>salesintern</span>
+									</small>
+								</div>
+							</div>
+							<ul class="icon-list mb-35">
+			                    <li>
+			                        <i class="thaticon icon-map-marker-s"></i>
+			                        <span onclick="window.location.href='#listingMapContent';">Map</span> |
+			                    </li>
+			                    <li>
+			                        <i class="thaticon icon-car"></i>
+			                        <span id="taxiDirections" data-dismiss="alert">Taxi Directions</span> |
+			                    </li>
+			                    <li>
+			                        <i class="thaticon icon-print"></i>
+			                        <span id="printTaxiDirectionsBtn1">Print</span>
+			                    </li>
+			                </ul><!-- /基本信息结束/ -->
+						</header>
+
+						<div class="writing row">
+							<div class="col-sm-5">
+								<div class="img-container listings-pic">
+									<a class="image-ajax-popup mfp-zoom" href="/image/view/201706/movie-nights---FORREST-GUMP_-.jpg">
+									    <img class="lazy" data-original="/image/view/201706/movie-nights---FORREST-GUMP_-.jpg?w=245&h=245" alt="">
+			                        </a>
+									<div class="pic-number text-center">
+									    <a href="http://www.thatsmags.com/shanghai/event/gallery/42584" target="_blank" class="text-fresh">
+			                                <small>View all photos (2) »</small>
+			                            </a>
+			                        </div>
+								</div>
+							</div>
+
+							<div class="col-sm-7">
+								<!-- 联系方式 -->
+								<dl class="serve-contact">
+									<dt class="data-dt">
+										<span class="text-muted">Date</span>
+									</dt>
+									<dd class="data-dd">
+										<span class="event-date">July 25, 2017</span>
+									</dd>
+									<dt class="data-dt">
+										<span class="text-muted">Time</span>
+									</dt>
+									<dd class="data-dd">
+										<span>8 pm</span>
+									</dd>						<dt class="data-dt">
+										<span class="text-muted">Price</span>
+									</dt>
+									<dd class="data-dd">
+										<span>
+										  <i class="thaticon icon-rmb"></i>
+										  <span class="event-price">88</span>
+										</span>
+									</dd>
+								</dl>
+								<style type="text/css">
+								.venues-list{border-style:solid;border-color:#ddd;border-width:1px 0 0}
+								.venues-list legend{border:0 none;margin:0;width:auto;display:inline-block;padding:5px 10px}
+								.venues-list .serve-contact{border-bottom:1px dotted #ccc}
+								.venues-list .serve-contact:last-child{border-bottom:0 none;}
+								</style>
+								<fieldset class="venues-list">
+									<legend align="center">Venues</legend>
+									<dl class="serve-contact">
+										<dt class="data-dt">
+											<span class="text-muted">Venue Name</span>
+										</dt>
+										<dd class="data-dd">
+											<span> <a href="" class="text-fresh">The Pearl</a>
+											</span>
+										</dd>
+										<dt class="data-dt">
+											<span class="text-muted">Address</span>
+										</dt>
+										<dd class="data-dd">
+											<span>471 Zhapu Lu, by Wujin Lu</span>
+										</dd>
+				                		<dt class="data-dt">
+											<span class="text-muted">Phone</span>
+										</dt>
+										<dd class="data-dd">
+											<span>137 6488 9962</span>
+										</dd>
+						    		</dl>
+						    	</fieldset>
+							</div>
+							<div class="clearfix"></div>
+
+							<!-- 文章底部：标签&分享 -->
+							<div class="toolbar clearfix padding-control">
+								<!-- tag bala-->
+								<p class="tagbala pull-left" style="margin-top:10px">
+		    						<a href="">That's Tickets</a>
+									<a href="">Movie Night</a>
+									<a href="">Movie Tuesday</a>
+									<a href="">movie screening</a>
+								</p>
+								<!-- 分享：小图标 -->
+								<ul class="share share-s pull-right jiathis_style_32x32" style="margin-top: 10px" data-id="42584" data-type="3">
+			                        <li><a class="jiathis_button_twitter"></a></li>
+			                        <li><a class="jiathis_button_fb"></a></li>
+			                        <li><a class="jiathis_button_tsina"></a></li>
+			                        <li><a class="jiathis_button_weixin"></a></li>
+			                        <li><a class="jiathis_button_email"></a></li>
+								</ul>
+								<!-- /分享结束/ -->
+							</div>
+							<!-- /标签&分享结束/ -->
+						</div>
+					</section>
+					<!-- /.文章摘要列表结束 -->
+					<div class="line-dashed"></div>
+
+					<section class="layout-parag">
+						<div class="text-container">
+							<p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">Tuesday 25<sup>th</sup> of July 2017, the Pearl will be screening the 1994 American comedy-drama film, Forrest Gump.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">The story depicts several decades in the life of Forrest Gump, a slow-witted but kind-hearted, good-natured and athletically prodigious man from Alabama, who witnesses, and in some cases influences, some of the defining events of the latter half of the 20th century in the United States; more specifically, the period between Forrest&#39;s birth in 1944 and 1982. The film differs substantially from Winston Groom&#39;s novel, including Gump&#39;s personality and several events that were depicted.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">Released in the United States on July 6, 1994, Forrest Gump became a commercial success as the top-grossing film in North America released in that year, being the first major success for Paramount Pictures since the studio&#39;s merger with Viacom, earning over US$677 million worldwide during its theatrical run.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;In 1995 it won the Academy Awards for Best Picture, Best Director for Robert Zemeckis, Best Actor for Tom Hanks, Best Adapted Screenplay for Eric Roth, Best Visual Effects, and Best Film Editing. It also garnered multiple other awards and nominations, including Golden Globes, People&#39;s Choice Awards, and Young Artist Awards, among others. </span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p>
+						</div>
+					</section>
+					<div class="line-dashed"></div>
+					
+					<section class="layout-map" id="listingMapBox">
+			            <div class="map-container">
+			                <h2 class="text-dark">Map of The Pearl</h2>
+			                <div id="listingMapContent" style="max-height: 220px; max-width: 695px;">
+			                </div>
+			            </div>
+			        </section>
+					<div class="line-dashed"></div>
+					<!-- 图文列表 -->
+				</div><!-- col-sm-9/main end -->
+
+				<div class="col-sm-3 sidebar">
+				    <!-- ad top-right -->
+				    <div class="tsab">
+				        <div class="tsa tsa-1">
+				        	<a href="">
+				        		<img class="right-add" src="Picture/book-1-.gif" />
+				        	</a>
+				        </div>    
+				    </div>
+				    <!-- ad top-right end -->
+			    	<div class="date last-open enter">
+						<div class="tab">
+							<div class="title">
+								<h2 class="text-uppercase">what’s on</h2>
+								<a href="#">See all events »</a>
+							</div>
+							<ul class="week-lisk nav nav-tabs clearfix">
+								<li role="presentation" class="active">
+									<a href="#goSun" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#goMon" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>	
+								<li role="presentation">
+									<a href="#goTue" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>
+								<li role="presentation">
+									<a href="#goWed" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>	
+								<li role="presentation">
+									<a href="#goThu" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>	
+								<li role="presentation">
+									<a href="#goFri" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>	
+								<li role="presentation">
+									<a href="#goSat" data-toggle="tab">
+										<span class="date-week">TUE</span>
+										<span class="date-day">18</span>
+									</a>
+								</li>					
+							</ul>
+							<div class="tab-content tab-content-week">
+								<div role="tabpanel" class="tab-pane fade in active" id="goSun">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goMon">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goTue">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goWed">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goThu">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goFri">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="goSat">
+									<ul>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+										<li class="clearfix">
+											<div class="img-container pull-left col-xs-5">
+												<a href="#">
+													<img src="images/week-img.jpg" alt="">
+												</a>
+											</div>
+											<div class="text-container pull-right col-xs-7">
+												<h3>
+													<a href="#">BEN MISTERKA COLLECTIVITY TRIO </a>
+												</h3>
+												<p>
+													<span>
+														from 10pm @
+														<a href="#">BEN MISTERKA COLLECTIVITY TRIO</a>
+													</span>
+												</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+							</div><!-- tab-content end -->	
+						</div><!-- tab end -->
+					</div><!-- date end -->
+					<!-- tab-side -->
+					<div class="tab tab-side" role="tabpanel" id="sideTab1">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs tab-row-2" role="tablist">
+						    <li role="presentation" class="active">
+						        <a href="#most_popular" aria-controls="home" role="tab" data-toggle="tab">
+						            <small>Featured Events</small>
+						        </a>
+						    </li>
+						    <li role="presentation">
+						        <a href="#most_recent" aria-controls="profile" role="tab" data-toggle="tab">
+						            <small>Related Events</small>
+						        </a>
+						    </li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="most_popular">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <h3>EGG</h3>
+						                    <p>...</p>
+					                	</div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <h3>EGG</h3>
+						                    <p>...</p>
+					                	</div>
+					            	</li>
+					            </ul>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="most_recent">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                    </a>
+						                </div>
+						                <div class="text-container pull-right">
+						                    <h3>Dope Shifu</h3>
+						                    <p>...</p>
+						                </div>
+					            	</li>
+					            </ul>
+							</div>
+						</div><!-- tab-content end -->	
+					</div><!-- /tab-side end/ -->
+					<div class="sidebar-module event-module">
+					    <a type="button" class="btn btn-fresh btn-all" href="">
+					        <span class="text-bold text-italic">Add an Event</span>
+					    </a>
+					</div>				 
+				</div><!-- col-sm-3/sidebar ed -->
+			</div><!-- row ed -->
+
+		    <!-- start footer -->
+			<h2 class="text-dark">In Case You Missed It…</h2>
+			<div class="row picture">
+				<div class="col-sm-2">
+					<div class="img-container article-pic-con">
+						<a href="">
+							<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
+						</a>
+					</div>
+					<p>
+						<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
+						</a>
+					</div>
+					<p>
+						<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
+						</a>
+					</div>
+					<p>
+						<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
+						</a>
+					</div>
+					<p>
+						<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
+						</a>
+					</div>
+					<p>
+						<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
+					</p>
+				</div>
+			</div><!-- picture ed -->
+			<div class="container-fluid page-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>We're on WeChat!</h3>
+						<div class="pull-left">
+							<p>Scan our QR Code at right or follow us at Thats_Shanghai for events, guides, giveaways and much more! </p>
+						</div>
+						<div class="pull-right ewm">
+							<img src="Picture/thats-shanghai-wechat.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>7 Days in Shanghai With thatsmags.com</h3>
+						<div class="pull-left">
+							<p>Weekly updates to your email inbox every Wednesday</p>
+							<p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/thats-newsletter.png">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>Download previous issues</h3>
+						<div class="pull-left">
+							<p>Never miss an issue of That's Shanghai!</p>
+							<p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/mags_thumb_1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div><!-- container-fluid ed -->
+		</div><!-- container ed -->
+	</div><!-- wrapper ed -->
+	<!-- 底部部分开始 -->
+	<footer id="footer" class="thats-footer">
+		<div class="container" class="clearfix">
+			<ul class="pull-left">
+				<li class="footer-logo">
+					<a href="#" class="logo">
+						<img src="Picture/logo.png" alt="">
+					</a>
+				</li>
+				<li class="footer-text">
+					<p>
+						<a href="http://online.thatsmags.com/mediakit">About Us</a>
+						<span>|</span>
+						<a href="/contact">Contact Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/mediakit/">Advertise With Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/jobs">Work for Us</a>
+						<span>|</span>
+						<a href="http://page.thatsmags.com/app" target="_blank">App</a>
+					</p>
+	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12038926号-2</a></p>
+				</li>
+			</ul>
+
+			<ul class="pull-right">
+					<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+						<li>&nbsp;</li>
+					</a>
+
+					<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+						<li></li>
+					</a>
+					<a href="http://weibo.com/p/1002061749863802" title="Weibo">
+						<li></li>
+					</a>
+					<a href="https://instagram.com/thatsshanghai" title="Instagram">
+						<li><img src="Picture/instagram.png"></li>
+					</a>
+			</ul>
+
+		</div>
+	</footer>
+	<!-- 底部部分结束 -->
+
+	<!-- 移动端nav开始 -->
+	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
+        <div class="container-fluid mobile-nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
+                    <span class="glyphicon glyphicon-search icon-ufsearch"></span>
+                </button>
+                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
+                    <span class="cityname">BEIJING</span>
+                    <span class="caret"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">news</a></li>
+					<li><a href="#">Bars & Restaurants</a></li>
+					<li><a href="#">entertainment</a></li>
+					<li><a href="#">lifestyle</a></li>
+					<li><a href="#">features</a></li>
+					<li><a href="#">Directory</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<hr>
+					<li></li>
+					<li><a href="#">log in</a></li>
+					<li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="citylist">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Shanghai</a></li>
+                    <li><a href="#">Beijing</a></li>
+                    <li><a href="#">Shenzhen</a></li>
+                    <li><a href="#">Guangzhou</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="mobile-navbar-search">
+                <div class="search-group-mobile">
+                    <form id="mobile-search-form" method="post" action="#">
+                        <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
+                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 移动端nav结束 -->
+    <!-- ad-app部分开始 -->
+    <div class="ad-thatsapp visible-xs">
+    	<div class="ad-thatsapp-logo">
+    		<a href="http://www.thatsmags.com/app">
+    			<img src="images/thatsapp-logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="ad-thatsapp-text">
+    		<p>Get the App. Your essential China city companion.</p>
+    	</div>
+    	<div class="ad-thatsapp-open">
+    		<button class="btn ad-thatsapp-download">open</button>
+    		<a class="ad-thatsapp-close">
+    			<img src="images/thatsapp-close.png" alt="">
+    		</a>
+    	</div>
+    	<div></div>
+    </div>
+    <!-- ad-app部分结束 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jia.js"></script>
+	<script src="js/fastclick.js"></script>
+</body>
+</html>
