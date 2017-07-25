@@ -556,8 +556,8 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 /*--------------------------- bars start ----------------------- */
 .sidebar .tab-pane .pull-right, .article .text-container {
-    width: 170px;
-    height: 74px;
+    width: 161px;
+    // height: 74px;
     line-height: 120%;
     overflow: hidden;
 }
@@ -614,17 +614,15 @@ input[type="text"], input[type="email"], input[type="password"] {
     font-weight: bold;
 }
 
-
-
-
-
 /*--------------------------- bars end ----------------------- */
 
+/*--------------------------- bars start ----------------------- */
+.add-event {
+    padding-top: 40px;
+}
 
 
-
-
-
+/*--------------------------- bars start ----------------------- */
 
 /*--------------------------- video 开始 ----------------------- */
 .bottom-banner img {
@@ -721,7 +719,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     right: 0;
     font-size: 18px;
 }
-
+.enter .title a {
+    color: #46dcff;
+    font-size: 12px;
+}
 .week-lisk {
     border-bottom: 1px solid #ddd;
 }
