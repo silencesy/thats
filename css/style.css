@@ -564,6 +564,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 .icon-star {
     background-position: -24px -32px;
 }
+.active .icon-star {
+    background-position: -24px -48px;
+}
 .sidebar-module >.article {
     padding-top: 10px;
     margin-bottom: 6px;
