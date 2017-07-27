@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>directory</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!-- <img src="Picture/startup-loses-umbrellas.jpg" style="width:0;height:0"> -->
+	<div class="wrapper">
+		<div class="container">
+			<!-- 头部部分开始 -->
+			<header class="hidden-xs thats-header">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="thats-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 ">
+				  		<div class="dropdown dropdown-cityname pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">SHANGHAI</a></li>
+								<li><a href="#">BEIJING</a></li>
+								<li><a href="#">SHENZHENG</a></li>
+								<li><a href="#">GUANGZHOU</a></li>
+								<li><a href="#">CHINA</a></li>
+							</ul>
+				  		</div>
+				  		<div class="search pull-left">
+							<form id="search-form" class="clearfix" action="#">
+								<div class="search-group">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">LISTINGS</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Listings"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<li><a href="#">LISTINGS</a></li>
+											<li><a href="#">ARTICLES</a></li>
+											<li><a href="#">EVENTS</a></li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left">
+									<button type="submit" class="icon-search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</form>
+				  		</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img class="pull-right" src="images/dowload.png" alt="">
+						</a>
+					</div>
+					<ul class="user-info">
+						<li>
+							<a href="#">LOG IN</a>|
+						</li>
+						<li>
+							<a href="#">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+				<nav id="thats-navbar" class="thats-navbar clearfix">
+					<ul class="nav navbar-nav">
+						<li><a href="#">news</a></li>
+						<li><a href="#">Bars & Restaurants</a></li>
+						<li><a href="#">entertainment</a></li>
+						<li><a href="#">lifestyle</a></li>
+						<li><a href="#">features</a></li>
+						<li><a href="#">Directory</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">VIDEO</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- 头部部分结束 -->
+			<div class="row">	
+				<div class="col-md-9 main">
+					<!-- 文章内容 -->
+					<section class="word-container">
+					    <ol class="breadcrumb">
+					        <li>
+					            <a href=""><i class="thaticon icon-home"></i>Home</a>
+					        </li>
+					        <li>
+					            <a href="">Articles</a>
+					        </li>
+					    </ol>
+					    <div class="list-boxes">
+					    	<!-- 左边栏开始 -->
+					    	<ul class="nav nav-tabs sidects">
+					    		<li class="active">
+					    			<a href="#">
+					    				<i class="fa fa-list"></i>
+					    				All
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-headphones"></i>
+					    				Arts & Entertainment
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-glass"></i>
+					    				Bars & Nightlife
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-university"></i>
+					    				Business & Government
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-users"></i>
+					    				Community
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-graduation-cap"></i>
+					    				Education
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-hospital-o"></i>
+					    				Health & Beauty
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-bed"></i>
+					    				Hotels
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-home"></i>
+					    				Real Estate & Property
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-cutlery"></i>
+					    				Restaurants & Dining
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-shopping-cart"></i>
+					    				Shopping & Services
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-futbol-o"></i>
+					    				Sports & Recreation
+					    			</a>
+					    		</li>
+					    		<li>
+					    			<a href="#">
+					    				<i class="fa fa-plane"></i>
+					    				Travel
+					    			</a>
+					    		</li>
+					    	</ul>
+					    	<!-- 左边栏结束 -->
+							
+							<!-- 右边简要列表开始 -->
+							<section class="writing-container">
+								<div class="select">
+									<div class="row select-type clearfix">
+										<div class="col-sm-3">
+											<p>
+												<i class="thaticon icon-map-marker"></i>
+												<span class="text-uppercase">region</span>
+											</p>
+										</div>
+										<div class="col-sm-9">
+											<ul class="area-ul">
+												<li class="active"><a href="#">All</a></li>
+												<li><a href="#">Baoshan</a></li>
+												<li><a href="#">Changning</a></li>
+												<li><a href="#">Hongkou</a></li>
+												<li><a href="#">Huangpu</a></li>
+												<li><a href="#">Jiading</a></li>
+												<li><a href="#">Jing'an</a></li>
+												<li><a href="#">Minhang</a></li>
+												<li><a href="#">Pudong</a></li>
+												<li><a href="#">Putuo</a></li>
+												<li><a href="#">Qingpu</a></li>
+												<li><a href="#">Songjiang</a></li>
+												<li><a href="#">Xuhui</a></li>
+												<li><a href="#">Yangpu</a></li>
+												<li><a href="#">Zhabei</a></li>
+												<li><a href="#">Others</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="line-dashed"></div>
+									<!-- 选项标签 最近 最热 -->
+									<ul class="select-sort clearfix">
+										<li class="pull-left">
+											<a href="javascript:void(0);" class="active">
+												<span>Latest</span>
+												<i class="thaticon icon-arrow-down"></i>
+											</a>
+										</li>
+										<li class="pull-left">
+											<a href="#">
+												<span>Latest</span>
+												<i class="thaticon icon-arrow-down"></i>
+											</a>
+										</li>
+									</ul>
+									<!-- 筛选结果 -->
+									<div class="writing row">
+										<div class="col-sm-4">
+											<div class="img-container">
+												<a href="#">
+													<img src="images/shjg.jpg" alt="">
+												</a>
+											</div>
+											<div class="hotwords">
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<h2>
+												<a href="#">
+													Lost Heaven (The Bund)
+												</a>
+											</h2>
+											<!-- 基本信息开始 -->
+											<ul class="serve-info clearfix">
+												<li>
+													<i class="thaticon icon-map-marker-s"></i>
+													<span>Huangpu</span>
+												</li>
+												<li>
+													<i class="thaticon icon-rmb"></i>
+													<span>RMB18-50</span>
+												</li>
+											</ul>
+											<div class="grade">
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="#">Be the first to review!</a>
+											</div>
+											<!-- 基本信息结束 -->
+											<!-- 联系地址 -->
+											<div class="serve-contact clearfix">
+												<div class="dt"><span>Address</span></div>
+												<div class="dd"><span>38 Gaoyou Lu, by Fuxing Xi Lu</span></div>
+												<div class="dt"><span>地址</span></div>
+												<div class="dd"><span>高邮路38号, 近复兴西路</span></div>
+												<div class="dt"><span>Phone</span></div>
+												<div class="dd"><span>64335126</span></div>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="line-dashed"></div>
+									<div class="writing row">
+										<div class="col-sm-4">
+											<div class="img-container">
+												<a href="#">
+													<img src="images/shjg.jpg" alt="">
+												</a>
+											</div>
+											<div class="hotwords">
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<h2>
+												<a href="#">
+													Lost Heaven (The Bund)
+												</a>
+											</h2>
+											<!-- 基本信息开始 -->
+											<ul class="serve-info clearfix">
+												<li>
+													<i class="thaticon icon-map-marker-s"></i>
+													<span>Huangpu</span>
+												</li>
+												<li>
+													<i class="thaticon icon-rmb"></i>
+													<span>RMB18-50</span>
+												</li>
+											</ul>
+											<div class="grade">
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="#">Be the first to review!</a>
+											</div>
+											<!-- 基本信息结束 -->
+											<!-- 联系地址 -->
+											<div class="serve-contact clearfix">
+												<div class="dt"><span>Address</span></div>
+												<div class="dd"><span>38 Gaoyou Lu, by Fuxing Xi Lu</span></div>
+												<div class="dt"><span>地址</span></div>
+												<div class="dd"><span>高邮路38号, 近复兴西路</span></div>
+												<div class="dt"><span>Phone</span></div>
+												<div class="dd"><span>64335126</span></div>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="line-dashed"></div>
+									<div class="writing row">
+										<div class="col-sm-4">
+											<div class="img-container">
+												<a href="#">
+													<img src="images/shjg.jpg" alt="">
+												</a>
+											</div>
+											<div class="hotwords">
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+												<a href="#" type="button" class="btn-tag btn btn-line bdr-fresh">Xuhui</a>
+											</div>
+										</div>
+										<div class="col-sm-8">
+											<h2>
+												<a href="#">
+													Lost Heaven (The Bund)
+												</a>
+											</h2>
+											<!-- 基本信息开始 -->
+											<ul class="serve-info clearfix">
+												<li>
+													<i class="thaticon icon-map-marker-s"></i>
+													<span>Huangpu</span>
+												</li>
+												<li>
+													<i class="thaticon icon-rmb"></i>
+													<span>RMB18-50</span>
+												</li>
+											</ul>
+											<div class="grade">
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="javascript:void(0);">
+													<span class="thaticon icon-star"></span>
+												</a>
+												<a href="#">Be the first to review!</a>
+											</div>
+											<!-- 基本信息结束 -->
+											<!-- 联系地址 -->
+											<div class="serve-contact clearfix">
+												<div class="dt"><span>Address</span></div>
+												<div class="dd"><span>38 Gaoyou Lu, by Fuxing Xi Lu</span></div>
+												<div class="dt"><span>地址</span></div>
+												<div class="dd"><span>高邮路38号, 近复兴西路</span></div>
+												<div class="dt"><span>Phone</span></div>
+												<div class="dd"><span>64335126</span></div>
+											</div>
+
+
+										</div>
+									</div>
+									<div class="line-dashed"></div>
+
+
+								</div>
+							</section>
+							<!-- 右边简要列表结束 -->
+					    </div>
+					    
+					</section>							
+				</div><!-- col-sm-9 end -->	
+				<!-- sidebar -->
+				<div class="col-md-3 sidebar">
+				   	 <!-- ad top-right -->
+				    <div class="tsab">
+				        <div class="tsa tsa-1">
+				        	<a href="">
+				        		<img class="right-add" src="Picture/book-1-.gif" />
+				        	</a>
+				        </div>    
+				    </div>
+				    <!-- tab-side -->
+					<div class="tab tab-side" role="tabpanel" id="sideTab1">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs tab-row-2" role="tablist">
+						    <li role="presentation" class="active">
+						        <a href="#most_popular" aria-controls="home" role="tab" data-toggle="tab">
+						            <small>popular</small>
+						        </a>
+						    </li>
+						    <li role="presentation">
+						        <a href="#most_recent" aria-controls="profile" role="tab" data-toggle="tab">
+						            <small>recommended</small>
+						        </a>
+						    </li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="most_popular">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            	<li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            </ul>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="most_recent">
+					    		<ul>
+					                <li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            	<li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            	<li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            	<li class="article clearfix">
+						                <div class="img-container pull-left">
+						                    <a href="">
+						                        <img class="lazy"alt="" src="images/slide-img.jpg">
+						                    </a>
+						                </div>
+					                	<div class="text-container pull-right">
+						                    <a href="#">
+						                    	<P>White Castle (Jing'an)</P>
+						                    	<p>July 17, 2017</p>
+						                    </a>
+					                	</div>
+					            	</li>
+					            </ul>
+							</div>
+						</div><!-- tab-content end -->	
+					</div><!-- /tab-side end/ -->	
+					<!-- 用户最新评论 -->
+					<div class="recent-reviews">
+						<h2 class="text-uppercase text-shadow">
+						Recent User Reviews
+						</h2>
+						<div class="reviews-individual">
+							<ul class="clearfix">
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+							</ul>
+							<p>Very nice place with great food and good rock music!</p>
+							<p>Review of <a href="#">Punk Rock Noodle</a> by <a href="#">KaiWei</a></p>
+							<p>July 5, 2017 at 0:00 am</p>
+						</div>
+						<div class="reviews-individual">
+							<ul class="clearfix">
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+								<li class="active">
+									<span class="thaticon icon-star"></span>
+								</li>
+							</ul>
+							<p>Very nice place with great food and good rock music!</p>
+							<p>Review of <a href="#">Punk Rock Noodle</a> by <a href="#">KaiWei</a></p>
+							<p>July 5, 2017 at 0:00 am</p>
+						</div>
+					</div>
+					<!-- 用户最新评论结束 -->
+				    <!-- ad top-right end -->
+				</div><!-- sidebar ed -->
+			</div><!-- row ed -->
+		    <!-- start footer -->
+			<h2 class="text-dark">In Case You Missed It…</h2>
+			<div class="row picture">
+				<div class="col-sm-2">
+					<div class="img-container article-pic-con">
+						<a href="">
+							<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
+						</a>
+					</div>
+					<p>
+						<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
+						</a>
+					</div>
+					<p>
+						<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
+						</a>
+					</div>
+					<p>
+						<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
+						</a>
+					</div>
+					<p>
+						<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
+						</a>
+					</div>
+					<p>
+						<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
+					</p>
+				</div>
+			</div><!-- picture ed -->
+			<div class="container-fluid page-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>We're on WeChat!</h3>
+						<div class="pull-left">
+							<p>Scan our QR Code at right or follow us at Thats_Shanghai for events, guides, giveaways and much more! </p>
+						</div>
+						<div class="pull-right ewm">
+							<img src="Picture/thats-shanghai-wechat.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>7 Days in Shanghai With thatsmags.com</h3>
+						<div class="pull-left">
+							<p>Weekly updates to your email inbox every Wednesday</p>
+							<p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/thats-newsletter.png">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>Download previous issues</h3>
+						<div class="pull-left">
+							<p>Never miss an issue of That's Shanghai!</p>
+							<p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/mags_thumb_1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div><!-- container-fluid ed -->
+		</div><!-- container ed -->
+	</div><!-- wrapper ed -->
+	<!-- 底部部分开始 -->
+	<footer id="footer" class="thats-footer">
+		<div class="container" class="clearfix">
+			<ul class="pull-left">
+				<li class="footer-logo">
+					<a href="#" class="logo">
+						<img src="Picture/logo.png" alt="">
+					</a>
+				</li>
+				<li class="footer-text">
+					<p>
+						<a href="http://online.thatsmags.com/mediakit">About Us</a>
+						<span>|</span>
+						<a href="/contact">Contact Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/mediakit/">Advertise With Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/jobs">Work for Us</a>
+						<span>|</span>
+						<a href="http://page.thatsmags.com/app" target="_blank">App</a>
+					</p>
+	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12038926号-2</a></p>
+				</li>
+			</ul>
+
+			<ul class="pull-right">
+					<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+						<li>&nbsp;</li>
+					</a>
+
+					<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+						<li></li>
+					</a>
+					<a href="http://weibo.com/p/1002061749863802" title="Weibo">
+						<li></li>
+					</a>
+					<a href="https://instagram.com/thatsshanghai" title="Instagram">
+						<li><img src="Picture/instagram.png"></li>
+					</a>
+			</ul>
+
+		</div>
+	</footer>
+	<!-- 底部部分结束 -->
+
+	<!-- 移动端nav开始 -->
+	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
+        <div class="container-fluid mobile-nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
+                    <span class="glyphicon glyphicon-search icon-ufsearch"></span>
+                </button>
+                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
+                    <span class="cityname">BEIJING</span>
+                    <span class="caret"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">news</a></li>
+					<li><a href="#">Bars & Restaurants</a></li>
+					<li><a href="#">entertainment</a></li>
+					<li><a href="#">lifestyle</a></li>
+					<li><a href="#">features</a></li>
+					<li><a href="#">Directory</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<hr>
+					<li></li>
+					<li><a href="#">log in</a></li>
+					<li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="citylist">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Shanghai</a></li>
+                    <li><a href="#">Beijing</a></li>
+                    <li><a href="#">Shenzhen</a></li>
+                    <li><a href="#">Guangzhou</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="mobile-navbar-search">
+                <div class="search-group-mobile">
+                    <form id="mobile-search-form" method="post" action="#">
+                        <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
+                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 移动端nav结束 -->
+    <!-- ad-app部分开始 -->
+    <div class="ad-thatsapp visible-xs">
+    	<div class="ad-thatsapp-logo">
+    		<a href="http://www.thatsmags.com/app">
+    			<img src="images/thatsapp-logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="ad-thatsapp-text">
+    		<p>Get the App. Your essential China city companion.</p>
+    	</div>
+    	<div class="ad-thatsapp-open">
+    		<button class="btn ad-thatsapp-download">open</button>
+    		<a class="ad-thatsapp-close">
+    			<img src="images/thatsapp-close.png" alt="">
+    		</a>
+    	</div>
+    	<div></div>
+    </div>
+    <!-- ad-app部分结束 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fastclick.js"></script>
+</body>
+</html>

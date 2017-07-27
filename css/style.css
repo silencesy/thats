@@ -1,5 +1,6 @@
 ﻿@charset "UTF-8";
 
+
 /*--------------------------- Article start ----------------------- */
 .word-container, .word-title {
 	position: relative;
@@ -20,6 +21,9 @@
 }
 .breadcrumb a {
 	color: #f9421e;
+}
+.breadcrumb a:hover {
+    color: #f9421e;
 }
 .addup a {
     margin-left: 15px;
@@ -76,6 +80,7 @@
     color: #9a9a9a;
     position: relative;
     margin-right: 10px !important;
+    margin-bottom: 3px;
     line-height: 12px;
     padding: 5px 15px 0px 6px !important;
 }
@@ -86,7 +91,15 @@
     height: 20px;
     border: 2px solid #9a9a9a;
     transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -webkit-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -moz-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -o-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -ms-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
     transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
     border-bottom: 0;
     border-left: 0;
     border-radius: 4px;
@@ -516,7 +529,8 @@ input[type="text"], input[type="email"], input[type="password"] {
 	width: 100%;
 }
 .writing {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px; 
 }
 .abstract {
     padding-top: 30px;
@@ -549,20 +563,26 @@ input[type="text"], input[type="email"], input[type="password"] {
 /*--------------------------- news end ----------------------- */
 
 /*--------------------------- bars start ----------------------- */
+.sidebar .tab-pane .pull-left {
+    width: 30%;
+}
+
+
+
 .sidebar .tab-pane .pull-right, .article .text-container {
-    width: 161px;
+    width: 65%;
     // height: 74px;
     line-height: 120%;
     overflow: hidden;
+}
+.sidebar .tab-pane .pull-right, .article .text-container a {
+    color: #333;
 }
 .area-b .pull-right h3 {
 	margin: 0;
 }
 .icon-star {
     background-position: -24px -32px;
-}
-.active .icon-star {
-    background-position: -24px -48px;
 }
 .sidebar-module >.article {
     padding-top: 10px;
@@ -765,6 +785,39 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     height: auto;
 }
+
+#carousel-example-generic {
+    position: relative;
+}
+
+#carousel-example-generic .big-play-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 146px;
+    height: 147px;
+    background: url(../images/play-icon.png) no-repeat -1px -1px;
+}
+
+
+.thats-content .flex-slider .slider-img {
+    position: relative;
+}
+
+.thats-content .flex-slider .slider-img .play-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 62px;
+    height: 63px;
+    background: url(../images/play-icon.png) no-repeat -319px -1px;
+}
 /*--------------------------- video 结束 ----------------------- */
 
 
@@ -954,18 +1007,548 @@ input[type="text"], input[type="email"], input[type="password"] {
 .last-open .img-container img {
     width: 100%;
 }
+
+.trending-artiles .text-shadow {
+    font-size: 24px;
+}
+
+.digest-list .data-dt {
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.digest-list .number {
+    color: #f9421e;
+    font-size: 48px;
+}
+.digest-list .data-dd,.digest-list .data-dt {
+    float: left;
+}
+
+.digest-list .data-dd {
+    width: 80%;
+    height: 95px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.digest-list .data-dd a {
+    margin-top: 0;
+    display: inline-block;
+    color: #292929;
+    line-height: 120%;
+    font-size: 140%;
+    font-family: 'Open Sans Condensed';
+}
+
+.news-image .imgae-text h3 {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+
+}
+.news-image .imgae-text p {
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+}
+
+.news-image .big-image img {
+    width: 100%;
+}
+
+.news-image .big-image {
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.small-image {
+    margin-top: 20px;
+}
+
+.small-image .row > div:nth-child(2) {
+    padding-left: 8px;
+}
+
+.news-image .small-image img {
+    width: 100%;
+}
+
+.news-image .small-image .imgae-text h3,.news-image .small-image .imgae-text p {
+    margin: 10px 0;
+    -webkit-line-clamp: 2;
+}
+
+/*侧边栏tab开始*/
+.slide-tab .nav {
+    background: url(../images/line_1px.png) repeat-x 0 47px;
+    margin-bottom: 10px;
+}
+
+.slide-tab ul li {
+    text-align: center;
+}
+
+.slide-tab .nav-tabs li.active a {
+    border-color: transparent;
+    background: url(../images/arrow_down.png) no-repeat 50% bottom;
+}
+
+
+
+.slide-tab .nav-tabs>li a:hover {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.slide-tab .nav-tabs>a:hover span {
+    margin-left: 0;
+}
+
+.slide-tab  .nav-tabs {
+    border: none;
+}
+
+.slide-tab ul li .thats-icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+.slide-tab ul li .icon-clock {
+    background-position: -41px 0;
+}
+
+.slide-tab ul li .icon-fork {
+    background-position: -41px -31px;
+}
+
+.slide-tab ul li .icon-microphone {
+    background-position: -41px -61px;
+}
+
+.slide-tab ul li .icon-star {
+    background-position: -41px -121px;
+}
+
+#slide-tab-Content .title {
+    position: relative;
+}
+
+#slide-tab-Content .title a {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    font-size: 18px;
+}
+
+#slide-tab-Content ul p {
+    color: #999;
+    text-align: left;
+}
+
+#slide-tab-Content ul h3 {
+    text-align: left;
+    margin: 0 0 10px 0;
+}
+
+
+/*侧边栏tab结束*/ 
+
+
+
+/*--------------------------- 目录页开始 ----------------------- */
+
+.nav-tabs.sidects {
+    float: left;
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+    width: 150px;
+}
+
+.nav-tabs.sidects > li.active {
+    border-right: 0;
+    position: relative;
+    right: -1px;
+    z-index: 100;
+    width: 151px;
+    left: -1px;
+}
+
+.nav-tabs.sidects>li {
+    border-bottom: 1px solid #eaeaea;
+    float: none;
+    margin: 0;
+    background-color: #fff;
+}
+
+.nav-tabs.sidects li a {
+    margin-right: 0;
+    border: 0;
+    background-color: #f4f4f4;
+    font-size: 12px;
+    font-weight: normal !important;
+    padding: 10px 5px 10px 8px;
+    word-wrap: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 0;
+    color: #9a9a9a;
+}
+
+.nav-tabs.sidects li a:hover {
+    background-color: #d2d2d2;
+    color: #fff;
+}
+
+.nav-tabs.sidects > li.active > a, .nav-tabs.sidects > li.active > a:hover, .nav-tabs.sidects > li.active > a:focus {
+    border: 0 none;
+    border-left: 4px solid #f9421e;
+    padding-left: 6px;
+    color: #9a9a9a;
+    background-color: #fff;
+}
+
+.nav-tabs.sidects li a i {
+    margin-right: 5px;
+}
+
+.list-boxes .writing-container {
+    border: 1px solid #eaeaea;
+    padding: 0 10px;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+}   
+
+.list-boxes .writing-container  .select {
+    padding: 10px 0;
+}
+
+.select .area-ul {
+    margin-bottom: 0;
+}
+
+.select .area-ul li {
+    display: inline-block;
+}
+
+.select-type li a {
+    line-height: 22px;
+    display: inline-block;
+    margin-bottom: 3px;
+    color: #666;
+    font-size: 12px;
+    padding: 1px 14px;
+}
+
+.select-type li.active a {
+    background: #f9421e;
+    border-radius: 2px;
+    color: #fff;
+    // padding: 1px 14px;
+}
+
+.select-sort {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.select-sort li {
+    margin-right: 20px;
+}
+
+.select-sort a.active {
+    color: #292929;
+}
+
+.writing .hotwords {
+    padding: 10px 0;
+}
+
+.serve-info {
+    margin-bottom: 10px;
+}
+
+.serve-info li {
+    float: left;
+    margin-right: 20px;
+}
+
+.grade {
+    margin-bottom: 10px;
+}
+
+.serve-contact {
+    background: #f5f5f5;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+}
+
+.serve-contact .dt {
+    float: left;
+    width: 30%;
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.serve-contact .dd {
+    float: left;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.reviews-individual ul li {
+    float: left;
+}
+
+/*--------------------------- 目录页结束 ----------------------- */
+
+
+
+/*--------------------------- events开始 ----------------------- */
+.events-container .line-dashed {
+    margin: 15px 0;
+}
+.data-input {
+    color: #999;
+    height: 40px;
+    max-width: 280px;
+    border-right: none;
+    background-color: #eee;
+}
+
+.events-container .form-group a {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    width: 44px;
+    margin-left: -2px;
+    text-align: center;
+    background: url(../images/input_file.png) no-repeat 0 0;
+}
+
+ 
+/*--------------------------- events结束 ----------------------- */
+
+
+
+
 /*--------------------------- 地区 结束 ----------------------- */
+
+
+/*精灵图统一位置*/
+.icon-map-marker {
+    background-position: 0 -41px;
+}
+/*== Common ICON ==*/
+.thaticon {
+    position: relative;
+    display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+    vertical-align: middle;
+}
+.icon-home, .icon-star, .icon-arrow-down, .icon-page-pre, .icon-page-next, .icon-share, .icon-share-d, .icon-print-wh-s,
+.icon-comment, .icon-map-marker-s, .icon-fork, .icon-cutlery, .icon-rmb, .icon-add-photo, .icon-file-add {
+    width: 14px;
+    height: 14px;
+}
+.icon-home {
+    margin-right: 5px;
+    background-position: -24px -16px;
+}
+.icon-star {
+    background-position: -24px -32px;
+}
+.active .icon-star {
+    background-position: -24px -48px;
+}
+.icon-arrow-down {
+    background-position: -26px -64px;
+}
+.active .icon-arrow-down {
+    background-position: -26px -78px;
+}
+.icon-page-pre {
+    background-position: -24px -123px;
+}
+.icon-page-next {
+    background-position: -24px -143px;
+}
+.icon-share {
+    background-position: -40px -151px;
+}
+.icon-share-d {
+    background-position: -42px -166px;
+}
+.icon-comment {
+    background-position: -56px -151px;
+}
+.icon-map-marker-s {
+    background-position: -57px -165px;
+}
+.icon-cutlery {
+    background-position: -24px -93px;
+}
+.icon-rmb {
+    background-position: -24px -108px;
+}
+.icon-add-photo {
+    background-position: -71px -165px;
+}
+.icon-file-add {
+    background-position: -71px -151px;
+}
+/* icon:16��14px */
+.icon-car, .icon-print, .icon-marker, .icon-ticket {
+    width: 16px;
+    height: 14px;
+}
+.icon-car {
+    background-position: -1px -63px;
+}
+.icon-print {
+    background-position: -1px -83px;
+}
+.icon-marker {
+    background-position: -1px -103px;
+}
+.icon-ticket {
+    background-position: 0 -124px;
+}
+/* icon:20��20px */
+.icon-search, .icon-th-large, .icon-map-marker, .icon-add, .icon-calendar, .icon-calendar-g, .icon-print-wh {
+    width: 20px;
+    height: 20px;
+}
+.icon-search {
+    background-position: 0 0;
+}
+.icon-th-large {
+    background-position: 0 -20px;
+}
+.icon-map-marker {
+    background-position: 0 -41px;
+}
+.icon-add {
+    background-position: 0 -140px;
+}
+.icon-calendar {
+    background-position: 2px -163px;
+}
+.icon-calendar-g {
+    background-position: -21px -163px;
+}
+/* icon:24��24px */
+.icon-fullscreen, .icon-save {
+    width: 24px;
+    height: 24px;
+    opacity: .5;
+    filter:alpha(opacity=50);
+}
+.icon-save {
+    background-position: -124px -156px;
+}
+.icon-fullscreen {
+    background-position: -156px -156px;
+}
+a.icon-fullscreen:hover, a.icon-save:hover {
+    opacity: .75;
+    filter:alpha(opacity=75);
+}
+/* icon:28��28px */
+.icon-time, .icon-cutlery-b, .icon-goblet, .icon-percent, .icon-star-group {
+    width: 28px;
+    height: 28px;
+}
+.icon-time {
+    background-position: -41px 0px;
+}
+.active .icon-time {
+    background-position: -71px 0px;
+}
+.icon-cutlery-b {
+    background-position: -41px -30px;
+}
+.active .icon-cutlery-b {
+    background-position: -71px -30px;
+}
+.icon-goblet {
+    background-position: -41px -60px;
+}
+.active .icon-goblet {
+    background-position: -71px -60px;
+}
+.icon-percent {
+    background-position: -41px -90px;
+}
+.active .icon-percent {
+    background-position: -71px -90px;
+}
+.icon-star-group {
+    background-position: -41px -120px;
+}
+.active .icon-star-group {
+    background-position: -71px -120px;
+}
+/* icon:share */
+.icon-twitter, .icon-facebook, .icon-weibo {
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+}
+.share-s .icon-twitter, .share-s .icon-facebook, .share-s .icon-weibo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.icon-twitter {
+    background-position: -100px 0;
+}
+.icon-facebook {
+    background-position: -100px -50px;
+}
+.icon-weibo {
+    background-position: -100px -100px;
+}
+.icon-wechat {
+    background-position: -150px -90px;
+    cursor: pointer;
+}
+.icon-mail {
+    background-position: -150px -120px;
+    cursor: pointer;
+}
+.icon-print-wh, .icon-print-wh-s {
+    background: url(../images/icon_print.png) no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+/*精灵图统一位置*/
+
+
 
 
 
 
 /*--------------------------- RESPONSIVE CSS ----------------------- */
 @media (min-width: 1024px){
-	.col-sm-9.main, .col-md-9.home-block {
+	.col-md-9.main, .col-md-9.home-block {
     	width: 70%;
     	padding-right: 0;
     }
-    .col-sm-3.sidebar, .col-md-3.home-block {
+    .col-md-3.sidebar, .col-md-3.home-block {
     	width: 30%;
 	}
 	.wrapper > .container, .container {
@@ -1081,7 +1664,13 @@ input[type="text"], input[type="email"], input[type="password"] {
     .page-bottom .pull-right {
         text-align: center;
     }
-}
+    .sidebar .tab-pane .pull-left {
+        width: 20%;
+    }
+
+    .sidebar .tab-pane .pull-right, .article .text-container {
+        width: 75%;
+    }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .picture .col-sm-2 {
@@ -1092,3 +1681,16 @@ input[type="text"], input[type="email"], input[type="password"] {
         width: 100%;
     }
 }
+@media screen and (max-width: 660px) {
+    .nav-tabs.sidects {
+        width: 26px;
+    }
+    .nav-tabs.sidects li a {
+        text-overflow: initial;
+    }
+    .nav-tabs.sidects > li.active {
+        width: auto;
+    }
+}
+
+
