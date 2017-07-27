@@ -91,7 +91,15 @@
     height: 20px;
     border: 2px solid #9a9a9a;
     transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -webkit-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -moz-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -o-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
+    -ms-transform: rotate(45deg) scale(0.75) translate(-1px, 0px) skew(14deg, 13deg);
     transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
     border-bottom: 0;
     border-left: 0;
     border-radius: 4px;
@@ -562,11 +570,16 @@ input[type="text"], input[type="email"], input[type="password"] {
     width: 30%;
 }
 
+
+
 .sidebar .tab-pane .pull-right, .article .text-container {
-    width: 62%;
+    width: 65%;
     // height: 74px;
     line-height: 120%;
     overflow: hidden;
+}
+.sidebar .tab-pane .pull-right, .article .text-container a {
+    color: #333;
 }
 .area-b .pull-right h3 {
 	margin: 0;
@@ -948,14 +961,14 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 .slide-tab .nav-tabs li.active a {
-    border: none;
+    border-color: transparent;
     background: url(../images/arrow_down.png) no-repeat 50% bottom;
 }
 
 
 
 .slide-tab .nav-tabs>li a:hover {
-    border: none;
+    border-color: transparent;
     background-color: transparent;
 }
 
@@ -1161,7 +1174,38 @@ input[type="text"], input[type="email"], input[type="password"] {
     margin-bottom: 10px;
 }
 
+.reviews-individual ul li {
+    float: left;
+}
+
 /*--------------------------- 目录页结束 ----------------------- */
+
+
+
+/*--------------------------- events开始 ----------------------- */
+.events-container .line-dashed {
+    margin: 15px 0;
+}
+.data-input {
+    color: #999;
+    height: 40px;
+    max-width: 280px;
+    border-right: none;
+    background-color: #eee;
+}
+
+.events-container .form-group a {
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    width: 44px;
+    margin-left: -2px;
+    text-align: center;
+    background: url(../images/input_file.png) no-repeat 0 0;
+}
+
+ 
+/*--------------------------- events结束 ----------------------- */
 
 
 
@@ -1466,7 +1510,13 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .page-bottom .pull-right {
         text-align: center;
     }
-}
+    .sidebar .tab-pane .pull-left {
+        width: 20%;
+    }
+
+    .sidebar .tab-pane .pull-right, .article .text-container {
+        width: 75%;
+    }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .picture .col-sm-2 {
@@ -1475,6 +1525,17 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 
     .img-container img {
         width: 100%;
+    }
+}
+@media screen and (max-width: 660px) {
+    .nav-tabs.sidects {
+        width: 26px;
+    }
+    .nav-tabs.sidects li a {
+        text-overflow: initial;
+    }
+    .nav-tabs.sidects > li.active {
+        width: auto;
     }
 }
 
