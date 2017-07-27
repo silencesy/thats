@@ -623,22 +623,136 @@ input[type="text"], input[type="email"], input[type="password"] {
 .text-weak {
     color: #cccccc;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.serve-grade {
+    margin-bottom: 15px;
+}
+.icon-list > * {
+    display: inline-block;
+    padding-right: 5px;
+}
+.icon-car, .icon-print, .icon-marker, .icon-ticket {
+    width: 16px;
+    height: 14px;
+}
+.icon-map-marker-s {
+    background-position: -57px -165px;
+}
+.icon-car {
+    background-position: -1px -63px;
+}
+.icon-print {
+    background-position: -1px -83px;
+}
+.icon-rmb {
+    background-position: -24px -108px;
+}
+.padding-control {
+    padding: 0 15px;
+}
+.writing .listings-pic {
+    padding: 2px 5px 5px 1px;
+    background: url(../images/pic_bg.png) no-repeat right bottom;
+}
+.listings-pic img {
+    max-height: 254px;
+    max-width: 245px;
+}
+.data-dt, .data-dd {
+    display: inline-block;
+    line-height: 160%;
+    padding-bottom: 10px;
+}
+.data-dt {
+    width: 30%;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.data-dd {
+    width: 66%;
+}
+.venues-list {
+    border-style:solid;
+    border-color:#ddd;
+    border-width:1px 0 0
+}
+.venues-list legend {
+    border:0 none;margin:0;
+    width:auto;
+    display:inline-block;
+    padding:5px 10px
+}
+.venues-list .serve-contact {
+    border-bottom:1px dotted #ccc
+}
+.venues-list .serve-contact:last-child {
+    border-bottom:0 none;
+}
+.evetnt-tagbala {
+    margin-top: 15px;
+}
+.main .layout-parag {
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.tips-taxi {
+    width: 960px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    margin-left: -480px;
+}
+.alert-default {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .25);
+    position: absolute;
+    z-index: 100;
+}
+.alert-default > .close {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #a5a5a5;
+    font-size: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-shadow: none;
+}
+.alert-default > .btn {
+    position: absolute;
+    border-radius: 20px;
+}
+.btn-l {
+    padding: 0 30px;
+}
+.btn-red {
+    background: rgba(249, 66, 30, 1);
+}
+.icon-print-wh, .icon-print-wh-s {
+    background: url(../Images/icon_print.png) no-repeat 50% 50%;
+    background-size: 100% 100%;
+}
+.tips-taxi .alert-content {
+    margin: 130px;
+}
+.tips-taxi h1 {
+    font-size: 42px;
+    font-weight: 400;
+}
+.tips-taxi .alert-content > p {
+    font-size: 32px;
+    line-height: 150%;
+}
+#listingMapContent {
+    width: 100%;
+    height: 220px;
+}
+.main .layout-map {
+    margin-bottom: 40px;
+}
+.snow-house {
+    color:#999;
+    font-weight: normal;
+}
 
 
 
@@ -872,6 +986,24 @@ input[type="text"], input[type="email"], input[type="password"] {
 	.front-carousel-caption p.text-muted {
 	    color: #eee;
 	}
+    .writing .listings-pic {
+        width: 250px;
+        max-height: 292px;
+    }
+    .writing .listings-pic .mfp-zoom {
+        display: table-cell;
+        height: 245px;
+        vertical-align: middle;
+        width: 245px;
+        text-align: center;
+    }
+    .tips-taxi {
+        height: 480px;
+    }
+
+
+
+
 
 
 

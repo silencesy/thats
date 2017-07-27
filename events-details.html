@@ -117,30 +117,43 @@
 									</small>
 								</div>
 							</div>
-							<ul class="icon-list mb-35">
+							<div class="icon-list mb-35">
 			                    <li>
 			                        <i class="thaticon icon-map-marker-s"></i>
-			                        <span onclick="window.location.href='#listingMapContent';">Map</span> |
+			                        <span onclick="window.location.href='#listingMapContent';" style="cursor: pointer">Map</span> |
 			                    </li>
 			                    <li>
 			                        <i class="thaticon icon-car"></i>
-			                        <span id="taxiDirections" data-dismiss="alert">Taxi Directions</span> |
+			                        <span style="cursor: pointer;" id="taxiDirections" data-dismiss="alert">Taxi Directions</span> |
 			                    </li>
 			                    <li>
 			                        <i class="thaticon icon-print"></i>
-			                        <span id="printTaxiDirectionsBtn1">Print</span>
+			                        <span style="cursor: pointer;" id="printTaxiDirectionsBtn1">Print</span>
 			                    </li>
-			                </ul><!-- /基本信息结束/ -->
+			                </div>
+			                <!-- Taxi 弹出框 -->
+			                <div id="printTaxiDirections" class="alert alert-default alert-dismissible tips-taxi fade in hide" role="alert">
+							    <button type="button" class="close" id="printTaxiDirectionsClose" ><span aria-hidden="true">×</span></button>
+							    <a type="button" class="btn btn-red btn-l" id="printTaxiDirectionsBtn2">
+							        <i class="thaticon icon-print-wh-s"></i>
+							        <span style="cursor: pointer;">&nbsp;Print</span>
+							    </a>
+							    <div class="alert-content">
+							        <h1>请带我去【<span>TOP 5 Opening Party X Unravel</span>】</h1>
+							        <p>地址：<span>长乐路462号, 近陕西南路</span></p>
+							        <p>电话：<span>6155 3399</span></p>
+							    </div>
+							</div>
 						</header>
 
 						<div class="writing row">
 							<div class="col-sm-5">
 								<div class="img-container listings-pic">
-									<a class="image-ajax-popup mfp-zoom" href="/image/view/201706/movie-nights---FORREST-GUMP_-.jpg">
-									    <img class="lazy" data-original="/image/view/201706/movie-nights---FORREST-GUMP_-.jpg?w=245&h=245" alt="">
+									<a class="image-ajax-popup mfp-zoom" href="">
+									    <img src="Picture/124772_n.jpg" alt="">
 			                        </a>
 									<div class="pic-number text-center">
-									    <a href="http://www.thatsmags.com/shanghai/event/gallery/42584" target="_blank" class="text-fresh">
+									    <a href="" target="_blank" class="text-fresh">
 			                                <small>View all photos (2) »</small>
 			                            </a>
 			                        </div>
@@ -161,7 +174,8 @@
 									</dt>
 									<dd class="data-dd">
 										<span>8 pm</span>
-									</dd>						<dt class="data-dt">
+									</dd>						
+									<dt class="data-dt">
 										<span class="text-muted">Price</span>
 									</dt>
 									<dd class="data-dd">
@@ -171,12 +185,7 @@
 										</span>
 									</dd>
 								</dl>
-								<style type="text/css">
-								.venues-list{border-style:solid;border-color:#ddd;border-width:1px 0 0}
-								.venues-list legend{border:0 none;margin:0;width:auto;display:inline-block;padding:5px 10px}
-								.venues-list .serve-contact{border-bottom:1px dotted #ccc}
-								.venues-list .serve-contact:last-child{border-bottom:0 none;}
-								</style>
+
 								<fieldset class="venues-list">
 									<legend align="center">Venues</legend>
 									<dl class="serve-contact">
@@ -207,44 +216,111 @@
 							<!-- 文章底部：标签&分享 -->
 							<div class="toolbar clearfix padding-control">
 								<!-- tag bala-->
-								<p class="tagbala pull-left" style="margin-top:10px">
-		    						<a href="">That's Tickets</a>
-									<a href="">Movie Night</a>
-									<a href="">Movie Tuesday</a>
-									<a href="">movie screening</a>
+								<p class="tagbala pull-left evetnt-tagbala">
+		    						<a href="" class="btn-tag btn btn-line bdr-fresh">That's Tickets</a>
+									<a href="" class="btn-tag btn btn-line bdr-fresh">Movie Night</a>
+									<a href="" class="btn-tag btn btn-line bdr-fresh">Movie Tuesday</a>
+									<a href="" class="btn-tag btn btn-line bdr-fresh">movie screening</a>
 								</p>
 								<!-- 分享：小图标 -->
-								<ul class="share share-s pull-right jiathis_style_32x32" style="margin-top: 10px" data-id="42584" data-type="3">
-			                        <li><a class="jiathis_button_twitter"></a></li>
-			                        <li><a class="jiathis_button_fb"></a></li>
-			                        <li><a class="jiathis_button_tsina"></a></li>
-			                        <li><a class="jiathis_button_weixin"></a></li>
-			                        <li><a class="jiathis_button_email"></a></li>
+								<ul class="share share-s pull-right jiathis_style_32x32" data-id="42584" data-type="3">
+			                        <li>
+			                        	<a class="jiathis_button_twitter">
+			                        		<span class="jiathis_txt jtico jtico_twitter"></span>
+			                        	</a>
+			                        </li>
+			                        <li>
+			                       		<a class="jiathis_button_fb">
+			                       			<span class="jiathis_txt jtico jtico_fb"></span>
+			                       		</a>
+			                        </li>
+			                        <li>
+			                        	<a class="jiathis_button_tsina">
+			                        		<span class="jiathis_txt jtico jtico_tsina"></span>
+			                        	</a>
+			                        </li>
+			                        <li>
+			                        	<a class="jiathis_button_weixin">
+			                        		<span class="jiathis_txt jtico jtico_weixin"></span>
+			                        	</a>
+			                        </li>
+			                        <li>
+			                        	<a class="jiathis_button_email">
+			                        		<span class="jiathis_txt jtico jtico_email"></span>
+			                        	</a>
+			                        </li>
 								</ul>
 								<!-- /分享结束/ -->
 							</div>
 							<!-- /标签&分享结束/ -->
 						</div>
 					</section>
-					<!-- /.文章摘要列表结束 -->
+					<!-- /文章摘要列表结束 -->
 					<div class="line-dashed"></div>
 
 					<section class="layout-parag">
 						<div class="text-container">
-							<p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">Tuesday 25<sup>th</sup> of July 2017, the Pearl will be screening the 1994 American comedy-drama film, Forrest Gump.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">The story depicts several decades in the life of Forrest Gump, a slow-witted but kind-hearted, good-natured and athletically prodigious man from Alabama, who witnesses, and in some cases influences, some of the defining events of the latter half of the 20th century in the United States; more specifically, the period between Forrest&#39;s birth in 1944 and 1982. The film differs substantially from Winston Groom&#39;s novel, including Gump&#39;s personality and several events that were depicted.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">Released in the United States on July 6, 1994, Forrest Gump became a commercial success as the top-grossing film in North America released in that year, being the first major success for Paramount Pictures since the studio&#39;s merger with Viacom, earning over US$677 million worldwide during its theatrical run.</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;In 1995 it won the Academy Awards for Best Picture, Best Director for Robert Zemeckis, Best Actor for Tom Hanks, Best Adapted Screenplay for Eric Roth, Best Visual Effects, and Best Film Editing. It also garnered multiple other awards and nominations, including Golden Globes, People&#39;s Choice Awards, and Young Artist Awards, among others. </span></p><p style="line-height:106%"><span style="font-family:&#39;Arial&#39;,sans-serif">&nbsp;</span></p>
+							<p>In 1995 it won the Academy Awards for Best Picture, Best Director for Robert Zemeckis, Best Actor for Tom Hanks, Best Adapted Screenplay for Eric Roth, Best Visual Effects, and Best Film Editing. It also garnered multiple other awards and nominations, including Golden Globes, People&#39;s Choice Awards, and Young Artist Awards, among others.</p>
 						</div>
 					</section>
 					<div class="line-dashed"></div>
-					
+					<!-- 地图 -->
 					<section class="layout-map" id="listingMapBox">
 			            <div class="map-container">
-			                <h2 class="text-dark">Map of The Pearl</h2>
+			                <h2 class="text-dark">Map of United Valley</h2>
 			                <div id="listingMapContent" style="max-height: 220px; max-width: 695px;">
 			                </div>
 			            </div>
 			        </section>
-					<div class="line-dashed"></div>
-					<!-- 图文列表 -->
+					<!-- 地图结束 -->
+					<div class="line-dashed"></div>					
+					<!-- 文章评论 -->
+					<section class="word-comment">
+					    <div id="listReviews" class="comment-info clearfix">    	
+					        <div class="pull-left">
+					            <h2 class="text-muted">
+					                <span>0</span> User Comments            
+					            </h2>
+					        </div>					        
+					        <div class="pull-right pull-plus">
+					            <a type="button" class="btn btn-red btn-lg add-btn" data-toggle="modal" data-target="#myModal">
+					                <i class="thaticon icon-add"></i>
+					                <span class="text-bold text-italic add-font">Add your Comment</span>
+					            </a>
+					        </div>
+					    </div>
+					</section>	
+					<!-- Add弹出层开始 -->	
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					        <form id="reviewForm">
+					            <div class="modal-content">
+					                <div class="modal-header">
+					                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					                    	<span aria-hidden="true">&times;</span>
+					                    </button>
+					                    <h4 class="modal-title" id="reviewModalLabel">Add your comment</h4>
+					                </div>
+					                <div class="modal-body">
+					                    <fieldset>
+					                        <div class="form-group" >
+					                            <label class="control-label add-laber" for="content">* Comment Content</label>
+					                            <textarea class="form-control add-control" rows="3" name="content" placeholder="Please enter your review"></textarea>
+					                        </div>
+					                        <input type="hidden" name="iTargetID" value="19822" />
+					                        <input type="hidden" name="iType" value="1" />
+					                        <input type="hidden" name="channel" value="4" />
+					                        <input type="hidden" name="cityid" value="1" />
+					                    </fieldset>
+					                </div>
+					                <div class="modal-footer">
+					                    <button type="submit" class="btn btn-primary">Submit</button>
+					                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					                </div>
+					            </div>
+					        </form>
+					    </div>    
+					</div><!-- Add弹出层结束 -->
 				</div><!-- col-sm-9/main end -->
 
 				<div class="col-sm-3 sidebar">
@@ -866,23 +942,23 @@
 					                <li class="article clearfix">
 						                <div class="img-container pull-left">
 						                    <a href="">
-						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                        <img alt="" src="Picture/F45-Shanghai-Logo.jpg">
 						                    </a>
 						                </div>
 					                	<div class="text-container pull-right">
-						                    <h3>EGG</h3>
-						                    <p>...</p>
+						                    <p>Mayura Wine Dinner</p>
+						                    <p>May 26, 2017</p>
 					                	</div>
 					            	</li>
 					                <li class="article clearfix">
 						                <div class="img-container pull-left">
 						                    <a href="">
-						                        <img class="lazy" alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                        <img alt="" src="Picture/F45-Shanghai-Logo.jpg">
 						                    </a>
 						                </div>
 					                	<div class="text-container pull-right">
-						                    <h3>EGG</h3>
-						                    <p>...</p>
+						                    <p>Mayura Wine Dinner</p>
+						                    <p>May 26, 2017</p>
 					                	</div>
 					            	</li>
 					            </ul>
@@ -892,34 +968,34 @@
 					                <li class="article clearfix">
 						                <div class="img-container pull-left">
 						                    <a href="">
-						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                        <img alt="" src="Picture/F45-Shanghai-Logo.jpg">
 						                    </a>
 						                </div>
 						                <div class="text-container pull-right">
-						                    <h3>Dope Shifu</h3>
-						                    <p>...</p>
+						                    <p>Mayura Wine Dinner</p>
+						                    <p>May 26, 2017</p>
 						                </div>
 					            	</li>
 					                <li class="article clearfix">
 						                <div class="img-container pull-left">
 						                    <a href="">
-						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                        <img alt="" src="Picture/F45-Shanghai-Logo.jpg">
 						                    </a>
 						                </div>
 						                <div class="text-container pull-right">
-						                    <h3>Dope Shifu</h3>
-						                    <p>...</p>
+						                    <p>Mayura Wine Dinner</p>
+						                    <p>May 26, 2017</p>
 						                </div>
 					            	</li>
 					                <li class="article clearfix">
 						                <div class="img-container pull-left">
 						                    <a href="">
-						                        <img class="lazy"alt="" src="Picture/F45-Shanghai-Logo.jpg">
+						                        <img alt="" src="Picture/F45-Shanghai-Logo.jpg">
 						                    </a>
 						                </div>
 						                <div class="text-container pull-right">
-						                    <h3>Dope Shifu</h3>
-						                    <p>...</p>
+						                    <p>Mayura Wine Dinner</p>
+						                    <p>May 26, 2017</p>
 						                </div>
 					            	</li>
 					            </ul>
@@ -1049,19 +1125,19 @@
 			</ul>
 
 			<ul class="pull-right">
-					<a href="https://twitter.com/ThatsShanghai" title="Twitter">
-						<li>&nbsp;</li>
-					</a>
+				<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+					<li>&nbsp;</li>
+				</a>
 
-					<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
-						<li></li>
-					</a>
-					<a href="http://weibo.com/p/1002061749863802" title="Weibo">
-						<li></li>
-					</a>
-					<a href="https://instagram.com/thatsshanghai" title="Instagram">
-						<li><img src="Picture/instagram.png"></li>
-					</a>
+				<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+					<li></li>
+				</a>
+				<a href="http://weibo.com/p/1002061749863802" title="Weibo">
+					<li></li>
+				</a>
+				<a href="https://instagram.com/thatsshanghai" title="Instagram">
+					<li><img src="Picture/instagram.png"></li>
+				</a>
 			</ul>
 
 		</div>
@@ -1147,5 +1223,72 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jia.js"></script>
 	<script src="js/fastclick.js"></script>
+	<script src="js/2a2ffe25cc1747a296912cc505d6c117.js"></script>
+	<script type="text/javascript" src="js/jquery.printarea.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+		    var lat = 31.220909;
+		    var lng = 121.457969;
+		    var position = new AMap.LngLat(lng, lat);
+
+		    var mapObj=new AMap.Map("listingMapContent",{
+		    	level: 16, zooms: [13, 18], center:position, lang: 'en'
+		    });//创建地图实例
+		    mapObj.plugin(["AMap.ToolBar","AMap.OverView","AMap.Scale"],function(){
+		        //加载工具条
+		        tool = new AMap.ToolBar({
+		            ruler:false,//隐藏视野级别控制尺
+		            autoPosition:false//禁止自动定位
+		        });
+		        mapObj.addControl(tool);
+		        //加载比例尺
+		        scale = new AMap.Scale();
+		        mapObj.addControl(scale);
+		    });/**/
+			var marker;
+		        lat = 31.220909;
+		    lng = 121.457969;
+		    position = new AMap.LngLat(lng, lat);
+		    marker = new AMap.Marker({
+		        icon:"//webapi.amap.com/images/marker_sprite.png",
+		        draggable: false,
+		        position:new AMap.LngLat(lng, lat)
+		    });
+		    marker.setMap(mapObj);  //在地图上添加点
+		    mapObj.setFitView();
+
+		    // share
+		    $.getScript("//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5254d24f5417e846");
+		    $('.arcbody a').attr('target','_blank');
+
+		    $("#bookmark").click(function(){
+		        var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
+		        if (document.all) {
+		            window.external.addFavorite(window.location.href, $('<title>').text())
+		        } else if (window.sidebar) {
+		            window.sidebar.addPanel($('<title>').text(), window.location.href, "")
+		        } else {
+		            alert('Please use ' + ctrl + ' + D to add~')
+		        }
+		    });
+
+		    $("#taxiDirections").click(function(){
+		        $("#printTaxiDirections").removeClass('hide');
+		    });
+		    $("#printTaxiDirectionsClose").click(function(){
+		        $("#printTaxiDirections").addClass('hide');
+		    });
+
+		    $("#printTaxiDirectionsBtn1").click(function(){
+		        $("#printTaxiDirections div.alert-content").printArea();
+		    });
+
+		    $("#printTaxiDirectionsBtn2").click(function(){
+		        $("#printTaxiDirections div.alert-content").printArea();
+		    });
+		});
+
+	</script>
 </body>
 </html>
