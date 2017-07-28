@@ -773,8 +773,15 @@ input[type="text"], input[type="email"], input[type="password"] {
     color:#999;
     font-weight: normal;
 }
-
-
+.publish-date .date-day {
+    font-size: 48px;
+    line-height: 48px;
+}
+.date-moon {
+    font-size: 28px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
 
 
 
@@ -1339,7 +1346,9 @@ input[type="text"], input[type="email"], input[type="password"] {
     text-align: center;
     background: url(../images/input_file.png) no-repeat 0 0;
 }
-
+.writing-date .abstract {
+    padding-top: 0;
+}
  
 /*--------------------------- events结束 ----------------------- */
 
