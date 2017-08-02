@@ -1252,6 +1252,157 @@ input[type="text"], input[type="email"], input[type="password"] {
 /*--------------------------- 地区页结束 ----------------------- */
 
 
+/*画廊轮播开始*/ 
+.gallery {
+    padding: 14px;
+}
+.gallery, .gallery-wrap {
+    background: rgba(37, 40, 43, 1);
+}
+.flexslider .slides li {
+    position: relative;
+    text-align: center;
+}
+.front-flexslider li {
+    width: 645px;
+    float: left;
+    display: block !important;
+    min-height: 0px;
+    max-height: 325px;
+}
+.flexslider {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.flexslider .slides li {
+    position: relative;
+    text-align: center;
+    display: block !important;
+}
+.front-flexslider li {
+    width: 645px;
+    float: left;
+    display: block;
+    min-height: 0px;
+    max-height: 325px;
+}
+.flexslider .slides img {
+    border: none;
+    max-width: 1000px;
+    max-height: 586px;
+    width: auto;
+    display: inline-block;
+}
+#slider .slides .pic-intro {
+    background: none;
+    font-size: 18px;
+    bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, .75);
+}
+.pic-intro {
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+.text-pure {
+    color: #ffffff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+#carousel.flexslider {
+    margin: 0 -14px;
+}
+.flexslider {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+#carousel .slides li > a {
+    display: block;
+    position: relative;
+    border: 2px solid transparent;
+    margin: 0 11px;
+    overflow: hidden;
+}
+#carousel img {
+    display: block;
+    opacity: 1;
+    cursor: pointer;
+}
+#carousel .slides li > a span {
+    color: #fff;
+    display: block;
+    padding: 0 3px;
+    position: absolute;
+    bottom: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.6);
+    line-height: 30px;
+    left: 0;
+    right: 0;
+}
+.text-pure {
+    color: #ffffff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+#carousel .flex-direction-nav .flex-prev {
+    background-position: 0 -165px;
+    left: -15px;
+}
+#carousel .flex-direction-nav .flex-next {
+    background-position: -26px -165px;
+    right: -15px;
+}
+.flex-direction-nav a:before, .flex-direction-nav a.flex-next:before, .flex-pauseplay a.flex-play:before {
+    content: '';
+}
+#carousel .flex-direction-nav a {
+    background-color: rgba(0, 0, 0, .95);
+    height: 40px;
+    border-radius: 50%;
+    top: 60%;
+}
+.flex-direction-nav a {
+    height: 72px;
+    margin: -36px 0 0;
+    opacity: 1;
+    background-image: url(../images/page_nav.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+/*画廊轮播结束*/ 
+.row-fluid {
+    text-align: center;
+    line-height: 58px;
+    margin: 20px 0 40px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+}
+
+
 /*--------------------------- 目录页开始 ----------------------- */
 
 .nav-tabs.sidects {
