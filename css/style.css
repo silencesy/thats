@@ -1,5 +1,83 @@
 ﻿@charset "UTF-8";
 
+/*分享开始*/ 
+.toolbar {
+    float: right;
+}
+.toolbar li {
+    width: 32px;
+    height: 32px;
+    float: left;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.toolbar li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.toolbar li:hover {
+    opacity: 0.9;
+}
+
+.toolbar .one {
+    background: url(../images/share.png) no-repeat 0 0;
+}
+
+.toolbar .two {
+    background: url(../images/share.png) no-repeat -45px 0;
+}
+
+.toolbar .three {
+    background: url(../images/share.png) no-repeat -90px 0;
+}
+
+.toolbar .four {
+    background: url(../images/share.png) no-repeat -135px 0;
+}
+
+.toolbar .five {
+    background: url(../images/share.png) no-repeat -180px 0;
+}
+
+.share-content {
+    padding: 20px 0 26px 0;
+}
+
+.word-content p,#article-details .word-content div {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.word-content div:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+.share-content span {
+    float: left;
+    color: #444;
+    font-size: 14px;
+}
+
+.share-content span:nth-child(2){
+    margin-left: 72px;
+}
+
+.share-content>a {
+    display: inline-block;
+    float: left;
+    color: #797979;
+    font-size: 14px;
+    background-color: #e1e1e1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 11px;
+}
+/*分享结束*/ 
+
 
 /*--------------------------- Article start ----------------------- */
 .word-container, .word-title {
@@ -667,7 +745,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     background-position: -24px -108px;
 }
 .padding-control {
-    padding: 0 15px;
+    padding: 0 8px;
 }
 .writing .listings-pic {
     padding: 2px 5px 5px 1px;
@@ -1020,7 +1098,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 .digest-list .data-dt {
-    width: 20%;
+    width: 17%;
     text-align: center;
     padding-top: 5px;
 }
@@ -1170,6 +1248,8 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 /*侧边栏tab结束*/ 
 
+
+/*--------------------------- 地区页结束 ----------------------- */
 
 
 /*--------------------------- 目录页开始 ----------------------- */
@@ -1353,9 +1433,162 @@ input[type="text"], input[type="email"], input[type="password"] {
 /*--------------------------- events结束 ----------------------- */
 
 
+/*--------------------------- login结束 ----------------------- */
+.information {
+    padding: 40px;
+    width: 80%;
+    margin: 40px auto 30px;
+    position: relative;
+    background: #ffffff;
+    border: 3px solid #e5e5e5;
+    border-radius: 6px;
+    font-family: 'Open Sans';
+}
+
+.information > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.information .form-group label {
+    width: 30%;
+    height: 40px;
+    line-height: 40px;
+}
 
 
-/*--------------------------- 地区 结束 ----------------------- */
+.information .form-group input {
+    width: 70%;
+    border-radius: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    color: #555;
+}
+
+.information .form-group>* {
+    float: left;
+}
+
+.information .form-tips a {
+    margin: 0 5px;
+    color: #46dcff;
+}
+
+.information .form-tips a:hover{
+    color: #30bedf;
+}
+
+
+.information .form-submit {
+    width: 100%;
+}
+
+.information .form-submit button {
+    margin: 30px auto;
+    width: 60%;
+    height: 40px;
+}
+
+.information .form-submit button:hover {
+    color: #fff;
+    background: rgba(230, 50, 18, 1);
+}
+
+.form-wrong {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.wrong-text {
+    color: red;
+
+}
+   
+.gologin {
+    font-size: 14px;
+    line-height: 30px;
+    color: #292929;
+    float: right;
+}
+
+.gologin a {
+    color: #46dcff;
+}
+
+.gologin a:hover {
+    color: #337ab7;
+}
+
+.errorMessage p {
+    color: red;
+    padding-left: 12%;
+}
+
+/*--------------------------- login结束 ----------------------- */
+
+
+/*--------------------------- Magazine开始 ----------------------- */
+.magazine-ul * {
+    font-family: 'Open Sans';
+}
+
+.magazine-ul li {
+    margin-top: 35px;
+}
+
+.magazine-ul em {
+    font-style: italic;
+}
+
+.magazine-ul h3 {
+    background: url(../images/tag_bg.png) no-repeat -25px 50%;
+    line-height: 28px;
+    height: 28px;
+    margin-left: -32px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.magazine-ul h2 {
+    margin: 5px 0;
+    font-family: 'Open Sans bold';
+}
+
+.magazine-ul p {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+// .magazine-ul .col-md-5 {
+//     padding-right: 
+// }
+
+// .magazine-ul .col-md-5 img {
+//     width: 100%;
+// }
+
+
+.btn-list {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+} 
+
+.btn-list button:first-child {
+    margin-right: 20px;
+}
+
+.page-word p {
+    margin-top: 25px;
+}
+
+
+/*--------------------------- Magazine结束 ----------------------- */
+
+
+
+
 
 
 /*精灵图统一位置*/
@@ -1656,7 +1889,43 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 	    padding: 10px;
 	}
 
+    .login-box {
+        margin-bottom: 10px;
+    }
 
+    .information {
+        width: 100%;
+        padding: 0 15px;
+        margin-top: 10px;
+    }
+
+    .information .form-group>* {
+        float: none;
+    }
+
+    .information .form-submit button {
+        margin: 30px auto;
+        width: 70%;
+    }
+
+    .information .form-group label {
+        width: 100%;
+    }
+
+    .information .form-group input {
+        font-style: 16px;
+        line-height: 16px;
+        width: 100%;
+        outline: none;
+        resize: none;
+        -webkit-appearance: none;
+    }
+    .gologin {
+        float: none;
+        display: block;
+        padding-top: 10px;
+    }
+        
 }
 
 
@@ -1680,6 +1949,26 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .sidebar .tab-pane .pull-right, .article .text-container {
         width: 75%;
     }
+    // .magazine-ul li .col-md-5 {
+    //     text-align: center;
+    // }
+
+    // .magazine-ul .col-md-5 img {
+    //     width: 80%;
+    // }
+
+    .magazine-ul h3 {
+        margin-left: 0;
+    }
+
+    .btn-list {
+        left: 15px;
+    }
+
+    .magazine-ul li {
+        margin-top: 20px;
+    }
+}
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
     .picture .col-sm-2 {
@@ -1689,6 +1978,23 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .img-container img {
         width: 100%;
     }
+
+    .information .form-group label {
+        width: 35%;
+    }
+
+
+    .information .form-group input {
+        width: 65%;
+    }
+
+    // .magazine-ul .col-md-5 {
+    //     text-align: center;
+    // }
+
+    // .magazine-ul .col-md-5 img {
+    //     width: 100%;
+    // }
 }
 @media screen and (max-width: 660px) {
     .nav-tabs.sidects {
@@ -1701,5 +2007,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         width: auto;
     }
 }
+
 
 
