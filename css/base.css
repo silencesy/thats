@@ -119,6 +119,9 @@ input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #e5e5e5;
     border-radius: 4px;
 }
+input {
+    -webkit-appearance: none;
+}
 textarea {
     width: 100%;
     color: #666;
@@ -156,6 +159,10 @@ a {
 div.wrapper {
     background: none;
     padding-top: 0;
+}
+
+.red {
+    color: red;
 }
 
 /*css 初始化 start */
@@ -285,6 +292,11 @@ body {
 
 .thats-header .search {
     height: 48px;
+}
+
+.thats-header #navsearchmodule {
+    display: inline-block;
+    width: 65px;
 }
 
 
@@ -506,8 +518,8 @@ body {
 
 #mobile-search-form .icon-search {
     position: absolute;
-    right: 32px;
-    top: 15px;
+    right: 30px;
+    top: 18px;
     background-color: transparent;
 }
 
