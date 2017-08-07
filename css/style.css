@@ -417,7 +417,6 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 /*----- 弹出层 start ---- */
 #reviewModal {
-	display: block;
     padding-right: 17px;
 }
 .add-laber {
@@ -860,7 +859,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     line-height: 18px;
     text-transform: uppercase;
 }
-
+.btn-email {
+    padding: 10px !important;
+    line-height: normal;
+}
 
 
 /*--------------------------- event-details end ----------------------- */
@@ -1363,11 +1365,6 @@ input[type="text"], input[type="email"], input[type="password"] {
     left: 0;
     right: 0;
 }
-.text-pure {
-    color: #ffffff;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 16px;
-}
 #carousel .flex-direction-nav .flex-prev {
     background-position: 0 -165px;
     left: -15px;
@@ -1393,7 +1390,18 @@ input[type="text"], input[type="email"], input[type="password"] {
     background-repeat: no-repeat;
     text-indent: -9999px;
 }
+#slider .pic-slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#carousel .small-slider{
+    max-width: 194px;
+    max-height:98px;
+}
+
 /*画廊轮播结束*/ 
+
 .row-fluid {
     text-align: center;
     line-height: 58px;
@@ -1402,6 +1410,184 @@ input[type="text"], input[type="email"], input[type="password"] {
     border-width: 1px 0;
 }
 
+
+/*--------------------------- galleries start ----------------------- */
+.gallery-wrap .gallery {
+    background-color: rgba(51, 55, 59, 1);
+    margin: 0 -15px;
+    padding-top: 0;
+}
+.gallery, .gallery-wrap {
+    background: rgba(37, 40, 43, 1);
+}
+.gallery-wrap .word-title {
+    position: relative;
+    margin: 0 15px;
+}
+.gallery-wrap {
+    padding: 0 15px;
+}
+.gallery-wrap .word-title h1 {
+    color: rgba(255, 255, 255, 1);
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.word-title .toolbar-slider {
+    margin-top: -35px;
+    margin-right: 20px;
+}
+.flexslider .slides li {
+    position: relative;
+    text-align: center;
+}
+.ggallery-wrap .word-title > h1, .gallery-wrap .word-title > p {
+    text-overflow: initial;
+    white-space: normal;
+    width: 100%;
+}
+.word-title .toolbar-slider .share-s {
+    margin-top: -9px;
+}
+
+
+.flex-direction-nav a {
+    height: 72px;
+    margin: -36px 0 0;
+    opacity: 1;
+    background-image: url(../images/page_nav.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
+#slider .flex-direction-nav .flex-prev {
+    background-position: 3px -70px;
+    border-radius: 0 3px 3px 0;
+    left: 0;
+}
+#slider .flex-direction-nav a {
+    background-color: rgba(0, 0, 0, .9);
+    height: 100px;
+    width: 50px;
+}
+#carousel .flex-direction-nav .flex-prev {
+    background-position: 0 -165px;
+    left: -15px;
+}
+#carousel .flex-direction-nav a {
+    background-color: rgba(0, 0, 0, .95);
+    height: 40px;
+    border-radius: 50%;
+    top: 60%;
+}
+#carousel .slider-div {
+    max-width: 180px;
+    max-height:112px
+}
+#carousel .slider-pic {
+    width: 100%;
+    overflow: hidden;
+}
+.listbox .more-gal {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.listbox .more-small {
+    margin-right: 15px;
+    margin-top: 17px;
+}
+.gallery-wrap .word-title > p {
+    margin-bottom: 20px;
+}
+
+.gallery-number{
+    color: #f9421e
+}
+
+.gallery-wrap .gallery #slider.flexslider {
+    margin: 0 -14px 20px;
+    position: relative;
+}
+.flexslider {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 5px;
+}
+#slider li .icon-save, #slider li .icon-fullscreen, .gallery-page {
+    position: absolute;
+    top: 540px;
+}
+.gallery-page {
+    left: 20px;
+    top: 540px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .75);
+    z-index: 3;
+}
+
+.gallery-wrap .listbox {
+    margin: 0 5px;
+}
+.gallery-list.row {
+    margin: 0;
+}
+.side-banner, .banner-s {
+    position: relative;
+}
+.container-fluid .banner-s:last-child {
+    margin-bottom: 20px;
+}
+.gallery-wrap .word-title > h1, .gallery-wrap .word-title > p, .carousel-caption h1, .side-banner .pic-intro .pull-left, .banner-s .pic-intro .pull-left, .news-pic.thumb-big h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.side-banner .pic-intro .pull-left, .banner-s .pic-intro .pull-left {
+    width: 180px;
+    height: 30px;
+    text-align: left;
+}
+.container-fluid .banner-s {
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    height: 140px;
+}
+.container-fluid .banner-s img {
+    width: 100%;
+    height: auto;
+}
+#slider .flex-direction-nav .flex-next {
+    background-position: -32px -70px;
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------- galleries end ----------------------- */
 
 /*--------------------------- 目录页开始 ----------------------- */
 
@@ -2075,6 +2261,22 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         float: none;
         display: block;
         padding-top: 10px;
+    }
+    .flexslider .slides img {
+        border: none;
+        max-width: 100%;
+        max-height: 256px;
+        width: auto;
+        display: inline-block;
+    }
+    .gallery-page {
+        top: 10px;
+    }
+    .gallery-wrap .word-title > p:nth-of-type(2) {
+        margin-bottom: 57px;
+    }
+    .word-title .toolbar-slider {
+        margin-right: 0;
     }
         
 }

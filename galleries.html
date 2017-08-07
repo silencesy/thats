@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>galleries</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/popup.css" >
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!-- 头部部分开始 -->
+			<header class="hidden-xs thats-header">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="thats-logo">
+							<a href="#">
+								<img src="images/logo.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 ">
+				  		<div class="dropdown dropdown-cityname pull-left">
+							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
+							<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a href="#">SHANGHAI</a></li>
+								<li><a href="#">BEIJING</a></li>
+								<li><a href="#">SHENZHENG</a></li>
+								<li><a href="#">GUANGZHOU</a></li>
+								<li><a href="#">CHINA</a></li>
+							</ul>
+				  		</div>
+				  		<div class="search pull-left">
+							<form id="search-form" class="clearfix" action="#">
+								<div class="search-group">
+									<div class="dropdown pull-left">
+										<button id="dLabe2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<span id="navsearchmodule">LISTINGS</span>
+											<span class="caret"></span>
+										</button>
+										<input type="hidden" name="type" value="Listings"/>
+										<ul id="search-module-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+											<li><a href="#">LISTINGS</a></li>
+											<li><a href="#">ARTICLES</a></li>
+											<li><a href="#">EVENTS</a></li>
+										</ul>
+									</div>
+									<input name="keywords" type="search" value="" placeholder="Search" class="pull-left">
+									<button type="submit" class="icon-search pull-right"><span class="glyphicon glyphicon-search"></span></button>
+								</div>
+							</form>
+				  		</div>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<img class="pull-right" src="images/dowload.png" alt="">
+						</a>
+					</div>
+					<ul class="user-info">
+						<li>
+							<a href="#">LOG IN</a>|
+						</li>
+						<li>
+							<a href="#">SIGN UP</a>
+						</li>
+					</ul>
+				</div>
+				<nav id="thats-navbar" class="thats-navbar clearfix">
+					<ul class="nav navbar-nav">
+						<li><a href="#">news</a></li>
+						<li><a href="#">Bars & Restaurants</a></li>
+						<li><a href="#">entertainment</a></li>
+						<li><a href="#">lifestyle</a></li>
+						<li><a href="#">features</a></li>
+						<li><a href="#">Directory</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">VIDEO</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- 头部部分结束 -->	
+			<div class="title title-bar">
+				<ul class="breadcrumb mt-15 mb-0">
+				    <li>
+				        <a href=""><i class="thaticon icon-home"></i>home</a>
+				    </li>
+				    <li>
+				        <a href="">Galleries</a>
+				    </li>
+				</ul>
+			</div>
+			<!-- Galleries内容开始 -->
+			<div class="container-fluid gallery-wrap mb-15 ggallery-wrap">
+				<header class="word-title">
+				    <h1>2017 That's National Hospitality Awards</h1>
+				    <p class="text-muted">The first ever That's National Hospitality Awards took place on July 14 at the brand new W Shanghai – The Bund.</p>
+				    <p class="text-fresh">
+				        Photo date: <span>July 14, 2017</span>    
+				    </p>
+					<div class="toolbar clearfix padding-control toolbar-slider">
+				        <ul class="share share-s pull-right"  data-id="" data-type="2">
+				            <li><a class="jiathis_button_twitter one"></a></li>
+				            <li><a class="jiathis_button_fb two"></a></li>
+				            <li><a class="jiathis_button_tsina three"></a></li>
+				            <li><a class="jiathis_button_weixin four"></a></li>
+				            <li><a class="jiathis_button_email five"></a></li>
+				        </ul>
+				    </div>
+				</header>
+
+				<div class="gallery">
+				    <!-- 画廊轮播大图 -->
+				    <div id="slider" class="flexslider">
+				        <ul class="slides">
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/1-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/2-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/3-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/4-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/5-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				            <li>
+				                <a class="image-ajax-popup mfp-zoom" href="">
+				                    <img src="Picture/6-virtual-riot-arkham-shanghai.jpg" />
+				                </a>
+				            </li>
+				        </ul>
+				        <div class="gallery-page">
+				            <span class="gallery-number">1</span> / <span>6</span>
+				        </div>
+				    </div>
+				    <!-- 画廊轮播缩略图 -->
+				    <div id="carousel" class="flexslider">
+				        <ul class="slides">
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/1-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/2-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/3-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/4-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/5-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				            <li>
+								<div class="slider-div">
+				                    <img class="slider-pic" src="Picture/6-virtual-riot-arkham-shanghai.jpg" />
+				                </div>
+				            </li>
+				        </ul>
+				    </div>
+				</div>
+
+				<div class="listbox">
+					<div class="mt-5 clearfix">
+				        <h2 class="pull-left text-fresh more-gal">More Galleries </h2>
+				        <a href=""> 
+				            <small class="pull-right text-fresh more-small">All Galleries >></small>
+				        </a>
+				    </div>
+				    <ul class="gallery-list row">
+				        <li class="col-md-3">
+				            <div class="banner-s">
+				                <a href="">
+				                    <img src="Picture/1-virtual-riot-arkham-shanghai.jpg">
+				                </a>
+				                <div class="pic-intro">
+				                    <a href="">
+				                        <div class="pull-left">
+				                            <span class="text-pure">Shanghai Craft Beer Festival</span>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="col-md-3">
+				            <div class="banner-s">
+				                <a href="">
+				                    <img src="Picture/10canada-day-shanghai.jpg">
+				                </a>
+				                <div class="pic-intro">
+				                    <a href="">
+				                        <div class="pull-left">
+				                            <span class="text-pure">Virtual Riot at Arkham</span>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="col-md-3">
+				            <div class="banner-s">
+				                <a href="">
+				                    <img src="Picture/30lovebangfilmphotos.jpg">
+				                </a>
+				                <div class="pic-intro">
+				                    <a href="">
+				                        <div class="pull-left">
+				                            <span class="text-pure">Fête Du Canada Day at Rockbund</span>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				        </li>
+				                <li class="col-md-3">
+				            <div class="banner-s">
+				                <a href="">
+				                    <img src="Picture/21-liquid-laundry.jpg">
+				                </a>
+				                <div class="pic-intro">
+				                    <a href="">
+				                        <div class="pull-left">
+				                            <span class="text-pure">Liquid Laundry's Star Spangled Summer Fest</span>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				        </li>
+				        <li class="col-md-3">
+				            <div class="banner-s">
+				                <a href="">
+				                    <img src="Picture/2-virtual-riot-arkham-shanghai.jpg">
+				                </a>
+				                <div class="pic-intro">
+				                    <a href="">
+				                        <div class="pull-left">
+				                            <span class="text-pure">That's Shanghai 2017 Lifestyle Awards</span>
+				                        </div>
+				                    </a>
+				                </div>
+				            </div>
+				        </li>
+				    </ul>
+				</div>
+			</div>
+			<!-- Galleries内容结束 -->
+
+		    <!-- start footer -->
+			<h2 class="text-dark">In Case You Missed It…</h2>
+			<div class="row picture">
+				<div class="col-sm-2">
+					<div class="img-container article-pic-con">
+						<a href="">
+							<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
+						</a>
+					</div>
+					<p>
+						<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
+						</a>
+					</div>
+					<p>
+						<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
+						</a>
+					</div>
+					<p>
+						<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
+						</a>
+					</div>
+					<p>
+						<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
+					</p>
+				</div>
+				<div class="col-sm-2">
+					<div class="img-container">
+						<a href="">
+							<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
+						</a>
+					</div>
+					<p>
+						<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
+					</p>
+				</div>
+			</div><!-- picture ed -->
+			<div class="container-fluid page-bottom">
+				<div class="row">
+					<div class="col-md-4">
+						<h3>We're on WeChat!</h3>
+						<div class="pull-left">
+							<p>Scan our QR Code at right or follow us at Thats_Shanghai for events, guides, giveaways and much more! </p>
+						</div>
+						<div class="pull-right ewm">
+							<img src="Picture/thats-shanghai-wechat.jpg">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>7 Days in Shanghai With thatsmags.com</h3>
+						<div class="pull-left">
+							<p>Weekly updates to your email inbox every Wednesday</p>
+							<p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/thats-newsletter.png">
+						</div>
+					</div>
+					<div class="col-md-4">
+						<h3>Download previous issues</h3>
+						<div class="pull-left">
+							<p>Never miss an issue of That's Shanghai!</p>
+							<p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
+						</div>
+						<div class="pull-right">
+							<img style="" src="Picture/mags_thumb_1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div><!-- container-fluid ed -->
+		</div><!-- container ed -->
+	</div><!-- wrapper ed -->
+	<!-- 底部部分开始 -->
+	<footer id="footer" class="thats-footer">
+		<div class="container" class="clearfix">
+			<ul class="pull-left">
+				<li class="footer-logo">
+					<a href="#" class="logo">
+						<img src="Picture/logo.png" alt="">
+					</a>
+				</li>
+				<li class="footer-text">
+					<p>
+						<a href="http://online.thatsmags.com/mediakit">About Us</a>
+						<span>|</span>
+						<a href="/contact">Contact Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/mediakit/">Advertise With Us</a>
+						<span>|</span>
+						<a href="http://online.thatsmags.com/jobs">Work for Us</a>
+						<span>|</span>
+						<a href="http://page.thatsmags.com/app" target="_blank">App</a>
+					</p>
+	                <p>&copy; 2017 SH Aoyang Advertising Co., Ltd.&nbsp;<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12038926号-2</a></p>
+				</li>
+			</ul>
+
+			<ul class="pull-right">
+				<a href="https://twitter.com/ThatsShanghai" title="Twitter">
+					<li>&nbsp;</li>
+				</a>
+
+				<a href="https://www.facebook.com/ThatsShanghai" title="Facebook">
+					<li></li>
+				</a>
+				<a href="http://weibo.com/p/1002061749863802" title="Weibo">
+					<li></li>
+				</a>
+				<a href="https://instagram.com/thatsshanghai" title="Instagram">
+					<li><img src="Picture/instagram.png"></li>
+				</a>
+			</ul>
+
+		</div>
+	</footer>
+	<!-- 底部部分结束 -->
+
+	<!-- Subscribe弹出层 start -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content"><!--  id="globalSubscribeForm" -->
+				<form action="http://newsletter.thatsmags.com/x/plugin/?pName=subscribe&amp;MIDRID=S7Y1BgAA64&amp;pLang=en&amp;Z=1087741649" method="post" target="_blank">
+					<input type="hidden" name="DMDtask" value="subscribe" />
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Add your email</h4>
+					</div>
+					<div class="modal-body">
+						<input type="email" placeholder="Email Address" name="email" class="btn-all btn-email" />
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-fresh btn-all">
+							<span class="text-bold text-italic">Add</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Subscribe弹出层 end -->
+
+	<!-- 移动端nav开始 -->
+	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
+        <div class="container-fluid mobile-nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
+                    <span class="glyphicon glyphicon-search icon-ufsearch"></span>
+                </button>
+                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
+                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
+                    <span class="cityname">BEIJING</span>
+                    <span class="caret"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">home</a></li>
+                    <li><a href="#">news</a></li>
+					<li><a href="#">Bars & Restaurants</a></li>
+					<li><a href="#">entertainment</a></li>
+					<li><a href="#">lifestyle</a></li>
+					<li><a href="#">features</a></li>
+					<li><a href="#">Directory</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">VIDEO</a></li>
+					<hr>
+					<li></li>
+					<li><a href="#">log in</a></li>
+					<li><a href="#">sign up</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="citylist">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Shanghai</a></li>
+                    <li><a href="#">Beijing</a></li>
+                    <li><a href="#">Shenzhen</a></li>
+                    <li><a href="#">Guangzhou</a></li>
+                    <li><a href="#">China</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse" id="mobile-navbar-search">
+                <div class="search-group-mobile">
+                    <form id="mobile-search-form" method="post" action="#">
+                        <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
+                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- 移动端nav结束 -->
+    <!-- ad-app部分开始 -->
+    <div class="ad-thatsapp visible-xs">
+    	<div class="ad-thatsapp-logo">
+    		<a href="http://www.thatsmags.com/app">
+    			<img src="images/thatsapp-logo.png" alt="">
+    		</a>
+    	</div>
+    	<div class="ad-thatsapp-text">
+    		<p>Get the App. Your essential China city companion.</p>
+    	</div>
+    	<div class="ad-thatsapp-open">
+    		<button class="btn ad-thatsapp-download">open</button>
+    		<a class="ad-thatsapp-close">
+    			<img src="images/thatsapp-close.png" alt="">
+    		</a>
+    	</div>
+    	<div></div>
+    </div>
+    <!-- ad-app部分结束 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/popup.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript">
+	    $(function(){
+	        $('#promotions').flexslider({
+	            animation: "slide",
+	            animationLoop: false,
+	            itemWidth: 300,
+	            itemMargin: 20,
+	            pausePlay: false,
+	        });
+
+	        $('#carousel').flexslider({
+	            animation: "slide",
+	            controlNav: false,
+	            animationLoop: false,
+	            slideshow: true,
+	            itemWidth: 185,
+	            itemMargin: 22,
+	            asNavFor: '#slider'
+	        });
+
+	        $('#slider').flexslider({
+	            animation: "slide",
+	            controlNav: false,
+	            //directionNav: false,
+	            animationLoop: false,
+	            slideshow: true,
+	            sync: "#carousel",
+	            after: function(slider) {
+	                $("div.gallery-page span:first").text(slider.currentSlide+1);
+	            }
+	        });
+	    });
+	</script>
+</body>
+</html>
