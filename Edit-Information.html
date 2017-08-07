@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>video</title>
+	<title>Individual personal page</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -29,6 +29,7 @@
 							</a>
 						</div>
 					</div>
+			
 					<div class="col-md-6 ">
 				  		<div class="dropdown dropdown-cityname pull-left">
 							<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHANGHAI
@@ -70,10 +71,13 @@
 					</div>
 					<ul class="user-info">
 						<li>
-							<a href="#">LOG IN</a>|
+							WELCOME<a class="text-uppercase username-href" href="#">sybilzhang</a>|
 						</li>
 						<li>
-							<a href="#">SIGN UP</a>
+							<a class="text-uppercase" href="#">my profile</a>|
+						</li>
+						<li>
+							<a class="text-uppercase" href="#">logout</a>
 						</li>
 					</ul>
 				</div>
@@ -92,250 +96,117 @@
 			</header>
 			<!-- 头部部分结束 -->
 			<section class="thats-content">
-					<!-- 轮播图开始 -->
-                   	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner" role="listbox">
-							<div class="item active">
-								<a href="#">
-									<img src="images/banner.jpg">
-									<span class="big-play-icon"></span>
-								</a>
-								<div class="carousel-caption">
-									<a href="#">
-										<h1>Two's a Pair: mmetry Breakfast Insta Blog Moves to Shanghai</h1>
-									</a>
-									<a href="#">
-										<p>An Instagram love story moves to Shanghai: SymmetryBreakfast's Michael Zee chats wsdfsdfsdfsfsdfsith us about his moasasdrning rituals with the love of his life.</p>
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a> -->
-						
+					<!-- banner广告开始 -->
+					<div class="thats-nav-ad">
+						<a href="#"><img src="images/nav-ad.jpg" alt=""></a>
 					</div>
-				
-
-        			<!-- 轮播图结束 -->	
-
 
         			<!-- 主体部分开始 -->
 					<div class="flex-slider">
-						<div class="slider-row">
-							<ul class="sliders clearfix">
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
+						<ol class="breadcrumb">
+			                <li>
+			                    <a href="#"><i class="thaticon icon-home"></i>Home</a>
+			                </li>
+			                <li>
+			                    <a href="#">Usercenter</a>
+			                </li>
+			            </ol>
+						<div class="row">
+							<div class="col-sm-3">
+								<div class="sidebar bar-left">
+									<ul class="user-group text-center">
+										<li>
+											<a href="#">
+												<img src="images/user-avatar.png" alt="">
+											</a>
+										</li>
+										<li>
+											<span class="user-info-name">sybilzhang</span>
+										</li>
+										<li>
+											<p class="text-dark">Member Since 11/10/2015</p>
+											<p class="text-dark">Lives in Shanghai</p>
+											<p> <a class="text-fresh" href="#">Edit My Information ›</a></p>
+										</li>
+									</ul>
+									<ul class="nav nav-sidebar">
+										<li class="active">
+											<a href="#">Home</a>
+										</li>
+										<li>
+											<a href="#">Reviews <span>1</span></a>
+										</li>
+										<li>
+											<a href="#">Venues <span>72</span></a>
+										</li>
+										<li>
+											<a href="#">Events <span>4</span></a>
+										</li>
+										<li>
+											<a href="#">Comments <span>1</span></a>
+										</li>
+										<li>
+											<a href="#">My Ticket Orders <span>1</span></a>
+										</li>
+									</ul>
+									<div class="login-info">
+										<p>
+											Member Since: <span>11/10/2015</span>
+										</p>
+										<p>
+											Last Login: <span>08/04/2017</span>
+										</p>
+										<p>
+											Last IP Address: <span>210.22.167.42</span>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-8 main usercenter">
+								<div class="user-content uc-home">
+									<h1>Edit My Information</h1>
+									<form action="#" method="post" accept-charset="utf-8" id="UserInfo">
+										<div class="form-group clearfix">
+											<label class="col-sm-2" for="User-name">Name</label>
+											<input class="col-sm-8" type="text" id="User-name" placeholder="Enter name">
 										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
+										<div class="form-group clearfix">
+											<label class="col-sm-2" for="User-email">Email</label>
+											<input class="col-sm-8" type="text" id="User-email" placeholder="Enter email">
 										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
+										<div class="form-group clearfix">
+											<label class="col-sm-2" for="User-phone">Phone</label>
+											<input class="col-sm-8" type="text" id="User-phone" placeholder="Enter phone">
 										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
+										<div class="form-group clearfix">
+											<label class="col-sm-2" for="User-file">Photo</label>
+											<input class="col-sm-8" type="file" id="User-file">
 										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
+										<div class="form-group clearfix">
+											<label class="col-sm-2">Gender</label>
+											<input type="radio" name="optionsRadios" id="sex1" value="option1" checked><label for="sex1">Male</label>
+											<input type="radio" name="optionsRadios" id="sex2" value="option1" checked><label for="sex2">Female</label>	
 										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
+										<div class="form-group clearfix">
+											<label class="col-sm-2" for="User-country">Country</label>
+											<select class="col-sm-8" name="name="country"" id="User-country">
+												<option value="1">Select country</option>
+												<option value="2">Select country</option>
+												<option value="3">Select country</option>
+											</select>
 										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
+										<div>
+											<button type="submit" class="btn btn-red btn-l">
+												<span class="text-bold text-italic">Confirm and save</span>
+											</button>
 										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-								<li class="col-md-4 col-xs-12">
-									<a href="#">
-										<div class="slider-img">
-											<img src="images/slider.jpg" alt="">
-											<span class="play-icon"></span>
-										</div>
-										<div class="slider-text">
-											<h3>#TBT: Meet Shanghai's Oldest Couple</h3>
-											<p>We speak with a centenarian pair born in imperial China.</p>
-										</div>
-									</a>
-								</li>
-							</ul>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="slider-more-btn">
-							<a class="" href="#">More Articles</a>
-						</div>
-						<h2 class="text-dark">In Case You Missed It…</h2>
-						<div class="row picture">
-							<div class="col-sm-2">
-								<div class="img-container article-pic-con">
-									<a href="">
-										<img src="Picture/startup-loses-umbrellas.jpg" alt="Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas">
-									</a>
-								</div>
-								<p>
-									<a href="">Chinese Umbrella-Share Startup Lost Almost 300,000 Umbrellas</a>
-								</p>
-							</div>
-							<div class="col-sm-2">
-								<div class="img-container">
-									<a href="">
-										<img src="Picture/drumroll-ron-josol.jpg" alt="Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest">
-									</a>
-								</div>
-								<p>
-									<a href="">Comedian Ron Josol on Adrenaline Rushes and Which Countries are the Meanest</a>
-								</p>
-							</div>
-							<div class="col-sm-2">
-								<div class="img-container">
-									<a href="">
-										<img src="Picture/win-tiki-party-update1.jpg" alt="There's a Tiki-Themed Rooftop Party in Jing'an This Sunday">
-									</a>
-								</div>
-								<p>
-									<a href="">There's a Tiki-Themed Rooftop Party in Jing'an This Sunday</a>
-								</p>
-							</div>
-							<div class="col-sm-2">
-								<div class="img-container">
-									<a href="">
-										<img src="Picture/yongkang-lu-shutdown1.jpg" alt="This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down">
-									</a>
-								</div>
-								<p>
-									<a href="">This Day in History: Shanghai's Yongkang Lu Bar Street Shut Down</a>
-								</p>
-							</div>
-							<div class="col-sm-2">
-								<div class="img-container">
-									<a href="">
-										<img src="Picture/arianagrande.jpg" alt="Confirmed: Ariana Grande Coming to Shanghai">
-									</a>
-								</div>
-								<p>
-									<a href="">Confirmed: Ariana Grande Coming to Shanghai</a>
-								</p>
-							</div>
-						</div><!-- picture ed -->
-						<div class="bottom-banner">
-							<a href="#">
-								<img src="images/video-bottom-ad.jpg" alt="">
-							</a>
-						</div>
+
+
+							
 						<div class="container-fluid page-bottom">
 							<div class="row">
 								<div class="col-md-4">

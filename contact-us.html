@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>sign up</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
@@ -101,33 +101,47 @@
                     </li>
                 </ol>
             </section>
-             <div class="box-outline information">
+             <div class="box-outline information contact-us">
                 <form action="#" id="userinfo">
-                    <h2>Create your account <span class="gologin">Have an account already? <a href="#">Log in! </a></span></h2>
+                    <h2>Contact Us</h2>
+                    <p>Please use the form below to contact thatsmags.com.</p>
+                    <p>All fields are mandatory.</p>
+                    <p>Your message will not be delivered to us if you don't provide a valid E-Mail adddress.</p>
                     <div class="form-group clearfix">
-                        <label for="username"><span class="red">* </span>Username(one word)</label>
-                        <input class="form-control" type="text" id="username" name="username" required>
+                        <label for="username">Your Name</label>
+                        <input class="form-control" type="text" id="username" name="name" required>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="email"><span class="red">* </span>E-mail</label>
-                        <input class="form-control" type="text" id="email" name="email" required data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
+                        <label for="city">Your City</label>
+                        <input class="form-control" type="text" id="city" name="city" required>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="phone"><span class="red">* </span>phone</label>
-                        <input class="form-control" type="text" id="phone" name="phone" required>
+                        <label for="email">Your E-Mail</label>
+                        <input class="form-control" type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="Password"><span class="red">* </span>Password</label>
-                        <input class="form-control" type="password" id="Password" name="Password" required>
+                        <label for="Subject">Subject</label>
+                        <input class="form-control" type="text" id="Subject" name="Subject" required>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="Retype"><span class="red">* </span>Retype Password</label>
-                        <input class="form-control" type="password" id="Retype" name="Retype" required>
+                        <label for="category">Department</label>
+                        <select class="form-control depar-select" name="iDepartment" id="category">
+                            <option value="1"></option>
+                            <option value="2">Sales & Marketing</option>
+                            <option value="3">Editorial</option>
+                            <option value="4">Directory</option>
+                            <option value="5">Events</option>
+                            <option value="6">Technical Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="Mess">Message</label>
+                        <textarea class="form-control con-message" maxlength="456" id="Mess" name="message"></textarea>
                     </div>
                     <span class="errorMessage"></span>
                     <div class="form-submit">
                         <button class="btn btn-l btn-red btn-block" type="submit">
-                            <span class="text-bold text-italic">Login</span>
+                            <span class="text-bold text-italic">SEND</span>
                         </button>
                     </div>
                 </form>
@@ -292,42 +306,6 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        $().ready(function() {
-            
-            var validator = $("#userinfo").validate({
-                errorPlacement: function(error, element) {
-                    $(element)
-                        .closest( ".information" )
-                            .find( ".errorMessage" )
-                                .append( error );
-                },
-                errorElement: "p",
-                messages: { 
-                    username: {
-                        required: "The username is required",
-                    },
-                    email: {
-                        required: "The email is required",
-                    },
-                    phone: {
-                        required: "The phone is required",
-                    },
-                    Password: {
-                        required: "The Password is required",
-                    },
-                    Retype: {
-                        required: "The Retype Password is required",
-                    }
-                }
 
-
-            });
-
-            $(".cancel").click(function() {
-                validator.resetForm();
-            });
-        });
-    </script>
 </body>
 </html>

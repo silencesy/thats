@@ -1584,7 +1584,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 /*--------------------------- events结束 ----------------------- */
 
 
-/*--------------------------- login结束 ----------------------- */
+/*--------------------------- login开始 ----------------------- */
 .information {
     padding: 40px;
     width: 80%;
@@ -1676,6 +1676,25 @@ input[type="text"], input[type="email"], input[type="password"] {
     padding-left: 12%;
 }
 
+.contact-us p:nth-child(3),.contact-us p:nth-child(4) {
+    color: #b7b7b7;
+    line-height: 20px;
+}
+
+.contact-us p:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 70%;
+    float: left;
+    outline: none;
+    box-shadow: none;
+}
+
+textarea.form-control {
+    height: 110px;
+}
 /*--------------------------- login结束 ----------------------- */
 
 
@@ -1737,6 +1756,203 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 /*--------------------------- Magazine结束 ----------------------- */
 
+
+/*--------------------------- app页开始 ----------------------- */
+
+.app-container{
+    padding-left:15px;
+    padding-right:15px;
+    color:#fff;
+    text-align:center;
+}
+
+.app-download{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#e83e27,#f0523c,#e83e27); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#e83e27,#f0523c,#e83e27); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#e83e27,#f0523c,#e83e27); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#e83e27,#f0523c,#e83e27); /* Standard syntax */
+    padding:13px 32px;
+    margin-bottom:10px;
+}
+
+.app-container h1{
+    color:#fff;
+    font-family: 'Open Sans Condensed';
+}
+
+.app-container h3{
+    color:#fff;
+    font-family: 'Open Sans Condensed';
+    text-transform:uppercase;
+}
+
+.app-container h3{
+    color:#fff;
+    font-family: 'Open Sans';
+}
+
+.text-intro{
+    margin-top:50px;
+}
+
+.col-md-offset-2 h2 {
+    color: #fff;
+    font-family: Open Sans Condensed;
+    position: relative;
+}
+
+.logos {
+    width: 120%;
+    position: relative;
+    left: -10%;
+}
+
+.logos > a {
+    margin-right: 5px;
+}
+
+.logos > a > img {
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.app-ewm {
+    margin-top: 10px;
+}
+
+.app-ewm img {
+    max-width: 106px;
+    margin-right: 10px;
+}
+
+.app-ewm img:nth-child(2) {
+    margin-right: 0;
+}
+
+.down-btn-list {
+    margin-top: 10px;
+}
+
+.down-btn-list .down-btn {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.appphone-ad {
+    margin-top: 60px;
+}
+
+.col-md-offset-2 h2:before {
+    content: "";
+    border: 0px solid #fff;
+    border-width: 4px;
+    border-color: #fff transparent transparent transparent;
+    -webkit-transform: rotate(0deg);
+    position: relative;
+    top: 32px;
+    left: 49px;
+}
+
+    
+
+
+/*--------------------------- app页结束 ----------------------- */
+
+
+/*--------------------------- 用户页面开始 ----------------------- */
+
+.thats-header .user-info  li .username-href {
+    color: #f9421e;
+}
+
+.thats-header .user-info  li .username-href:hover {
+    color: #f9421e;
+}
+
+.user-info-name {
+    font-family: 'Open Sans bold';
+    font-size: 24px;
+}
+
+.nav-sidebar > .active > a, .nav-sidebar > .active > a:hover, .nav-sidebar > .active > a:focus {
+    color: #292929;
+    background: #00ecff;
+    border: none;
+}
+
+.user-group.text-center li:nth-child(2) {
+    margin: 10px 0;
+}
+
+.nav-sidebar > li > a {
+    padding: 20px 40px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: bold;
+    color: #666666;
+}
+
+.bar-left .login-info {
+    margin-top: 20px;
+    padding: 0 20px 10px;
+    line-height: 130%;
+}
+
+.main .user-content {
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+
+.user-content li {
+    padding: 25px 0;
+    max-width: 694px;
+    overflow: hidden;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.user-content li > div {
+    padding: 0;
+}
+
+.user-content h2 {
+    margin-top: 0;
+}
+
+.user-content li p {
+    line-height: 240%;
+    margin-left: 10px;
+}
+
+.user-content li .btn-info {
+    width: 98px;
+    float: right;
+}
+
+#UserInfo > div {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+#UserInfo .col-sm-2 {
+    line-height: 40px;
+}
+
+#UserInfo input {
+    height: 40px;
+}
+
+#UserInfo select {
+    height: 40px;
+}
+
+/*--------------------------- 用户页面结束 ----------------------- */
 
 
 
@@ -2076,7 +2292,26 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         display: block;
         padding-top: 10px;
     }
-        
+
+    .depar-select {
+        width: 100%;
+    }
+    
+    .con-message {
+        width: 100%;
+    }
+
+    div.appwrapper {
+        padding-top: 0;
+    }
+
+    div.appwrapper > .container {
+        padding-top: 0;
+    }
+
+    .app-container { 
+        padding-left:0;padding-right:0;
+    }
 }
 
 
@@ -2119,6 +2354,10 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .magazine-ul li {
         margin-top: 20px;
     }
+
+    .appphone-ad {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -2146,6 +2385,14 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     // .magazine-ul .col-md-5 img {
     //     width: 100%;
     // }
+    .depar-select {
+        width: 65%;
+    }
+
+    .con-message {
+        width: 65%;
+    }
+
 }
 @media screen and (max-width: 660px) {
     .nav-tabs.sidects {

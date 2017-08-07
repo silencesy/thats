@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>sign up</title>
+    <title>app</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,7 +17,7 @@
     <![endif]-->
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper appwrapper">
         <div class="container">
             <!-- 头部部分开始 -->
             <header class="hidden-xs thats-header">
@@ -91,47 +91,74 @@
                 </nav>
             </header>
             <!-- 头部部分结束 -->
-            <section class="word-container login-box">
-                <ol class="breadcrumb">
-                    <li>
-                        <a href=""><i class="thaticon icon-home"></i>Home</a>
-                    </li>
-                    <li>
-                        <a href="">Login</a>
-                    </li>
-                </ol>
+            <section>
+                <div class="row">
+                    <div class="app-container">
+                        <div class="col-sm-12 app-download">
+                            <div class="row">
+                                <div class="col-md-7 text-intro">
+                                    <h1>Available Now!</h1>
+                                    <img src="images/thats-app-logo.png">
+                                    <h3>Your Essential China City Companion</h3>
+
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <p>
+                                                Comprehensive Listings, Latest Events, Today’s News, Exclusive Deals and Much More!
+                                            </p>
+                                            <h2>Get it on</h2>
+                                            <div class="logos">
+                                                <a href="https://itunes.apple.com/cn/app/thats/id1107937261?l=en&mt=8" target="_blank">
+                                                    <img src="images/applesotore.png">
+                                                </a>
+                                                <a href="http://shouji.baidu.com/software/10379004.html" target="_blank">
+                                                    <img src="images/baidu.png">
+                                                </a>
+                                                <a href="http://apk.hiapk.com/appinfo/com.thats/102" target="_blank">
+                                                    <img src="images/android-market.png">
+                                                </a>
+                                                <a href="http://app.mi.com/details?id=com.thats" target="_blank">
+                                                    <img src="images/ml.png">
+                                                </a>
+                                                <a href="https://play.google.com/store/apps/details?id=com.thats" target="_blank">
+                                                    <img src="images/googlea.png">
+                                                </a>
+                                                <a href="http://apk.91.com/Soft/Android/com.thats-103.html" target="_blank">
+                                                    <img src="images/91.png">
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="app-ewm">
+                                                        <img src="images/ios.png">
+                                                        <img src="images/android_qr.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="down-btn-list">
+                                                        <a class="down-btn" href="https://itunes.apple.com/cn/app/thats/id1107937261?l=en&mt=8" target="_blank"><i class="fa fa-apple"></i> iPhone</a>
+                                                        <a class="down-btn" href="http://shouji.baidu.com/software/10053467.html" target="_blank"><i class="fa fa-android"></i> Android</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-5">
+                                    <img class="appphone-ad" src="images/app-ad.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-             <div class="box-outline information">
-                <form action="#" id="userinfo">
-                    <h2>Create your account <span class="gologin">Have an account already? <a href="#">Log in! </a></span></h2>
-                    <div class="form-group clearfix">
-                        <label for="username"><span class="red">* </span>Username(one word)</label>
-                        <input class="form-control" type="text" id="username" name="username" required>
-                    </div>
-                    <div class="form-group clearfix">
-                        <label for="email"><span class="red">* </span>E-mail</label>
-                        <input class="form-control" type="text" id="email" name="email" required data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address">
-                    </div>
-                    <div class="form-group clearfix">
-                        <label for="phone"><span class="red">* </span>phone</label>
-                        <input class="form-control" type="text" id="phone" name="phone" required>
-                    </div>
-                    <div class="form-group clearfix">
-                        <label for="Password"><span class="red">* </span>Password</label>
-                        <input class="form-control" type="password" id="Password" name="Password" required>
-                    </div>
-                    <div class="form-group clearfix">
-                        <label for="Retype"><span class="red">* </span>Retype Password</label>
-                        <input class="form-control" type="password" id="Retype" name="Retype" required>
-                    </div>
-                    <span class="errorMessage"></span>
-                    <div class="form-submit">
-                        <button class="btn btn-l btn-red btn-block" type="submit">
-                            <span class="text-bold text-italic">Login</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
             <div class="container-fluid page-bottom">
                 <div class="row">
                     <div class="col-md-4">
@@ -150,7 +177,7 @@
                             <p><a class="btn btn-default" href="javascript:;" id="subscribe" data-toggle="modal" data-target="#myModal" role="button">Subscribe</a></p>
                         </div>
                         <div class="pull-right">
-                            <img style="" src="Picture/thats-newsletter.png">
+                            <img src="Picture/thats-newsletter.png">
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -160,7 +187,7 @@
                             <p><a class="btn btn-default" href="/magazine" role="button">Visit the archives</a></p>
                         </div>
                         <div class="pull-right">
-                            <img style="" src="Picture/mags_thumb_1.jpg" alt="">
+                            <img src="Picture/mags_thumb_1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -212,62 +239,6 @@
 	</footer>
 	<!-- 底部部分结束 -->
 
-	<!-- 移动端nav开始 -->
-	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
-        <div class="container-fluid mobile-nav-container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle unified-center" data-toggle="collapse" data-target="#mobile-navbar-collapse">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <button type="button" class="navbar-toggle search-mobile unified-center" data-toggle="collapse" data-target="#mobile-navbar-search">
-                    <span class="glyphicon glyphicon-search icon-ufsearch"></span>
-                </button>
-                <a class="pull-left" href="#"><img class="mobile-logo" src="images/logo.png" alt=""></a>
-                <button type="button" class="navbar-toggle citylist pull-left" data-toggle="collapse" data-target="#citylist">
-                    <span class="cityname">BEIJING</span>
-                    <span class="caret"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="mobile-navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="#">news</a></li>
-					<li><a href="#">Bars & Restaurants</a></li>
-					<li><a href="#">entertainment</a></li>
-					<li><a href="#">lifestyle</a></li>
-					<li><a href="#">features</a></li>
-					<li><a href="#">Directory</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">VIDEO</a></li>
-					<hr>
-					<li></li>
-					<li><a href="#">log in</a></li>
-					<li><a href="#">sign up</a></li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="citylist">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Shanghai</a></li>
-                    <li><a href="#">Beijing</a></li>
-                    <li><a href="#">Shenzhen</a></li>
-                    <li><a href="#">Guangzhou</a></li>
-                    <li><a href="#">China</a></li>
-                </ul>
-            </div>
-            <div class="navbar-collapse collapse" id="mobile-navbar-search">
-                <div class="search-group-mobile">
-                    <form id="mobile-search-form" method="post" action="#">
-                        <input name="keywords" type="search" value="" placeholder="Search school" class="pull-left">
-                        <button type="submit" class="icon-search"><span class="glyphicon glyphicon-search"></span></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- 移动端nav结束 -->
     <!-- ad-app部分开始 -->
     <div class="ad-thatsapp visible-xs">
     	<div class="ad-thatsapp-logo">
@@ -290,44 +261,7 @@
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/fastclick.js"></script>
     <script src="js/script.js"></script>
-    <script>
-        $().ready(function() {
-            
-            var validator = $("#userinfo").validate({
-                errorPlacement: function(error, element) {
-                    $(element)
-                        .closest( ".information" )
-                            .find( ".errorMessage" )
-                                .append( error );
-                },
-                errorElement: "p",
-                messages: { 
-                    username: {
-                        required: "The username is required",
-                    },
-                    email: {
-                        required: "The email is required",
-                    },
-                    phone: {
-                        required: "The phone is required",
-                    },
-                    Password: {
-                        required: "The Password is required",
-                    },
-                    Retype: {
-                        required: "The Retype Password is required",
-                    }
-                }
-
-
-            });
-
-            $(".cancel").click(function() {
-                validator.resetForm();
-            });
-        });
-    </script>
 </body>
 </html>
