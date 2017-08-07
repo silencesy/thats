@@ -119,9 +119,9 @@ input[type="text"], input[type="email"], input[type="password"] {
     border: 1px solid #e5e5e5;
     border-radius: 4px;
 }
-input {
-    -webkit-appearance: none;
-}
+// input {
+//     -webkit-appearance: none;
+// }
 textarea {
     width: 100%;
     color: #666;
