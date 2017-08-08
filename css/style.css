@@ -1789,6 +1789,11 @@ input[type="text"], input[type="email"], input[type="password"] {
     padding-left: 15px;
 }
 
+.word-container .page-word.clearfix{
+    padding-left: 150px;
+}
+
+
 
  
 /*--------------------------- events结束 ----------------------- */
@@ -2769,6 +2774,11 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .nav-tabs.sidects > li.active {
         width: auto;
     }
+
+    .word-container .page-word.clearfix{
+        padding-left: 25px;
+    }
+
 }
 
 
