@@ -143,6 +143,18 @@ td {
     border: 1px solid #e5e5e5;
     word-break: break-all;
 }
+
+/*修改分页样式*/ 
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: transparent;
+    color: #f9421e;
+}
+
+.pagination>li>a:hover {
+    background-color: transparent;
+    color: #999;
+}
+
 body {
     background: #fff url(../Images/bg_body.png) repeat-x 0 0;
     color: #292929;
