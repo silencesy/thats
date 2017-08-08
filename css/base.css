@@ -534,6 +534,7 @@ body {
     bottom: 0;
     padding: 0 10px;
     z-index: 1;
+    display: none;
 }
 
 .ad-thatsapp>div {
@@ -643,6 +644,14 @@ body {
         width: 318px;
     }
 }
+
+
+@media only screen and (max-device-width:768px){
+    .ad-thatsapp {
+        display: block;
+    }
+}
+
 
 
 

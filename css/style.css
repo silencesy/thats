@@ -2047,6 +2047,24 @@ textarea.form-control {
     left: 49px;
 }
 
+div.maskdown {
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    height: 2000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: none;
+}
+
+div.maskdown > img {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    left: 13%;
+}
+
     
 
 
@@ -2138,8 +2156,6 @@ textarea.form-control {
     height: 40px;
 }
 
-
-
 .img-container .revirws-img {
     width: 160px;
     height:120px;    
@@ -2208,7 +2224,35 @@ textarea.form-control {
 
 
 
+=======
+.sex-label {
+    height: 40px;
+    line-height: 48px;
+    margin: 0 20px;
+}
+
+.logo-quote {
+    width: 120px;
+    height: 120px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    position: absolute;
+    right: -40px;
+    bottom: 50px;
+}
+
+.logo-quote .logo {
+    width: 75%;
+    height: 48px;
+    display: block;
+    background: url(../images/logo_gray.png) no-repeat 0 0;
+    background-size: 100% auto;
+    margin: 37.5% auto;
+}
+
 /*--------------------------- 用户页面结束 ----------------------- */
+
+
 
 
 
