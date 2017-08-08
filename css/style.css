@@ -633,8 +633,8 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 .right-add {
 	border:0 none;
-	width:280px;
-	max-height:460px;
+    max-height: 460px;
+    max-width: 100%;
 }
 
 /*--------------------------- news end ----------------------- */
@@ -2735,6 +2735,15 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .appphone-ad {
         margin-top: 0;
     }
+
+    .tsa.tsa-1 {
+        text-align: center;
+    }
+
+    .tsab a>img {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -2773,7 +2782,7 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 }
 @media screen and (max-width: 660px) {
     .nav-tabs.sidects {
-        width: 26px;
+        width: 27px;
     }
     .nav-tabs.sidects li a {
         text-overflow: initial;

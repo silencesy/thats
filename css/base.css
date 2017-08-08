@@ -259,6 +259,8 @@ body {
     position: relative;
 }
 
+
+
 @media (min-width: 1024px) {
     .wrapper > .container, .container {
         padding-right: 20px;
@@ -625,6 +627,18 @@ body {
         margin-top: 10px;
         margin-left: 15px;
     }
+    // 移动端主体marin-top
+    .row.thats-content {
+        padding: 62px 15px 0 15px;
+    }
+
+    div.wrapper {
+        padding-top: 60px;
+    }
+
+    .row.thats-content .thats-nav-ad {
+        padding: 0 15px;
+    }
 }
 
 // @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -662,12 +676,12 @@ body {
     .ad-thatsapp {
         display: block;
     }
+    
 }
 
 
-
-
    
+
 
 
 
