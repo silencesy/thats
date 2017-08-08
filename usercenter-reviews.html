@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Individual personal page</title>
+	<title>usercenter reviews</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -130,10 +130,10 @@
 										</li>
 									</ul>
 									<ul class="nav nav-sidebar">
-										<li class="active">
+										<li>
 											<a href="#">Home</a>
 										</li>
-										<li>
+										<li class="active">
 											<a href="#">Reviews <span>1</span></a>
 										</li>
 										<li>
@@ -163,52 +163,48 @@
 								</div>
 							</div>
 							<div class="col-sm-8 main usercenter">
-								<div class="user-content uc-home">
-									<h1>Edit My Information</h1>
-									<form action="#" method="post" accept-charset="utf-8" id="UserInfo">
-										<div class="form-group clearfix">
-											<label class="col-sm-2" for="User-name">Name</label>
-											<input class="col-sm-8" type="text" id="User-name" placeholder="Enter name">
-										</div>
-										<div class="form-group clearfix">
-											<label class="col-sm-2" for="User-email">Email</label>
-											<input class="col-sm-8" type="text" id="User-email" placeholder="Enter email">
-										</div>
-										<div class="form-group clearfix">
-											<label class="col-sm-2" for="User-phone">Phone</label>
-											<input class="col-sm-8" name="phone" type="text" id="User-phone" placeholder="Enter phone">
-										</div>
-										<div class="form-group clearfix">
-											<label class="col-sm-2" for="User-file">Photo</label>
-											<input class="col-sm-8" name="photo" type="file" id="User-file">
-										</div>
-										<div class="form-group clearfix">
-											<label class="col-sm-2">Gender</label>
-											<input type="radio" name="sex" id="sex1" value="option1" checked><label class="sex-label" for="sex1">Male</label>
-											<input type="radio" name="sex" id="sex2" value="option1" checked><label class="sex-label" for="sex2">Female</label>	
-										</div>
-										<div class="form-group clearfix">
-											<label class="col-sm-2" for="User-country">Country</label>
-											<select class="col-sm-8" name="country" id="User-country">
-												<option value="1">Select country</option>
-												<option value="2">Select country</option>
-												<option value="3">Select country</option>
-											</select>
-										</div>
-										<div>
-											<button type="submit" class="btn btn-red btn-l">
-												<span class="text-bold text-italic">Confirm and save</span>
-											</button>
-										</div>
-									</form>
-									<div class="logo-quote visible-lg">
-										<span class="logo"></span>
-									</div>
-								</div>
+					            <div class="user-content uc-reviews">
+					                <section class="writing-container">
+					                    <header>
+					                        <h2>Reviews</h2>
+					                    </header>
+					                    <div class="writing row">
+					                        <div class="col-sm-4">
+					                            <div class="img-container">
+					                                <a href="" target="_blank">
+					                                    <img class="revirws-img" src="Picture/airmule-3-.jpg" alt="">
+					                                </a>
+					                            </div>
+					                        </div>
+					                        <div class="col-sm-8">
+					                            <h3 class="comment-title">
+					                                <a href="" target="_blank">憓众乐波国际创客营</a>
+					                            </h3>
+					                            <div class="grade pull-right">
+				                                    <a href="javascript:void(0)" class="active">
+				                                        <span class="thaticon icon-star"></span>
+				                                    </a>
+				                                    <a href="javascript:void(0)" class="active">
+				                                        <span class="thaticon icon-star"></span>
+				                                    </a>
+				                                    <a href="javascript:void(0)" class="active">
+				                                        <span class="thaticon icon-star"></span>
+				                                    </a>
+				                                    <a href="javascript:void(0)" class="active">
+				                                        <span class="thaticon icon-star"></span>
+				                                    </a>
+				                                    <a href="javascript:void(0)" class="active">
+				                                        <span class="thaticon icon-star"></span>
+				                                    </a>
+					                            </div>
+					                            <p class="comment-time text-weak">Added August 23, 2016 at 14:17 pm</p>
+					                            <p class="comment-content">nice place</p>
+					                        </div>
+					                    </div>
+					                </section>
+					            </div>
 							</div>
 						</div>
-
-
 							
 						<div class="container-fluid page-bottom">
 							<div class="row">
@@ -378,7 +374,7 @@
     </nav>
     <!-- 移动端nav结束 -->
     <!-- ad-app部分开始 -->
-    <div class="ad-thatsapp">
+    <div class="ad-thatsapp visible-xs">
     	<div class="ad-thatsapp-logo">
     		<a href="http://www.thatsmags.com/app">
     			<img src="images/thatsapp-logo.png" alt="">
@@ -388,9 +384,7 @@
     		<p>Get the App. Your essential China city companion.</p>
     	</div>
     	<div class="ad-thatsapp-open">
-    		<a href="#">
-    			<button class="btn ad-thatsapp-download">open</button>
-    		</a>
+    		<button class="btn ad-thatsapp-download">open</button>
     		<a class="ad-thatsapp-close">
     			<img src="images/thatsapp-close.png" alt="">
     		</a>
