@@ -533,7 +533,7 @@ body {
     position: fixed;
     bottom: 0;
     padding: 0 10px;
-    z-index: 1;
+    z-index: 10000;
     display: none;
 }
 

@@ -1749,7 +1749,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 .data-input {
     color: #999;
     height: 40px;
-    max-width: 280px;
+    width: 280px;
     border-right: none;
     background-color: #eee;
 }
@@ -1766,6 +1766,30 @@ input[type="text"], input[type="email"], input[type="password"] {
 .writing-date .abstract {
     padding-top: 0;
 }
+
+// .table-condensed>tbody>tr>td,
+//  .table-condensed>tbody>tr>th,
+  // .table-condensed>tfoot>tr>td,
+//    .table-condensed>tfoot>tr>th,
+    // .table-condensed>thead>tr>td,
+//      .table-condensed>thead>tr>th 
+    //  {
+    //     padding: 5px 10px;
+    // }
+.datetimepicker td, .datetimepicker th {
+    width: 38px;
+    height: 34px;
+}
+
+// .datetimepicker td, .datetimepicker th {
+//     width: auto;
+// }
+
+#form_datetime {
+    padding-left: 15px;
+}
+
+
  
 /*--------------------------- events结束 ----------------------- */
 
@@ -2559,6 +2583,24 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .app-container { 
         padding-left:0;padding-right:0;
     }
+
+    #form_datetime {
+        width: 100%;
+    }
+    
+    .datetime-btn {
+        float: right;
+        margin-top: -40px;
+    }
+
+    // .table-condensed>tbody>tr>td,
+    //  .table-condensed>tbody>tr>th,
+    //   .table-condensed>tfoot>tr>td,
+    //    .table-condensed>tfoot>tr>th,
+    //     .table-condensed>thead>tr>td,
+    //      .table-condensed>thead>tr>th {
+    //         padding: 4px 8px;
+    //     }
 }
 
 
