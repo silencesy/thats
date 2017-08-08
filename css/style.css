@@ -2138,6 +2138,76 @@ textarea.form-control {
     height: 40px;
 }
 
+
+
+.img-container .revirws-img {
+    width: 160px;
+    height:120px;    
+}
+.uc-reviews h2 {
+    margin-bottom: 15px;
+}
+.uc-reviews .img-container, .uc-reviews .writing .comment-time {
+    margin-bottom: 10px;
+}
+.uc-reviews .writing p {
+    margin-bottom: 0;
+    line-height: 175%;
+}
+.writing-date .col-sm-1 {
+    padding: 0;
+    margin-left: 50px;
+}
+.date-moon {
+    font-size: 28px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.uc-reviews .grade {
+    margin-top: -33px;
+}
+.serve-info {
+    overflow: hidden;
+}
+.serve-info > * {
+    margin-right: 20px;
+}
+.icon-list > * {
+    display: inline-block;
+    padding-right: 5px;
+}
+.box-dye {
+    background: #f5f5f5;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+}
+.data-dt {
+    width: 30%;
+    margin-left: 5px;
+    vertical-align: top;
+}
+.data-dt, .data-dd {
+    display: inline-block;
+    line-height: 160%;
+    padding-bottom: 10px;
+}
+.pagination>li>a, .pagination >a {
+    border: none;
+    display: inline-block;
+    color: #666;
+    padding: 5px 8px;
+}
+.pagination>.active>a {
+    color: #f9421e;
+    background: none;
+}
+
+
+
+
+
+
 /*--------------------------- 用户页面结束 ----------------------- */
 
 
@@ -2478,7 +2548,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         display: block;
         padding-top: 10px;
     }
-<<<<<<< HEAD
     .flexslider .slides img {
         border: none;
         max-width: 100%;
@@ -2495,9 +2564,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .word-title .toolbar-slider {
         margin-right: 0;
     }
-        
-=======
-
     .depar-select {
         width: 100%;
     }
@@ -2517,7 +2583,20 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .app-container { 
         padding-left:0;padding-right:0;
     }
->>>>>>> 26a78119afcfa604d64c5a2c1a26bb9e00ce9184
+    .writing-date .col-sm-7 {
+        width: 78%;
+        float: left;
+    }
+    .writing-date .col-sm-1 {
+        width: 20%;
+        float: right;
+        margin-left: 0;
+    }
+    .img-container .revirws-img {
+        width: 100%;
+    }
+
+
 }
 
 

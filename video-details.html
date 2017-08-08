@@ -295,15 +295,15 @@
 					            </h2>
 					        </div>					        
 					        <div class="pull-right pull-plus">
-					            <a type="button" class="btn btn-red btn-lg add-btn" data-toggle="modal" data-target="#myModal">
+					            <a type="button" class="btn btn-red btn-l add-btn" data-toggle="modal" data-target="#reviewModal">
 					                <i class="thaticon icon-add"></i>
 					                <span class="text-bold text-italic add-font">Add your Comment</span>
 					            </a>
-					        </div>
+					        </div>    
 					    </div>
 					</section>	
 					<!-- Add弹出层开始 -->	
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
 					    <div class="modal-dialog">
 					        <form id="reviewForm">
 					            <div class="modal-content">
@@ -328,7 +328,7 @@
 					                <div class="modal-footer">
 					                    <button type="submit" class="btn btn-primary">Submit</button>
 					                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					                </div>
+					                </div>   
 					            </div>
 					        </form>
 					    </div>    
@@ -549,6 +549,30 @@
 		</div>
 	</footer>
 	<!-- 底部部分结束 -->
+
+	<!-- Subscribe弹出层 start -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content"><!--  id="globalSubscribeForm" -->
+				<form action="http://newsletter.thatsmags.com/x/plugin/?pName=subscribe&amp;MIDRID=S7Y1BgAA64&amp;pLang=en&amp;Z=1087741649" method="post" target="_blank">
+					<input type="hidden" name="DMDtask" value="subscribe" />
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Add your email</h4>
+					</div>
+					<div class="modal-body">
+						<input type="email" placeholder="Email Address" name="email" class="btn-all btn-email" />
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-fresh btn-all">
+							<span class="text-bold text-italic">Add</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Subscribe弹出层 end -->
 
 	<!-- 移动端nav开始 -->
 	<nav id="mobile-nav" class="navbar navbar-default navbar-fixed-top visible-xs clearfix" role="navigation">
