@@ -1566,17 +1566,48 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 
 
+.gallery-wrap .word-title {
+    position: relative;
+    margin: 0 15px;
+}
+.gallery-wrap .select > * {
+    border-color: #33373b;
+}
+.select-type h2, .select .col-sm-3 .lead {
+    font-size: 14px;
+    margin-top: 0;
+}
+.gallery-wrap .lead, .gallery-wrap .select-sort a.active {
+    color: rgba(255, 255, 255, 1);
+}
+.gallery-wrap .select {
+    padding-top: 25px;
+}
+.select-type li {
+    display: inline-block;
+}
+.select-all .select-sort {
+    padding: 10px 0;
+    border-bottom: none;
+}
 
 
 
-
-
-
-
-
-
-
-
+.bdr-gray {
+    border-color: #33373b;
+    color: rgba(235, 245, 255, .5);
+}
+.btnbox {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.bdr-dashed {
+    border-width: 3px;
+    border-style: dashed;
+    height: 38px;
+    line-height: 32px;
+    padding: 0 70px;
+}
 
 
 
@@ -1713,7 +1744,9 @@ input[type="text"], input[type="email"], input[type="password"] {
 .grade {
     margin-bottom: 10px;
 }
-
+.writing-container .pic-number {
+    margin: 10px 0;
+}
 .serve-contact {
     background: #f5f5f5;
     border-radius: 10px;
@@ -2525,6 +2558,23 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 
 
 @media (max-width: 768px) {
+    .serve-contact {
+        padding: 0;
+        background: none;
+    }
+    .writing .listings-pic {
+        background: none;
+    }
+    .serve-grade .pull-right {
+        float: left !important;
+    }
+    .writing .img-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .abstract {
+        padding-top: 5px;
+    }
 	.tagbala .bdr-fresh {
 		margin-bottom: 20px;
 	}
