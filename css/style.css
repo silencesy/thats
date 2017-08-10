@@ -78,6 +78,11 @@
 }
 /*分享结束*/ 
 
+.btn-red:hover, .btn-red:focus, .btn-red.focus, .btn-red:active, .btn-red.active {
+    background: rgba(230, 50, 18, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
 
 /*--------------------------- Article start ----------------------- */
 .word-container, .word-title {
@@ -2305,6 +2310,51 @@ div.maskdown > img {
     margin: 37.5% auto;
 }
 
+
+/*submit event*/
+.submit-title {
+    height: 48px;
+    margin: 10px 0 20px 0;
+    background: url(../images/title.png) no-repeat 0 51%;
+}
+
+.form-signin {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.form-signin .form-group {
+    margin-bottom: 30px;
+}
+
+.add-only {
+    width: 24%;
+    min-width: 140px;
+}
+
+.website-text {
+    color: #aaa;
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.Image-Photo {
+    width: 100px;
+}
+
+.form-signin .form-submit button {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form-listing .checkbox label:first-child {
+    margin-right: 20px;
+}
+
+.ssi-button.success {
+    // background-color: red;
+}
+
 /*--------------------------- 用户页面结束 ----------------------- */
 
 
@@ -2732,6 +2782,7 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         width: 100%;
     }
 
+
 }
 
 
@@ -2822,6 +2873,10 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         width: 65%;
     }
 
+    .form-signin .form-control {
+        width: 95%;
+    }
+
 }
 @media screen and (max-width: 660px) {
     .nav-tabs.sidects {
@@ -2839,6 +2894,24 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .form-signin .form-control {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-device-width: 768px) {
+    .submit-title {
+        height: 25px;
+        background-size: 130% auto;
+        margin: 20px 0;
+    }
+}
+
+
+
 
 
 

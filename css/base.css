@@ -393,6 +393,9 @@ body {
 }
 
 
+.row.thats-content .thats-nav-ad {
+    padding: 0 15px;
+}
 /*主题部分*/ 
 
 
@@ -636,9 +639,7 @@ body {
         padding-top: 60px;
     }
 
-    .row.thats-content .thats-nav-ad {
-        padding: 0 15px;
-    }
+    
 }
 
 // @media screen and (max-width: 991px) and (min-width: 768px) {
