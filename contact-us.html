@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -102,41 +103,40 @@
                 </ol>
             </section>
              <div class="box-outline information contact-us">
-                <form action="#" id="userinfo">
+                <form action="#" id="ContactUs">
                     <h2>Contact Us</h2>
                     <p>Please use the form below to contact thatsmags.com.</p>
                     <p>All fields are mandatory.</p>
                     <p>Your message will not be delivered to us if you don't provide a valid E-Mail adddress.</p>
                     <div class="form-group clearfix">
                         <label for="username">Your Name</label>
-                        <input class="form-control" type="text" id="username" name="name" required>
+                        <input class="form-control" type="text" id="username" name="sRealName">
                     </div>
                     <div class="form-group clearfix">
                         <label for="city">Your City</label>
-                        <input class="form-control" type="text" id="city" name="city" required>
+                        <input class="form-control" type="text" id="city" name="sCity">
                     </div>
                     <div class="form-group clearfix">
                         <label for="email">Your E-Mail</label>
-                        <input class="form-control" type="email" id="email" name="email" required>
+                        <input class="form-control" type="email" id="email" name="sEmail">
                     </div>
                     <div class="form-group clearfix">
                         <label for="Subject">Subject</label>
-                        <input class="form-control" type="text" id="Subject" name="Subject" required>
+                        <input class="form-control" type="text" id="Subject" name="sSubject">
                     </div>
                     <div class="form-group clearfix">
                         <label for="category">Department</label>
                         <select class="form-control depar-select" name="iDepartment" id="category">
-                            <option value="1"></option>
-                            <option value="2">Sales & Marketing</option>
-                            <option value="3">Editorial</option>
-                            <option value="4">Directory</option>
-                            <option value="5">Events</option>
-                            <option value="6">Technical Support</option>
+                            <option value="1">Sales & Marketing</option>
+                            <option value="2">Editorial</option>
+                            <option value="3">Directory</option>
+                            <option value="4">Events</option>
+                            <option value="5">Technical Support</option>
                         </select>
                     </div>
                     <div class="form-group clearfix">
-                        <label for="Mess">Message</label>
-                        <textarea class="form-control con-message" maxlength="456" id="Mess" name="message"></textarea>
+                        <label class="label-hight" for="Mess">Message</label>
+                        <textarea class="form-control con-message" id="Mess" name="sMessage"></textarea>
                     </div>
                     <span class="errorMessage"></span>
                     <div class="form-submit">
@@ -332,6 +332,69 @@
 	<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('#ContactUs')
+                .bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        sRealName: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sCity: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sEmail: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The email address is required and can\'t be empty'
+                                },
+                                regexp: {
+                                    regexp: /^(\w-*\.*)+@(\w-?)+(\.\w{1,})+$/,
+                                    message: 'The input is not a valid email address'
+                                }
+                            }
+                        },
+                        sSubject: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sMessage: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'The username is required and can\'t be empty'
+                                }
+                            }
+                        }
+                    }
+                })
+                .on('success.form.bv', function(e) {
+                    e.preventDefault();
+                    // ajax提交表单  跳转页面
+                    alert("提交触发函数");
+                    
+                    
+                    
+                });
+        });
+    </script>
 
 </body>
 </html>

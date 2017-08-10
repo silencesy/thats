@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrapValidator.min.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -118,10 +119,10 @@
 						<div class="submit-title"></div>
 						<div class="row">
 							<div class="col-sm-7 main">
-								<form action="#" class="form-signin">
+								<form action="#" class="form-signin" id="form-signin">
 									<div class="form-group clearfix">
 										<label for="cityid" class="add-only">City<em> * </em></label>
-										<select class="form-control" name="cityid" id="cityid">
+										<select class="form-control" name="iCityID" id="cityid">
 											<option value="1" selected>Shanghai</option>
 											<option value="2">Beijing</option>
 											<option value="3">Shenzhen</option>
@@ -130,15 +131,15 @@
 									</div>
 									<div class="form-group clearfix">
 										<label for="eventname" class="add-only">Event Name<em> * </em></label>
-										<input id="eventname" class="form-control" name="eventname" type="text" required >
+										<input id="eventname" class="form-control" name="sEventName" type="text">
 									</div>
 									<div class="form-group clearfix">
 										<label for="listingsname" class="add-only">Venue/where?<em> * </em></label>
-										<input id="listingsname" class="form-control" name="listingsname" type="text" >
+										<input id="listingsname" class="form-control" name="sListingsName" type="text" >
 									</div>
 									<div class="form-group clearfix">
 										<label for="Channel " class="add-only">Channel<em> * </em></label>
-										<select class="form-control" name="Channel" id="Channel">
+										<select class="form-control" name="sChannelID" id="Channel">
 											<option value="1" selected>Bars&Restaurants</option>
 											<option value="2">Entertainment</option>
 											<option value="3">LifeStyle</option>
@@ -149,7 +150,7 @@
 									</div>
 									<div class="form-group clearfix">
 										<label for="Category" class="add-only">Category<em> * </em></label>
-										<select class="form-control" name="Category" id="Category">
+										<select class="form-control" name="category[0][]" id="Category">
 											<option value="1" selected>Select Category</option>
 											<option value="2">Arts</option>
 											<option value="3">Nightlife & Live Music</option>
@@ -160,7 +161,7 @@
 									</div>
 									<div class="form-group clearfix">
 										<label for="EventType" class="add-only">Type of Event<em> * </em></label>
-										<select class="form-control" name="Category " id="EventType">
+										<select class="form-control" name="sTypeID" id="EventType">
 											<option value="1" selected>Eat&Drink</option>
 											<option value="2">Arts</option>
 											<option value="3">Nightlife</option>
@@ -169,7 +170,7 @@
 									</div>
 									<div class="form-group clearfix">
 										<label for="WhichDays" class="add-only">Which Days?<em> * </em></label>
-										<select class="form-control" name="WhichDays" id="WhichDays">
+										<select class="form-control" name="iRunType" id="WhichDays">
 											<option value="1" selected>One Day</option>
 											<option value="2">Every Month</option>
 											<option value="3">Every Week</option>
@@ -178,24 +179,24 @@
 									</div>
 									<div class="form-group clearfix">
 										<label for="StartDate" class="add-only">Start Date<em> * </em></label>
-										<input type="text" name="StartDate" id="StartDate" class="form-control">
+										<input type="text" name="sStartDate" id="StartDate" class="form-control">
 									</div>
 									<div class="form-group clearfix">
-										<label for="Description" class="add-only">Description<em> * </em></label>
-										<textarea class="form-control" placeholder="Maximum 500 characters." maxlength="500" name="Description" id="Description"></textarea>
+										<label for="Description" class="add-only tygd">Description<em> * </em></label>
+										<textarea class="form-control" placeholder="Maximum 500 characters." maxlength="500" name="sContent" id="Description"></textarea>
 									</div>
 									<div class="form-group clearfix">
 										<label for="email" class="add-only">Contact Email</label>
-										<input id="email" class="form-control" name="email" type="text" >
+										<input id="email" class="form-control" name="sEmail" type="text" >
 									</div>
 									<div class="form-group clearfix">
 										<label for="Website" class="add-only">Website</label>
-										<input id="Website" class="form-control" name="Website" type="text" >
+										<input id="Website" class="form-control" name="sWebsite" type="text" >
 										<div class="website-text">Please input a real website, for example: http://www.thatsmags.com/shanghai</div>
 									</div>
 									<div class="form-group clearfix">
 										<label for="StartTime" class="add-only">Start Time</label>
-										<input id="StartTime" class="form-control" name="StartTime" type="text" >
+										<input id="StartTime" class="form-control" name="sOpentime" type="text" >
 									</div>
 									<div class="form-group clearfix">
 										<label for="Photo" class="add-only">Image Or Photo<em> * </em></label>
@@ -206,15 +207,15 @@
 									<p class="text-muted mb-30">Please fill in your contact details below. All fields are required. Submissions leaving any of these fields blank will be rejected.</p>
 									<div class="form-group clearfix">
 										<label for="uname" class="add-only">Your Name<em> * </em></label>
-										<input id="uname" class="form-control" name="uname" type="text" >
+										<input id="uname" class="form-control" name="sInputName" type="text" >
 									</div>
 									<div class="form-group clearfix">
 										<label for="uemail" class="add-only">Your Email<em> * </em></label>
-										<input id="uemail" class="form-control" name="uemail" type="text" >
+										<input id="uemail" class="form-control" name="sInputEmail" type="text" >
 									</div>
 									<div class="form-group clearfix">
 										<label for="uphone" class="add-only">Phone Number</label>
-										<input id="uphone" class="form-control" name="uphone" type="text" >
+										<input id="uphone" class="form-control" name="sInputPhone" type="text" >
 									</div>
 									<div class="form-submit">
 										<button class="btn btn-l btn-red btn-block" type="submit">
@@ -431,8 +432,11 @@
 	<script src="js/fastclick.js"></script>
 	<script src="js/bootstrap-datetimepicker.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/bootstrapValidator.min.js"></script>
 	<script>
 		$(function(){
+
+			// 日期时间插件
 			$('#StartDate').datetimepicker({
 				format: 'yyyy-mm-dd',//显示格式
 				minView: "month",//设置只显示到月份
@@ -448,6 +452,74 @@
 				forceParse: 0,
 		        showMeridian: 1,
 			});
+
+
+			// 表单验证
+			$('#form-signin')
+                .bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        sEventName: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The event name is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sListingsName: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The venue/where is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sStartDate: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The start date is required and can\'t be empty'
+                                }
+                            }	
+                        },
+                        sContent: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The description is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sInputName: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The Your Name is required and can\'t be empty'
+                                }
+                            }
+                        },
+                        sInputEmail: {
+                        	validators: {
+                                notEmpty: {
+                                    message: 'The email address is required and can\'t be empty'
+                                },
+                                regexp: {
+                                    regexp: /^(\w-*\.*)+@(\w-?)+(\.\w{1,})+$/,
+                                    message: 'The input is not a valid email address'
+                                }
+                            }
+                        }
+                    }
+                })
+                .on('success.form.bv', function(e) {
+                    e.preventDefault();
+                    // ajax提交表单  跳转页面
+                    alert("提交触发函数");
+                    
+                    
+                    
+                });
 		});
 	</script>
 </body>

@@ -1938,6 +1938,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     margin-bottom: 20px;
 }
 
+.information .form-group .label-hight {
+    height: 120px;
+}
+
 .form-control {
     width: 70%;
     float: left;
@@ -2327,6 +2331,15 @@ div.maskdown > img {
     margin-bottom: 30px;
 }
 
+.form-signin .has-feedback label~.form-control-feedback {
+    top: 0px;
+    right: 30px;
+}
+
+.form-signin .add-only {
+    height: 30px;
+}
+
 .add-only {
     width: 24%;
     min-width: 140px;
@@ -2354,6 +2367,13 @@ div.maskdown > img {
 .ssi-button.success {
     // background-color: red;
 }
+
+
+/*表单验证*/
+.has-feedback label~.form-control-feedback {
+    top: 3px;
+} 
+
 
 /*--------------------------- 用户页面结束 ----------------------- */
 
@@ -2782,7 +2802,26 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         width: 100%;
     }
 
+    .has-feedback label~.form-control-feedback {
+        top: 48px;
+    }
+    
+    .information .form-group .label-hight {
+        height: auto;
+    }
 
+    // .form-signin .has-feedback label~.form-control-feedback {
+    //     top: 0px;
+    //     right: 33px;
+    // }
+    .form-signin .form-control {
+        width: 100%;
+    }
+
+    .form-signin .has-feedback label~.form-control-feedback {
+        top: 35px;
+        right: 0px;
+    }
 }
 
 
@@ -2877,6 +2916,11 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         width: 95%;
     }
 
+    .form-signin .has-feedback label~.form-control-feedback {
+        top: 34px;
+        right: 21px;
+    }
+
 }
 @media screen and (max-width: 660px) {
     .nav-tabs.sidects {
@@ -2895,19 +2939,18 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 
 }
 
-@media screen and (max-width: 500px) {
-    .form-signin .form-control {
-        width: 100%;
-    }
-
-}
-
 @media screen and (max-device-width: 768px) {
     .submit-title {
         height: 25px;
         background-size: 130% auto;
         margin: 20px 0;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .form-signin .tygd {
+        height: 115px;
+    } 
 }
 
 
