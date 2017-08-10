@@ -133,6 +133,9 @@
 .article-banner {
 	margin:15px 0;
 }
+.word-content .tool-top {
+    width: 100%;
+}
 .article-banner >img {
 	max-width: 100%;
 }
@@ -331,12 +334,12 @@ img {
 } 
 
 .page-bottom .pull-left {
-    width: 55%;
+    width: 50%;
     padding-top: 5px;
 }
 
 .page-bottom .pull-right {
-    width: 45%;
+    width: 50%;
     padding-top: 5px;
 }
 .page-bottom .col-md-4:nth-of-type(2) img {
@@ -652,8 +655,8 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 
 .sidebar .tab-pane .pull-right, .article .text-container {
-    width: 65%;
-    // height: 74px;
+    width: 170px;
+    height: 74px;
     line-height: 120%;
     overflow: hidden;
 }
@@ -665,6 +668,10 @@ input[type="text"], input[type="email"], input[type="password"] {
 }
 .icon-star {
     background-position: -24px -32px;
+}
+.article.area-b .img-container {
+    width: 96px;
+    height: 72px;
 }
 .sidebar-module >.article {
     padding-top: 10px;
@@ -2628,10 +2635,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 
 
 @media (max-width: 768px) {
-    .serve-contact {
-        padding: 0;
-        background: none;
-    }
     .writing .listings-pic {
         background: none;
     }
@@ -2697,7 +2700,9 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 	    background-color: #000;
 	    padding: 10px;
 	}
-
+    .sidebar .tab-pane .pull-right, .article .text-container {
+        width: calc(100% - 104px) !important;
+    }
     .login-box {
         margin-bottom: 10px;
     }
