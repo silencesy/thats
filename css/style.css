@@ -2383,6 +2383,10 @@ div.maskdown > img {
     font-size: 12px;
 }
 
+.user-content.uc-home .confirm-save {
+    margin-left: 15px;
+}
+
 .Image-Photo {
     width: 100px;
 }
@@ -2814,16 +2818,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         float: right;
         margin-top: -40px;
     }
-
-    // .table-condensed>tbody>tr>td,
-    //  .table-condensed>tbody>tr>th,
-    //   .table-condensed>tfoot>tr>td,
-    //    .table-condensed>tfoot>tr>th,
-    //     .table-condensed>thead>tr>td,
-    //      .table-condensed>thead>tr>th {
-    //         padding: 4px 8px;
-    //     }
-
     .writing-date .col-sm-7 {
         width: 78%;
         float: left;
@@ -2844,11 +2838,6 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .information .form-group .label-hight {
         height: auto;
     }
-
-    // .form-signin .has-feedback label~.form-control-feedback {
-    //     top: 0px;
-    //     right: 33px;
-    // }
     .form-signin .form-control {
         width: 100%;
     }
@@ -2866,6 +2855,12 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         height: auto !important;
         margin-bottom: 20px !important;
         margin-right: 0 !important;
+    }
+
+    
+
+    .user-content.uc-home .col-xs-3 {
+        line-height: 44px;
     }
 }
 
