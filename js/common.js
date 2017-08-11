@@ -1,4 +1,4 @@
-$(document).ready(function(){    
+ $(document).ready(function(){    
     /**
      * top banner menu event
      */
@@ -114,7 +114,7 @@ $(document).ready(function(){
     });
     
     //懒加载
-    $("img.lazy").lazyload({
-        effect: 'fadeIn'
-    });
+    // $("img.lazy").lazyload({
+    //     effect: 'fadeIn'
+    // });
 })
