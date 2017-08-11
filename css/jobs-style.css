@@ -126,6 +126,9 @@ div.mask {
     .mb-hide { display: none; }
 
     .col-md-5 img { left:0 !important; max-width: 100%;}
+    .jobsection {
+        padding: 0 15px;
+    }
 
 }
 
