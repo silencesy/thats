@@ -3024,8 +3024,38 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     } 
 }
 
+@media screen and (max-device-width: 414px) and (min-device-width: 401px) {
+    .tips-taxi {
+        width: 390px;
+        margin-left: -195px;
+    }
 
-
-
-
-
+}
+@media screen and (max-device-width: 768px) and (min-device-width: 240px) {
+    .tips-taxi h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    .tips-taxi .alert-content {
+        margin: auto 15px 0;
+        padding-top: 10px;
+    }
+    .tips-taxi .alert-content > p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-device-width: 375px) and (min-device-width: 361px) {
+    .tips-taxi {
+        width: 340px;
+        margin-left: -170px;
+    }
+}
+@media screen and (max-device-height: 568px) and (max-device-width: 320px) {
+    .tips-taxi {
+        width: 290px;
+        margin-left: -145px;
+    }
+}
