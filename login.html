@@ -329,12 +329,12 @@
                             message: 'The username is not valid',
                             validators: {
                                 notEmpty: {
-                                    message: 'The username is required and can\'t be empty'
+                                    message: 'The username/email is required.'
                                 },
                                 stringLength: {
                                     min: 3,
                                     max: 20,
-                                    message: 'The username must contain more than 3 and less than 20 characters long'
+                                    message: '3-20 characters for username is required.'
                                 },
                                 /*remote: {
                                     url: 'remote.php',
@@ -350,11 +350,11 @@
                         password: {
                             validators: {
                                 notEmpty: {
-                                    message: 'The password is required and can\'t be empty'
+                                    message: 'The password is required.'
                                 },
                                 stringLength: {
                                     min: 8,
-                                    message: 'The Password field must be at least 8 characters in length'
+                                    message: 'The Password must contain at least 8 characters.'
                                 }
                             }
                         }
