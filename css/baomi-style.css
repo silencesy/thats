@@ -1,0 +1,143 @@
+.baomi-container { padding-left:15px;padding-right:15px;color:#fff;text-align:center;}
+
+.baomi-download{
+	background: #5b97c4;
+    min-height: 305px;
+}
+
+.phones{margin-top:10px;}
+
+.baomi-explainer{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.baomi-menu{font-family:'Open Sans Condensed';}
+.baomi-menu li{margin-bottom:10px;}
+.baomi-menu a{color:#999;}
+.baomi-menu a:hover{color:#333;}
+
+.baomi-container h1{color:#fff;font-family: 'Open Sans Condensed';}
+.baomi-container h3{color:#fff;font-family: 'Open Sans Condensed';}
+.baomi-container h3{color:#fff;font-family: 'Open Sans';}
+
+
+.text-intro{ margin-top: 20px; position: relative; z-index: 10; left: 20px;color: #fff;}
+
+div.wrapper {
+    background: none;
+    padding-top: 0;
+}
+div.mask {
+    width: 100%;
+    background-color: rgba(0,0,0,0.85);
+    height: 2000px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+.mask > img {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    left: 13%;
+
+}
+.mask > p {
+    position: relative;
+    top: 82px;
+    text-align: center;
+    font-size: 22px;
+    color: #f9421e;
+    font-weight: 300;
+}
+.android {
+    display: none;
+}
+.col-md-offset-2 h2 { color:#fff; font-family: Open Sans Condensed;position:relative;}
+/*.col-md-offset-2 h2:before{
+    content: "";
+    border: 0px solid #fff;
+    border-width: 4px;
+    border-color: #fff transparent transparent transparent;
+    -webkit-transform: rotate(0deg);
+    position: absolute;
+    top: 28px;
+    left: 173px;
+}*/
+
+.logos > a > img { width:100%;max-width:50px; }
+.logos > a { margin-right:5px; }
+
+
+.col-md-5 .mobile { display: none; }
+.down-btn {
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    line-height: 40px;
+}
+.down-btn > i {
+    font-size: 18px;
+}
+@media screen and (min-width: 993px ){
+    .ar-container .baomi-download { min-height: 530px; }
+    .ar-container .col-md-5 img {
+        zoom: 1;
+        position: absolute;
+        top: -115px;
+        left: -528px;
+        width: 213%;
+        z-index: 1;
+    }
+    .baomi-container .col-md-5 {
+    position: relative;
+    top:116px;
+}
+    .phones{margin-top:25px;}
+}
+@media screen and (max-width: 992px){
+    .col-md-5 .mobile-none { display: none;}
+    .col-md-5 .mobile { 
+        display: initial;
+        left: 0;
+        width: 100%;
+    }
+    .text-intro { left: 0; }
+    .col-md-5 { margin-top: 10px; }
+    .baomi-menu li{text-align:center;display:inline;padding-left:20px;padding-right:20px;}
+    .baomi-menu ul{margin-bottom:30px;text-align:center;}
+}
+
+@media screen and (max-width:768px){
+    .text-intro{margin-top:40px;}
+    .baomi-menu li{padding-left:10px;padding-right:10px;}
+};
+
+/* 设备小于768*/
+@media screen and (max-device-width:768px) {
+    .col-md-offset-2 h2:before{
+        left: 50%;
+    }
+    .mb-hide { display: none; }
+
+    .col-md-5 img { left:0 !important; max-width: 100%;}
+
+}
+
+/* responsive screen */
+@media screen and (min-width:240px) and (max-width:768px){
+    header { display: none;}
+    .navbar-header { display: block !important;}
+    body { margin-top:-20px;}
+    .baomi-container { padding-left:0;padding-right:0;}
+}
+
+
+.ar-container .down-btn { width: 114px; }

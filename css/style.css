@@ -117,6 +117,7 @@
     background: url(../images/icon.png) no-repeat;
     vertical-align: middle;
 }
+
 .icon-home {
     margin-right: 5px;
     background-position: -24px -16px;
@@ -365,6 +366,8 @@ img {
 .share-s .icon-weibo {
     background-position: -150px -60px;
 }
+
+
 .share-s .icon-twitter, .share-s .icon-facebook, .share-s .icon-weibo {
     width: 30px;
     height: 30px;
@@ -649,13 +652,13 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 /*--------------------------- bars start ----------------------- */
 .sidebar .tab-pane .pull-left {
-    width: 30%;
+    width: 40%;
 }
 
 
 
 .sidebar .tab-pane .pull-right, .article .text-container {
-    width: 170px;
+    width: 58%;
     height: 74px;
     line-height: 120%;
     overflow: hidden;
@@ -1197,7 +1200,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 .slide-tab .nav-tabs li.active a {
     border-color: transparent;
-    background: url(../images/arrow_down.png) no-repeat 50% bottom;
+    background: url(../images/arrow_down.png) no-repeat 50% 98%;
 }
 
 
@@ -1226,16 +1229,33 @@ input[type="text"], input[type="email"], input[type="password"] {
     background-position: -41px 0;
 }
 
+.slide-tab ul li.active .icon-clock {
+    background-position: -71px 0px;
+}
+
 .slide-tab ul li .icon-fork {
     background-position: -41px -31px;
+}
+
+
+.slide-tab ul li.active .icon-fork {
+    background-position: -71px -31px;
 }
 
 .slide-tab ul li .icon-microphone {
     background-position: -41px -61px;
 }
 
+.slide-tab ul li.active .icon-microphone {
+    background-position: -71px -60px;
+}
+
 .slide-tab ul li .icon-star {
     background-position: -41px -121px;
+}
+
+.slide-tab ul li.active .icon-star {
+    background-position: -71px -120px;
 }
 
 #slide-tab-Content .title {
@@ -2564,6 +2584,11 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 .icon-weibo {
     background-position: -100px -100px;
 }
+.icon-instagram {
+    width: 49px;
+    height: 49px;
+    background-position: -3px -180px;
+}
 .icon-wechat {
     background-position: -150px -90px;
     cursor: pointer;
@@ -2700,9 +2725,9 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 	    background-color: #000;
 	    padding: 10px;
 	}
-    .sidebar .tab-pane .pull-right, .article .text-container {
-        width: calc(100% - 104px) !important;
-    }
+    // .sidebar .tab-pane .pull-right, .article .text-container {
+    //     width: calc(100% - 104px) !important;
+    // }
     .login-box {
         margin-bottom: 10px;
     }
@@ -2827,29 +2852,41 @@ a.icon-fullscreen:hover, a.icon-save:hover {
         top: 35px;
         right: 0px;
     }
+    .flex-slider .slider-row ul li:nth-child(2n) {
+        margin-left: 0 !important;
+    }
+
+    .flex-slider .slider-row ul li {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+        margin-right: 0 !important;
+    }
 }
 
 
 @media (max-width: 992px) {
+    
     .flex-slider .slider-row ul li {
-        height: auto;
-        width: 100%;
-        margin-bottom: 20px;
+        width: 48%;
+        margin-right: 0;
     }
-
+    .flex-slider .slider-row ul li:nth-child(2n) {
+        margin-left: 4%;
+    }
     .picture .col-sm-2 {
         width: 100%;
     }
     .page-bottom .pull-right {
         text-align: center;
     }
-    .sidebar .tab-pane .pull-left {
-        width: 20%;
-    }
+    // .sidebar .tab-pane .pull-left {
+    //     width: 20%;
+    // }
 
-    .sidebar .tab-pane .pull-right, .article .text-container {
-        width: 75%;
-    }
+    // .sidebar .tab-pane .pull-right, .article .text-container {
+    //     width: 75%;
+    // }
     // .magazine-ul li .col-md-5 {
     //     text-align: center;
     // }
@@ -2924,6 +2961,35 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .form-signin .has-feedback label~.form-control-feedback {
         top: 34px;
         right: 21px;
+    }
+
+    .writing-date .col-sm-1 {
+        margin-left: 0;
+    }
+
+    // .news-pic.thumb-side {
+    //     width: 48%;
+    //     float: left;
+    // }
+
+    // .news-pic.thumb-side:nth-child(2n) {
+    //     margin-right: 4%;
+    // }
+    .tab-content-week .tab-pane ul li {
+        width: 48%;
+        float: left;
+    }
+    .tab-content-week .tab-pane ul li:nth-child(2n) {
+        margin-left: 4%;
+    }
+
+    .tab-content .tab-pane ul li {
+        width: 48%;
+        float: left;
+    }
+
+    .tab-content .tab-pane ul li:nth-child(2n) {
+        margin-left: 4%;
     }
 
 }
