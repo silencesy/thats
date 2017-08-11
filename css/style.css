@@ -1803,6 +1803,11 @@ input[type="text"], input[type="email"], input[type="password"] {
     float: left;
 }
 
+.Website-text {
+    word-break:break-all;
+    word-wrap:break-word;  
+}
+
 /*--------------------------- 目录页结束 ----------------------- */
 
 
@@ -2706,7 +2711,7 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 	}
 	.wrapper > .container {
     	padding-top: 15px;
-    	margin-top: -8px;
+    	// margin-top: -8px;
 	}
 	.main .carousel {
 	    height: auto;
