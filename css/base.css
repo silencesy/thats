@@ -467,7 +467,6 @@ body {
 }
 
 
-
 #mobile-nav .citylist {
     border: none;
 }
@@ -639,6 +638,13 @@ body {
         padding-top: 60px;
     }
 
+    #footer .footer-text>p,#footer .footer-text>p>a {
+        font-size: 12px;
+    }
+    #footer .footer-logo .logo img {
+        width: 110px;
+        height: auto;
+    }
     
 }
 
