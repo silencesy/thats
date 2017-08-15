@@ -19,6 +19,10 @@
 </head>
 <body>
 	<div class="wrapper">
+		<!-- 置顶固定广告 -->
+		<div class="sticky-fixed-ad">
+			<a href="#"><img src="images/sticky-fixed-ad.jpg" alt=""></a>
+		</div>
 		<div class="container">
 			<!-- 头部部分开始 -->
 			<header class="hidden-xs thats-header">
@@ -92,6 +96,27 @@
 				</nav>
 			</header>
 			<!-- 头部部分结束 -->
+			
+			<!-- 对联 -->
+			<div class="couplet couplet-left">
+				<a href="#">
+					<img src="images/bjduilian.jpg" alt="">
+				</a>
+				<a class="couplet-close couplet-left-close"">X</a>
+			</div>
+			<div class="couplet couplet-right">
+				<a href="#">
+					<img src="images/bjduilian.jpg" alt="">
+				</a>
+				<a class="couplet-close couplet-right-close">X</a>
+			</div>
+
+
+			<!-- banner广告开始 -->
+			<div class="thats-nav-ad">
+				<a href="#"><img src="images/nav-ad.jpg" alt=""></a>
+			</div>
+			<!-- 广告位结束 -->
 			<div class="row">
 				<div class="col-md-9 main">
 					<!-- 轮播开始 -->
@@ -1302,6 +1327,9 @@
 					    </div><!-- sidebar-module / pt-0 ed -->
 					</div>
 				</div>
+				<div class="thats-nav-ad">
+					<a href="#"><img src="images/nav-ad.jpg" alt=""></a>
+				</div>
 			</div>
 			
 			<!-- 画廊轮播图开始 -->
@@ -1419,7 +1447,13 @@
 							</div>
 						</div><!-- gallery end -->
 					</div><!-- col-md-9 end -->
-					<div class="col-md-3 home-block"></div>
+					<div class="col-md-3 home-block">
+						<div>
+							<a href="#">
+								<img src="images/bj-ad2.jpg" alt="">
+							</a>
+						</div>
+					</div>
 				</div><!-- 画廊轮播图结束 -->
 
 				<!-- 底部推荐 -->
@@ -1486,6 +1520,11 @@
 					</p>
 				</div>
 			</div><!-- picture ed -->
+					
+			<div class="thats-nav-ad">
+				<a href="#"><img src="images/nav-ad.jpg" alt=""></a>
+			</div>
+
 			<div class="container-fluid page-bottom">
 				<div class="row">
 					<div class="col-md-4">
@@ -1674,14 +1713,7 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$('.slide-tab .nav-tabs li.active').children('')
-		});
-
-		$(function(){
 			$('.dropdown-toggle').dropdown();
-		});
-
-		$(function(){
 			$('#promotions').flexslider({
 				animation: "slide",
 				animationLoop: false,
@@ -1722,6 +1754,50 @@
 				slideshow: true,
 				sync: "#carousel"
 			});
+
+
+			// 关闭对联广告
+			$('.couplet-close').on('click',function(){
+				$(this).parents('.couplet').hide();
+			});
+
+			CoupletPositionLeft();
+			CoupletPositionRight();
+			$(window).resize(function(event) {
+				CoupletPositionLeft();
+				CoupletPositionRight();
+				
+			});
+			// 广告位随着屏幕的改变而改变
+			function CoupletPositionLeft(){
+				if ($('.couplet-left')) {
+					$isShow = $('.wrapper>.container').offset().left-$('.couplet-left').width();
+					if ($isShow>0) {
+						$('.couplet-left').css({"display":"block","left":$isShow});
+					} else if($isShow>-20) {
+						$('.couplet-left').css({"display":"block","left":$isShow+Number(20)});
+					} 
+					else {
+						$('.couplet-left').css({"display":"none"});
+					}
+				}
+			}
+			function CoupletPositionRight(){
+				if ($('.couplet-right')) {
+					$isShow = $('.wrapper>.container').offset().left-$('.couplet-left').width();
+					$rightIsShow = $('.wrapper>.container').offset().left+1000;
+					
+					if ($isShow>0) {
+						$('.couplet-right').css({"display":"block","right":$isShow});
+					} else if($isShow>-20) {
+						$('.couplet-right').css({"display":"block","right":$isShow+Number(20)});
+					} 
+					else {
+						$('.couplet-right').css({"display":"none"});
+					}
+				}
+			}
+
 		});
 	</script>
 </body>

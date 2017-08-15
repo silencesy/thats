@@ -2404,6 +2404,26 @@ div.maskdown > img {
     // background-color: red;
 }
 
+input.textbox {
+    color: #999;
+    height: 40px;
+    width: 280px;
+    border-right: none;
+}
+
+.input-file {
+    width: 60.7%;
+}
+
+a.link {
+    cursor: pointer;
+    height: 40px;
+    width: 44px;
+    line-height: 40px;
+    margin-left: -2px;
+    background: url(../images/input_file.png) no-repeat 0 0;
+}
+
 
 /*表单验证*/
 .has-feedback label~.form-control-feedback {
@@ -2668,7 +2688,7 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 }   
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .writing .listings-pic {
         background: none;
     }
@@ -2862,6 +2882,10 @@ a.icon-fullscreen:hover, a.icon-save:hover {
     .user-content.uc-home .col-xs-3 {
         line-height: 44px;
     }
+
+    .input-file {
+        width: 54%;
+    }
 }
 
 
@@ -2990,6 +3014,10 @@ a.icon-fullscreen:hover, a.icon-save:hover {
 
     .tab-content .tab-pane ul li:nth-child(2n) {
         margin-left: 4%;
+    }
+
+    .input-file {
+        width: 58.4%;
     }
 
 }

@@ -168,10 +168,10 @@ a {
     width: 14px;
     height: 14px;
 }
-div.wrapper {
-    background: none;
-    padding-top: 0;
-}
+// div.wrapper {
+//     background: none;
+//     padding-top: 0;
+// }
 
 .red {
     color: red;
@@ -267,9 +267,71 @@ body {
         padding-left: 20px;
         width: 1040px;
     }
+    // .wrapper {
+    //     padding-top: 188px;
+    // }
 
 }
 
+/*背景banner*/
+// .wrapper {
+//     background: url(../images/bg_wrapper.jpg) no-repeat 50% 0;
+// } 
+
+/*置顶固定广告*/ 
+.sticky-fixed-ad img {
+    width: 100%;
+    height: auto;
+} 
+
+/*对联*/
+.couplet {
+    width: 100px;
+    position: fixed;
+    // top: -1400px;
+    z-index: 100;
+} 
+
+.couplet-left {
+    border: 0px none;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+    top: 143px;
+    // left: 95.5px;
+}
+
+.couplet-right {
+    border: 0px none;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+    top: 143px;
+    // left: 95.5px;
+}
+
+.couplet-close {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    color: #fff;
+    line-height: 8px;
+    cursor: pointer;
+}
+
+.couplet-close:visited ,.couplet-close:hover ,.couplet-close:active{
+    color: #fff;
+}
+
+.couplet-left-close {
+    right: 0;
+}
+
+.couplet-right-close {
+    left: 0;
+}
 
 /*头部*/ 
 .thats-header {
@@ -619,7 +681,7 @@ body {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #footer {
         padding: 12px 10px 10px 10px;
     }
@@ -644,6 +706,10 @@ body {
     #footer .footer-logo .logo img {
         width: 110px;
         height: auto;
+    }
+
+    .couplet {
+        display: none;
     }
     
 }
@@ -684,6 +750,13 @@ body {
         display: block;
     }
     
+}
+
+@media screen and (min-width: 768px) {
+    /*背景banner*/
+    .wrapper {
+        background: url(../images/bg_wrapper.jpg) no-repeat 50% 0;
+    }
 }
 
 
