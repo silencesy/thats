@@ -1298,21 +1298,7 @@
 		    marker.setMap(mapObj);  //在地图上添加点
 		    mapObj.setFitView();
 
-		    // share
-		    $.getScript("//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5254d24f5417e846");
-		    $('.arcbody a').attr('target','_blank');
-
-		    $("#bookmark").click(function(){
-		        var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd': 'CTRL';
-		        if (document.all) {
-		            window.external.addFavorite(window.location.href, $('<title>').text())
-		        } else if (window.sidebar) {
-		            window.sidebar.addPanel($('<title>').text(), window.location.href, "")
-		        } else {
-		            alert('Please use ' + ctrl + ' + D to add~')
-		        }
-		    });
-
+			// 打印
 		    $("#taxiDirections").click(function(){
 		        $("#printTaxiDirections").removeClass('hide');
 		    });
